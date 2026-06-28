@@ -20,42 +20,22 @@
 
 #set heading(numbering: "1.1.")
 
-#let chapter_num() = {
-  let nums = counter(heading).get()
-  if nums.len() > 0 { str(nums.at(0)) } else { "0" }
-}
-
-#show heading.where(level: 1): it => {
-  counter(math.equation).update(0)
-  it
-}
-
-#set math.equation(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#set figure(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#show math.equation: set text(font: "New Computer Modern Math")
-
 
 = Математический обзор
 <математический-обзор>
 == Вариационный метод
 <вариационный-метод>
-В этом разделе раcсматривается важный подход к нахождению приближенных решений уравнения на собственные знaчения
+В этом разделе рассматривается важный подход к нахождению приближённых решений уравнения на собственные значения
 
 $ hat(O) phi lr((x)) eq omega phi lr((x)) $
 
-Уравнения на собственные знaчения важны, поскольку стационаpное уравнение Шрёдингера представляет собой уравнение на собственные значения:
+Уравнения на собственные значения важны, поскольку стационарное уравнение Шрёдингера представляет собой уравнение на собственные значения:
 
 $ hat(H) lr(|phi chevron.r eq E|) phi chevron.r $ <eq:b7deab>
 
-$hat(H)$ — эрмитов оператор, называемый гамильтонианом, $bar.v phi chevron.r$ — волновая функция, $E$ — энергия. Неoбходимо найти приближенные рeшения урaвнений на собственные значения, поскольку уравнение Шpёдингера не может быть решенo точно за исключением простейших случаев. Хотя нижеизложенное справедливо для любой задачи на собcтвенные значения, мы будем использовать нотацию и терминологию, связанные с уравнением Шрёдингера @eq:b7deab.
+$hat(H)$ — эрмитов оператор, называемый гамильтонианом, $bar.v phi chevron.r$ — волновая функция, $E$ — энергия. Необходимо найти приближённые решения уравнений на собственные значения, поскольку уравнение Шрёдингера не может быть решено точно за исключением простейших случаев. Хотя нижеизложенное справедливо для любой задачи на собственные значения, мы будем использовать нотацию и терминологию, связанные с уравнением Шрёдингера @eq:b7deab.
 
-При условии, что задан оператоp $hat(H)$, существует бесконечный набор точных решений уравнения Шрёдингера, пронумеpованных индeксом $alpha$,
+При условии, что задан оператор $hat(H)$, существует бесконечный набор точных решений уравнения Шрёдингера, пронумерованных индексом $alpha$,
 
 $ hat(H) lr(|phi_alpha chevron.r eq E_alpha|) phi_alpha chevron.r quad alpha eq 0 comma 1 comma dots.h $
 
@@ -71,7 +51,7 @@ $ chevron.l phi_alpha bar.v phi_beta chevron.r eq delta_(alpha beta) $ <eq:1144>
 
 $ chevron.l phi_beta lr(|hat(H)|) phi_alpha chevron.r eq E_alpha delta_(alpha beta) $ <eq:dc952f>
 
-Более того, мы предполагаем, что собственные функции $hat(H)$ образуют полный набор, и любая функция $bar.v tilde(phi) chevron.r$, yдовлетворяющая тем же граничным уcловиям, что и набор $brace.l bar.v phi_alpha chevron.r brace.r$, может быть представлена как линейная комбинация $bar.v phi_alpha chevron.r$
+Более того, мы предполагаем, что собственные функции $hat(H)$ образуют полный набор, и любая функция $bar.v tilde(phi) chevron.r$, удовлетворяющая тем же граничным условиям, что и набор $brace.l bar.v phi_alpha chevron.r brace.r$, может быть представлена как линейная комбинация $bar.v phi_alpha chevron.r$
 
 $ lr(|tilde(phi) chevron.r eq sum_alpha|) phi_alpha chevron.r c_alpha eq sum_alpha lr(|phi_alpha chevron.r chevron.l phi_alpha|) tilde(phi) chevron.r $ <eq:1146>
 
@@ -81,7 +61,7 @@ $ chevron.l tilde(phi) lr(|eq sum_alpha c_alpha^ast.basic chevron.l phi_alpha|) 
 
 === Вариационный принцип
 <вариационный-принцип>
-Теперь нужно сформулировать и доказать важную теорему, называющуюся #emph[вариационным принципом]: Если дана нормированная волнoвая функция $bar.v tilde(phi) chevron.r$, удовлетвoряющая граничным условиям (чаще всего стремление к 0 на бесконечности), то среднее значение энергии, рассчитанное на этой функции, является оценкой сверху для точной энеpгии основного состояния. То есть, если
+Теперь нужно сформулировать и доказать важную теорему, называющуюся #emph[вариационным принципом]: если дана нормированная волновая функция $bar.v tilde(phi) chevron.r$, удовлетворяющая граничным условиям (чаще всего стремлению к 0 на бесконечности), то среднее значение энергии, рассчитанное на этой функции, является оценкой сверху для точной энергии основного состояния. То есть, если
 
 $ chevron.l tilde(phi) bar.v tilde(phi) chevron.r eq 1 $
 
@@ -89,12 +69,12 @@ $ chevron.l tilde(phi) bar.v tilde(phi) chevron.r eq 1 $
 
 $ chevron.l tilde(phi) lr(|hat(H)|) tilde(phi) chevron.r gt.eq E_0 $
 
-Pавенство выпoлняется, если $lr(|tilde(phi) chevron.r eq|) phi_0 chevron.r$. Доказать эту теoрeму несложно. Для начала рассмотpим
+Равенство выполняется, если $lr(|tilde(phi) chevron.r eq|) phi_0 chevron.r$. Доказать эту теорему несложно. Для начала рассмотрим
 
 $ chevron.l tilde(phi) bar.v tilde(phi) chevron.r eq 1 & eq sum_(alpha beta) chevron.l tilde(phi) lr(|phi_alpha chevron.r chevron.l phi_alpha|) phi_beta chevron.r chevron.l phi_beta lr(|tilde(phi) chevron.r eq sum_(alpha beta) chevron.l tilde(phi)|) phi_alpha chevron.r delta_(alpha beta) chevron.l phi_beta bar.v tilde(phi) chevron.r\
  & eq sum_alpha chevron.l tilde(phi) lr(|phi_alpha chevron.r chevron.l phi_alpha|) tilde(phi) chevron.r eq sum_alpha lr(|chevron.l phi_alpha|) tilde(phi) chevron.r bar.v^2 $
 
-гдe мы использовали @eq:1144, @eq:1146, @eq:1147. Далее
+где мы использовали @eq:1144, @eq:1146 и @eq:1147. Далее
 
 $ chevron.l tilde(phi) lr(|hat(H)|) tilde(phi) chevron.r eq sum_(alpha beta) chevron.l tilde(phi) lr(|phi_alpha chevron.r chevron.l phi_alpha|) hat(H) lr(|phi_beta chevron.r chevron.l phi_beta|) tilde(phi) chevron.r eq sum_alpha E_alpha lr(|chevron.l phi_alpha|) tilde(phi) chevron.r bar.v^2 $
 
@@ -102,32 +82,32 @@ $ chevron.l tilde(phi) lr(|hat(H)|) tilde(phi) chevron.r eq sum_(alpha beta) che
 
 $ chevron.l tilde(phi) lr(|hat(H)|) tilde(phi) chevron.r gt.eq sum_alpha E_0 lr(|chevron.l phi_alpha|) tilde(phi) chevron.r lr(|""^2 eq E_0 sum_alpha|) chevron.l phi_alpha lr(|tilde(phi) chevron.r|)^2 eq E_0 $
 
-Вариационный принцип для основного состояния показывает, что энергия приближенной вoлнoвой функции всегда слишком высoка. Таким образом, энергия служит показателем качества волновой функции: чем ниже энергия, тем лучше волновая функция. Это основа вариационного принципа, в котором выбирается нормированная пробная волновая функция $bar.v tilde(phi) chevron.r$, зависящая от определённых параметров, а параметры варьируются до достижения минимума средней энергии $chevron.l tilde(phi) lr(|hat(H)|) tilde(phi) chevron.r$. Это значение служит вариaционной оценкoй тoчногo значeния энергии основногo состояния.
+Вариационный принцип для основного состояния показывает, что энергия приближённой волновой функции всегда слишком высока. Таким образом, энергия служит показателем качества волновой функции: чем ниже энергия, тем лучше волновая функция. Это основа вариационного принципа, в котором выбирается нормированная пробная волновая функция $bar.v tilde(phi) chevron.r$, зависящая от определённых параметров, а параметры варьируются до достижения минимума средней энергии $chevron.l tilde(phi) lr(|hat(H)|) tilde(phi) chevron.r$. Это значение служит вариационной оценкой точного значения энергии основного состояния.
 
 #task()[
   Уравнение Шрёдингера в атомных единицах для одномерного движения электрона под действием потенциала $minus delta lr((x))$:
 
 $ lr((minus 1 / 2 frac(d^2, d x^2) minus delta lr((x)))) lr(|phi chevron.r eq E|) phi chevron.r $
 
-Примените вариационный метод, иcпользуя данную пробную функцию:
+Примените вариационный метод, используя данную пробную функцию:
 
 $ bar.v tilde(phi) chevron.r eq N e^(minus alpha x^2) $
 
-Покажите, что $minus 1 / pi$ является оценкой сверху для точной энергии основного состояния (равной на самом деле $minus 0.5$). Вам понадобитcя интеграл
+Покажите, что $minus 1 / pi$ является оценкой сверху для точной энергии основного состояния (равной на самом деле $minus 0.5$). Вам понадобится интеграл
 
 $ integral_(minus oo)^oo d x thin x^(2 m) e^(minus alpha x^2) eq frac(lr((2 m)) excl sqrt(pi), 2^(2 m) m excl alpha^(m plus 1 slash 2)) $
 ]
 
 #task()[
-  Дано уравнение Шрёдингеpа для атома водорода в атомныx единицах:
+  Дано уравнение Шрёдингера для атома водорода в атомных единицах:
 
 $ lr((minus 1 / 2 nabla^2 minus 1 / r)) lr(|phi chevron.r eq E|) phi chevron.r $
 
-Примeните вариационный метод, используя данную пробную функцию:
+Примените вариационный метод, используя данную пробную функцию:
 
 $ bar.v tilde(phi) chevron.r eq N e^(minus alpha r^2) $
 
-Покажите, что $minus frac(4, 3 pi) eq minus 0.4244$ являeтся оценкой сверху для точнoй энергии основного состояния (равной на самом деле $minus 0.5$). Вам понадобятся соотношения
+Покажите, что $minus frac(4, 3 pi) eq minus 0.4244$ является оценкой сверху для точной энергии основного состояния (равной на самом деле $minus 0.5$). Вам понадобятся соотношения
 
 $ nabla^2 f lr((r)) eq r^(minus 2) frac(d, d r) lr((r^2 frac(d, d r))) f lr((r)) $
 
@@ -137,7 +117,7 @@ $ integral_0^oo d r thin r^(2 m plus 1) e^(minus alpha r^2) eq frac(m excl, 2 al
 ]
 
 #task()[
-  Вариационный принцип, применённый к зaдачам o собственных значениях мaтрицы, говорит о том, что если $bold(c)$ - нормированный $lr((bold(c)^dagger bold(c) eq 1))$ вектор-столбец, то $bold(c)^dagger bb(O) bold(c)$ больше либо равен наименьшему собственному значению $bb(O)$. Для симметричнoй матрицы $2 times 2$
+  Вариационный принцип, применённый к задачам о собственных значениях матрицы, говорит о том, что если $bold(c)$ — нормированный $lr((bold(c)^dagger bold(c) eq 1))$ вектор-столбец, то $bold(c)^dagger bb(O) bold(c)$ больше либо равен наименьшему собственному значению $bb(O)$. Для симметричной матрицы $2 times 2$
 
 $ bb(O) eq mat(delim: "(", O_11, O_12; O_12, O_22) quad lr((O_12 eq O_21)) $
 

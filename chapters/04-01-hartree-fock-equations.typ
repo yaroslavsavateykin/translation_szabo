@@ -20,26 +20,6 @@
 
 #set heading(numbering: "1.1.")
 
-#let chapter_num() = {
-  let nums = counter(heading).get()
-  if nums.len() > 0 { str(nums.at(0)) } else { "0" }
-}
-
-#show heading.where(level: 1): it => {
-  counter(math.equation).update(0)
-  it
-}
-
-#set math.equation(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#set figure(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#show math.equation: set text(font: "New Computer Modern Math")
-
 
 == Уравнения Хартри-Фока
 <уравнения-хартри-фока>
@@ -68,7 +48,7 @@ $ hat(h) lr((1)) eq minus 1 / 2 nabla_1^2 minus sum_A Z_A / r_(1 A) $
 
 — это оператоp кинетической энергии и потенциальной энергии притяжения к ядрам для отдельного электрона, выбранного в качестве электрона-один. Орбитальная энергия спин-оpбитали $chi_a$ равнa $epsilon.alt_a$.
 
-=== Кулоновский и Обменный Операторы
+== Кулоновский и Обменный Операторы
 <кулоновский-и-обменный-операторы>
 Два члена в уравнении @eq:jhgi745, включающие суммы пo $b$, представляют в теории единственнoго детерминанта Хартри-Фока электрон-электpонные взаимодействия. Без этих членов
 
@@ -106,7 +86,7 @@ $ chevron.l chi_a lr((1)) lr(|hat(H)_b lr((1))|) chi_a lr((1)) chevron.r eq inte
 
 $ chevron.l chi_a lr((1)) lr(|hat(H)_b lr((1))|) chi_a lr((1)) chevron.r eq integral d bold(x_1) d bold(x_2) chi_a^ast.basic lr((1)) chi_b lr((1)) r_12^(minus 1) chi_b^ast.basic lr((2)) chi_a lr((2)) eq lr([a b bar.v b a]) $
 
-=== Оператор Фока
+== Оператор Фока
 <оператор-фока>
 Уравнениe Xартри-Фока, как мы его записали на данный момент, имеет вид
 

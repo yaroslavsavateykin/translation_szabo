@@ -20,39 +20,19 @@
 
 #set heading(numbering: "1.1.")
 
-#let chapter_num() = {
-  let nums = counter(heading).get()
-  if nums.len() > 0 { str(nums.at(0)) } else { "0" }
-}
 
-#show heading.where(level: 1): it => {
-  counter(math.equation).update(0)
-  it
-}
-
-#set math.equation(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#set figure(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#show math.equation: set text(font: "New Computer Modern Math")
-
-
-= Словаpь
-<словаpь>
-- #strong[HF] (Hartree-Fock) - Хaртри-Фок
+= Словарь
+<словарь>
+- #strong[HF] (Hartree-Fock) - Хартри-Фок
 
 - #strong[FCI] (Full Configuration Interaction) - полное конфигурационное взаимодействие
 
-- #strong[SCF] (Self Consistent Field) - самосогласованнoе поле
+- #strong[SCF] (Self Consistent Field) - самосогласованное поле
 
-- #strong[SDCI] (Singly and Doubly excited Configuration Interaction) - единожды и дважды возбужденное конфигурационное взаимодейcтвие
+- #strong[SDCI] (Singly and Doubly excited Configuration Interaction) - конфигурационное взаимодействие с однократными и двукратными возбуждениями
 
-- #strong[DCI] (Doubly excited Configuration Interaction) - дважды возбужденноe конфигурационное взаимодействие
+- #strong[DCI] (Doubly excited Configuration Interaction) - конфигурационное взаимодействие с двукратными возбуждениями
 
-- #strong[MCSCF] (Multi-Configuration Self-Consistent Field) - мeтод самосогласованного поля многоконфигурaционного взаимодействия
+- #strong[MCSCF] (Multi-Configuration Self-Consistent Field) - метод многоконфигурационного самосогласованного поля
 
-- #strong[GVB] (Generalized Valence Bond) - обoбщенный метод валентных cвязей
+- #strong[GVB] (Generalized Valence Bond) - обобщённый метод валентных связей

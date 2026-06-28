@@ -20,26 +20,6 @@
 
 #set heading(numbering: "1.1.")
 
-#let chapter_num() = {
-  let nums = counter(heading).get()
-  if nums.len() > 0 { str(nums.at(0)) } else { "0" }
-}
-
-#show heading.where(level: 1): it => {
-  counter(math.equation).update(0)
-  it
-}
-
-#set math.equation(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#set figure(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#show math.equation: set text(font: "New Computer Modern Math")
-
 
 = Многочастичная теория возмущений <sec:45145d>
 

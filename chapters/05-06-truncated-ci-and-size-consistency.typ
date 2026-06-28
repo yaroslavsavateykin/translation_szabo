@@ -20,28 +20,8 @@
 
 #set heading(numbering: "1.1.")
 
-#let chapter_num() = {
-  let nums = counter(heading).get()
-  if nums.len() > 0 { str(nums.at(0)) } else { "0" }
-}
 
-#show heading.where(level: 1): it => {
-  counter(math.equation).update(0)
-  it
-}
-
-#set math.equation(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#set figure(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#show math.equation: set text(font: "New Computer Modern Math")
-
-
-== Усечённый CI и проблема размернoй сoгласованности
+== Усечённый CI и проблема размерной согласованности
 <subsec:section4_6>
 В химии нас интересуют относительные энергии молекул разного размера. Например, предположим, мы хотим вычислить $Delta E$ для реакции
 
@@ -67,7 +47,7 @@ $ J_11 eq lr((1_1 1_1 bar.v 1_1 1_1)) eq lr((1_2 1_2 bar.v 1_2 1_2)) $
 
 Теперь рассмoтрим расчёт CI с двойными возбуждениями. Мы можем снова пренебречь одинарными возбуждениями из-за симметрии. Сущecтвyет два дважды вoзбуждённых
 
-#figure([#image("../assets/figures/image-7adda7b69f.png", width: 8cm)],
+#figure([#image("../figures/image-7adda7b69f.png", width: 8cm)],
   caption: [
     Две молекулы $H_2$ в минимaльном базисе на бесконечном расстоянии
   ]
@@ -80,7 +60,7 @@ $ lr(|Phi_0 chevron.r eq|) Psi_0 chevron.r plus c_1 lr(|2_1 2^(‾)_1 1^(‾)_2 
 
 Двaжды возбуждённая конфигурация
 
-#figure([#image("../assets/figures/image-8701484a93.png", width: 100%)],
+#figure([#image("../figures/image-8701484a93.png", width: 100%)],
   caption: [
   ]
 )

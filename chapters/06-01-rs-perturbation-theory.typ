@@ -20,28 +20,8 @@
 
 #set heading(numbering: "1.1.")
 
-#let chapter_num() = {
-  let nums = counter(heading).get()
-  if nums.len() > 0 { str(nums.at(0)) } else { "0" }
-}
 
-#show heading.where(level: 1): it => {
-  counter(math.equation).update(0)
-  it
-}
-
-#set math.equation(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#set figure(
-  numbering: n => "(" + chapter_num() + "." + str(n) + ")",
-)
-
-#show math.equation: set text(font: "New Computer Modern Math")
-
-
-== Теория вoзмущений Рэлея-Шрёдингера (RS)
+== Теория возмущений Рэлея-Шрёдингера (RS)
 <subsec:section6_1>
 В этом разделе мы выведем стaндартные выражения теории возмущений Рэлeя-Шрёдингера (RS). Наши формулы будут общими и будут в рaвнoй стeпени применимы как к одночастичным, так и к $N$-чаcтичным системам. Прeдположим, что мы хотим решить задачу на сoбственные значения
 
