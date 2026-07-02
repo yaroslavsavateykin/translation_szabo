@@ -1,25 +1,3 @@
-#import "../macros.typ": task
-
-#set page(
-  paper: "a4",
-  margin: (
-    left: 2cm,
-    right: 2cm,
-    top: 2cm,
-    bottom: 2cm,
-  ),
-  numbering: "1",
-)
-
-#set par(
-  justify: true,
-  leading: 0.65em,
-  first-line-indent: 1.2em,
-)
-
-#set heading(numbering: "1.1.")
-
-
 Настоящий перевод выполнен по книге Modern Quantum Chemistry:
 Introduction to Advanced Electronic Structure Theory авторов Attila
 Szabo и Neil S. Ostlund — одному из наиболее признанных и
