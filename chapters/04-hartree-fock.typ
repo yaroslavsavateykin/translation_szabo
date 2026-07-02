@@ -35,13 +35,13 @@
 #include "04-04-roothaan-equations.typ"
 #pagebreak()
 
-#include "04-05-model-calculations-on-h2-and-heh-plus.typ"
-#pagebreak()
+// #include "04-05-model-calculations-on-h2-and-heh-plus.typ"
+// #pagebreak()
 
 #include "04-06-polyatomic-basis-sets.typ"
 #pagebreak()
 
-#include "04-07-illustrative-closed-shell-hf.typ"
-#pagebreak()
+// #include "04-07-illustrative-closed-shell-hf.typ"
+// #pagebreak()
 
 #include "04-08-unrestricted-open-shell-hf.typ"

@@ -1,0 +1,5 @@
+[package]
+name = "quantum-chemistry"
+version = "0.1.0"
+entrypoint = "main.typ"
+compiler = "0.15.0"

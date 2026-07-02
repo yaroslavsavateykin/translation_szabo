@@ -29,8 +29,8 @@
 #include "05-02-doubly-excited-ci.typ"
 #pagebreak()
 
-#include "05-03-illustrative-calculations.typ"
-#pagebreak()
+// #include "05-03-illustrative-calculations.typ"
+// #pagebreak()
 
 #include "05-04-natural-orbitals-and-1rdm.typ"
 #pagebreak()
