@@ -1,10 +1,25 @@
-// macros.typ
-
 #let task-kind = "task"
 
 #let task-counter = counter(
   figure.where(kind: task-kind),
 )
+
+// Формат номера задачи: номер главы + локальный номер задачи.
+#let task-numbering(number) = context {
+  let chapter = counter(heading).get().first()
+
+  numbering(
+    "1.1",
+    chapter,
+    number,
+  )
+}
+
+// Эту функцию нужно применить к заголовкам первого уровня.
+#let reset-task-counter(heading-body) = [
+  #task-counter.update(0)
+  #heading-body
+]
 
 #let task(body) = figure(
   block(
@@ -28,7 +43,6 @@
     below: 0.8em,
   )[
     #context {
-      // Отменяем стандартное центрирование содержимого figure.
       set align(left)
 
       set par(
@@ -36,7 +50,9 @@
         first-line-indent: 0pt,
       )
 
-      let number = task-counter.display("1")
+      let number = task-counter.display(
+        task-numbering,
+      )
 
       [
         *Задача #number.*
@@ -47,10 +63,21 @@
 
   kind: task-kind,
   supplement: [задача],
-  numbering: "1",
 
-  // Поэтому никакой подписи снизу не будет.
+  // Этот же формат будет использоваться в ссылках:
+  // @task-label → задача 1.1
+  numbering: task-numbering,
+
   caption: none,
-
   outlined: false,
 )
+
+#let placeholder(body) = box(
+  fill: rgb(240, 120, 120),
+  // stroke: (
+  //   left: 3pt + rgb(220, 20, 60),
+  // ),
+  inset: 3pt,
+)[
+  #body
+]

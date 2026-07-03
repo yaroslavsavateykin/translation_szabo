@@ -11,10 +11,15 @@
 #outline(title: [Содержание])
 #pagebreak()
 
-#include "chapters/00-eigenvectors-and-etc.typ"
-#pagebreak()
 
 #include "chapters/01-glossary.typ"
+#pagebreak()
+
+= Математический обзор <математический-обзор>
+
+// здесь еще куча всяких видимо глав от Амины и Максима
+
+#include "chapters/00-eigenvectors-and-etc.typ"
 #pagebreak()
 
 #include "chapters/02-mathematical-review.typ"
