@@ -31,7 +31,7 @@ $ E_0 lt.eq E_1 lt.eq E_2 lt.eq dots.h lt.eq E_alpha lt.eq dots.h $
 дискретен. Поскольку $hat(H)$ эрмитов, собственные значения $E_alpha$
 действительны и соответствующие волновые функции ортонормированы
 
-$ chevron.l Phi_alpha bar.v Phi_beta chevron.r eq delta_(alpha beta) $ <eq:1144>
+$ chevron.l Phi_alpha|Phi_beta chevron.r eq delta_(alpha beta) $ <eq:1144>
 
 Таким образом, умножая @eq:b7deab слева на $chevron.l Phi_beta bar.v$, получим
 
