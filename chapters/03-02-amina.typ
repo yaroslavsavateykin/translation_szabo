@@ -66,11 +66,10 @@ $
 
 #import "../cetz/Coord-syst-H2.typ": Coord-syst-H2
 #figure(
-  scale(80%, reflow: true)[#Coord-syst-H2()],
-  caption: [
-    система координат для минимального базиса $H_2$
-  ],
-)
+  scale(70%, reflow: true)[#Coord-syst-H2()], caption:[
+  система координат для минимального базиса $H_2$
+  ]
+  )
 
 <fig:4556ytu>
 
