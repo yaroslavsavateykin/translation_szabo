@@ -19,63 +19,112 @@
       // Координаты центров атомов (сфер) и общей точки (электрона)
       let s1 = (x: 2.5, y: 6.5) // Левый атом
       let s2 = (x: 7.5, y: 6.5) // Правый атом
-      let v  = (x: 7.0, y: 10.5) // Вершина (точка r)
+      let v = (x: 7.0, y: 10.5) // Вершина (точка r)
 
       // ==========================================
       // 1. СФЕРЫ (АТОМЫ) — рисуем сначала, чтобы стрелки были поверх
       // ==========================================
-      
-      // Левая сфера (с легким серым градиентом/заливкой для объема)
-      circle(s1, radius: 0.6, stroke: atom-stroke, fill: gray.lighten(60%))
-      
-      // Правая сфера
-      circle(s2, radius: 0.6, stroke: atom-stroke, fill: gray.lighten(60%))
 
+      // Левая сфера (с легким серым градиентом/заливкой для объема)
+      circle(
+        s1,
+        radius: 0.6,
+        stroke: atom-stroke,
+        fill: gray.lighten(60%),
+      )
+
+      // Правая сфера
+      circle(
+        s2,
+        radius: 0.6,
+        stroke: atom-stroke,
+        fill: gray.lighten(60%),
+      )
 
       // ==========================================
       // 2. СИСТЕМА КООРДИНАТ (Оси x, y, z)
       // ==========================================
-      
+
       // Ось z (вверх)
       line((x: ox, y: oy), (x: ox, y: oy + 7), stroke: axis-stroke)
-      content((x: ox, y: oy + 7.3), text(size: 16pt)[$z$], anchor: "south")
+      content(
+        (x: ox, y: oy + 7.3),
+        text(size: 16pt)[$z$],
+        anchor: "south",
+      )
 
       // Ось y (вправо)
       line((x: ox, y: oy), (x: ox + 6, y: oy), stroke: axis-stroke)
-      content((x: ox + 6.3, y: oy), text(size: 16pt)[$y$], anchor: "west")
+      content(
+        (x: ox + 6.3, y: oy),
+        text(size: 16pt)[$y$],
+        anchor: "west",
+      )
 
       // Ось x (вперед-влево)
-      line((x: ox, y: oy), (x: ox - 3.3, y: oy - 3.3), stroke: axis-stroke)
-      content((x: ox - 3.5, y: oy - 3.5), text(size: 16pt)[$x$], anchor: "north-east")
-
+      line(
+        (x: ox, y: oy),
+        (x: ox - 3.3, y: oy - 3.3),
+        stroke: axis-stroke,
+      )
+      content(
+        (x: ox - 3.5, y: oy - 3.5),
+        text(size: 16pt)[$x$],
+        anchor: "north-east",
+      )
 
       // ==========================================
       // 3. РАДИУС-ВЕКТОРЫ И ИХ ПОДПИСИ
       // ==========================================
-      
+
       // Вектор R1 (к левому атому)
       line((x: ox, y: oy), s1, stroke: arrow-stroke, mark: mark-style)
-      content((x: 3.52, y: 5.0), text(size: 16pt)[$bold(R)_1$], anchor: "north")
+      content(
+        (x: 3.52, y: 5.0),
+        text(size: 16pt)[$bold(R)_1$],
+        anchor: "north",
+      )
 
       // Вектор R2 (к правому атому)
       line((x: ox, y: oy), s2, stroke: arrow-stroke, mark: mark-style)
-      content((x: 6.52, y: 5.0), text(size: 16pt)[$bold(R)_2$], anchor: "north")
+      content(
+        (x: 6.52, y: 5.0),
+        text(size: 16pt)[$bold(R)_2$],
+        anchor: "north",
+      )
 
       // Вектор r (к вершине)
       line((x: ox, y: oy), v, stroke: arrow-stroke, mark: mark-style)
-      content((x: 5.95, y: 8.0), text(size: 16pt)[$bold(r)$], anchor: "east")
+      content(
+        (x: 5.95, y: 8.0),
+        text(size: 16pt)[$bold(r)$],
+        anchor: "east",
+      )
 
       // Вектор R12 (от правого атома к левому)
       line(s2, s1, stroke: arrow-stroke, mark: mark-style)
-      content((x: 4.2, y: 6.7), text(size: 16pt)[$bold(R)_(12)$], anchor: "south")
+      content(
+        (x: 4.2, y: 6.7),
+        text(size: 16pt)[$bold(R)_(12)$],
+        anchor: "south",
+      )
 
       // Вектор r - R1 (от левого атома к вершине)
       line(s1, v, stroke: arrow-stroke, mark: mark-style)
-      content((x: 4.4, y: 8.45), text(size: 16pt)[$bold(r) - bold(R)_1$], anchor: "south-east", angle: 40deg)
+      content(
+        (x: 4.4, y: 8.45),
+        text(size: 16pt)[$bold(r) - bold(R)_1$],
+        anchor: "south-east",
+        angle: 40deg,
+      )
 
       // Вектор r - R2 (от правого атома к вершине)
       line(s2, v, stroke: arrow-stroke, mark: mark-style)
-      content((x: 7.4, y: 8.8), text(size: 16pt)[$bold(r) - bold(R)_2$], anchor: "west")
+      content(
+        (x: 7.4, y: 8.8),
+        text(size: 16pt)[$bold(r) - bold(R)_2$],
+        anchor: "west",
+      )
     })
   ]
 }
