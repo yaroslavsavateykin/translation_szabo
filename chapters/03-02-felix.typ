@@ -432,12 +432,12 @@ $
   P lr((bold(r)_1 comma bold(r)_2)) d bold(r)_1 d bold(r)_2 #{}eq#{} integral d omega_1 d omega_2 lr(|Psi|)^2 d bold(r)_1 d bold(r)_2 eq \ 1 / 2 lr([lr(|psi_1 lr((bold(r)_1))|)^2 lr(|psi_2 lr((bold(r)_2))|)^2 plus lr(|psi_1 lr((bold(r)_2))|)^2 lr(|psi_2 lr((bold(r)_1))|)^2]) d bold(r)_1 d bold(r)_2
 $ <eq:190b74>
 
+#import "../cetz/Probability.typ": Probability
 #figure(
-  [#image("../figures/image-933c34e509.png", width: 9cm)],
+  scale(80%, reflow: true)[#Probability()],
   caption: [
     Вероятность нахождения первого электрона в $d bold(r)_1$ и втoрого
-    электрона в $d bold(r)_2$
-  ],
+    электрона в $d bold(r)_2$],
 )
 <fig:45c315>
 
