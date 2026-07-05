@@ -1,10 +1,11 @@
+// ============================================================================
+// в settings.typ есть правило переноса на другую страницу
 #let task-kind = "task"
 
 #let task-counter = counter(
   figure.where(kind: task-kind),
 )
 
-// Формат номера задачи: номер главы + локальный номер задачи.
 #let task-numbering(number) = context {
   let chapter = counter(heading).get().first()
 
@@ -15,28 +16,33 @@
   )
 }
 
-// Эту функцию нужно применить к заголовкам первого уровня.
 #let reset-task-counter(heading-body) = [
   #task-counter.update(0)
   #heading-body
 ]
 
-#let task(body) = figure(
+#let task(
+  body,
+  breakable: true,
+) = figure(
   block(
     width: 100%,
-    breakable: true,
+    breakable: breakable,
+
     inset: (
       left: 1em,
       right: 0.8em,
       top: 0.65em,
       bottom: 0.65em,
     ),
+
     stroke: (
       left: 2.5pt + rgb("#3d5a80"),
       right: none,
       top: none,
       bottom: none,
     ),
+
     radius: 0pt,
     fill: rgb("#f6f8fb"),
     above: 0.8em,
@@ -56,6 +62,7 @@
 
       [
         *Задача #number.*
+
         #body
       ]
     }
@@ -63,14 +70,12 @@
 
   kind: task-kind,
   supplement: [задача],
-
-  // Этот же формат будет использоваться в ссылках:
-  // @task-label → задача 1.1
   numbering: task-numbering,
-
   caption: none,
   outlined: false,
 )
+
+// ============================================================================
 
 #let placeholder(body) = box(
   fill: rgb(240, 120, 120),
@@ -81,3 +86,5 @@
 )[
   #body
 ]
+
+// ============================================================================
