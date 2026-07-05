@@ -28,7 +28,7 @@
     let y-labels = ("10", "20", "30", "40", "50")
 
     for (i, y) in y-positions.enumerate() {
-      line(p(1.8, y), p(2, y), stroke: tick-stroke)
+      line(p(2.2, y), p(2, y), stroke: tick-stroke)
       content(
         p(1.6, y),
         text(size: 9pt)[#y-labels.at(i)],
@@ -62,8 +62,8 @@
 
     // Название оси Y
     content(
-      p(-0.5, 6),
-      text-rotate(90deg)[
+      p(0.4, 6),
+      text-rotate(-90deg)[
         Число пространственных базисных функций $K$
       ],
       anchor: "center",
@@ -75,7 +75,7 @@
 
     // Стрелка «Предел Хартри — Фока»
     line(
-      p(4, 6),
+      p(4, 6.5),
       p(4, 11),
       stroke: arrow-stroke,
       mark: mark-style,
