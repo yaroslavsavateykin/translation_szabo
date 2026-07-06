@@ -64,12 +64,14 @@ $
   S_12 eq integral d bold(r) phi.alt_1^ast.basic lr((bold(r))) phi.alt_2 lr((bold(r)))
 $
 
+#import "../cetz/Coord-syst-H2.typ": Coord-syst-H2
 #figure(
-  [#image("../figures/image-b61506050d.png", width: 8cm)],
+  scale(70%, reflow: true)[#Coord-syst-H2()],
   caption: [
     система координат для минимального базиса $H_2$
   ],
 )
+
 <fig:4556ytu>
 
 Перекрывание будет зaвисеть от расстояния
