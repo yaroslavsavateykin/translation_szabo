@@ -168,7 +168,9 @@ $ <1124>
 равна $2 epsilon$, площадь под графиком $delta_epsilon(x)$ равна
 единице при любом $epsilon$.
 
-#task()[
+#task(
+  breakable: false,
+)[
   Используя приведённое выше представление $delta(x)$, покажите, что
 
   $
@@ -517,11 +519,10 @@ $ <1140>
       и вставляя единичный оператор, получаем
 
       $
-        hat(O)|a chevron.r & = hat(O) 1 |a chevron.r \
-                           & = integral d x space
-                             hat(O)|x chevron.r
-                             chevron.l x|a chevron.r \
-                           & = |b chevron.r.
+        hat(O)|a chevron.r
+        = hat(O) bb(1)|a chevron.r
+        = integral d x space hat(O)|x chevron.r chevron.l x|a chevron.r
+        = |b chevron.r.
       $
 
       Умножьте это уравнение слева на $chevron.l x'|$ и покажите, что
@@ -541,7 +542,7 @@ $ <1140>
       $
         hat(O)(x, x')
         = sum_(i j)
-        psi_i(x)
+        psi_i (x)
         hat(O)_(i j)
         psi_j^*(x')
       $

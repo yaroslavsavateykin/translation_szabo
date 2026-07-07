@@ -29,7 +29,9 @@
     // Основной слой точек по всей высоте полосы.
     for i in range(430) {
       let x = (
-        -half-slit + 0.025 + noise(i, 73, 29, 100) * (slit-width - 0.05)
+        -half-slit
+          + 0.025
+          + noise(i, 73, 29, 100) * (slit-width - 0.05)
       )
       let y = (
         0.035 + noise(i + 127, 151, 43, 100) * (slit-height - 0.07)
@@ -42,7 +44,9 @@
     // Более плотная штриховка в верхней части, как на оригинале.
     for i in range(300) {
       let x = (
-        -half-slit + 0.025 + noise(i + 509, 97, 41, 23) * (slit-width - 0.05)
+        -half-slit
+          + 0.025
+          + noise(i + 509, 97, 41, 23) * (slit-width - 0.05)
       )
       let y = (
         6.35 + noise(i + 701, 137, 53, 11) * (slit-height - 6.39)
@@ -55,7 +59,9 @@
     // Несколько более крупных пятен делают фактуру похожей на скан.
     for i in range(95) {
       let x = (
-        -half-slit + 0.035 + noise(i + 1013, 109, 61, 29) * (slit-width - 0.07)
+        -half-slit
+          + 0.035
+          + noise(i + 1013, 109, 61, 29) * (slit-width - 0.07)
       )
       let y = (
         0.08 + noise(i + 1217, 163, 67, 13) * (slit-height - 0.16)
