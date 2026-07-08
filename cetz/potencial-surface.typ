@@ -47,7 +47,11 @@
       let asym-y = 4.15
 
       // Асимптотический уровень энергии при R_A -> infinity.
-      line((0, asym-y + 0.1), (9.3, asym-y + 0.1), stroke: dashed-stroke)
+      line(
+        (0, asym-y + 0.1),
+        (9.3, asym-y + 0.1),
+        stroke: dashed-stroke,
+      )
 
       // Вертикальная пунктирная линия к равновесному расстоянию R_0.
       line((min-pt.at(0), 0), min-pt, stroke: dashed-stroke)
@@ -55,11 +59,21 @@
       // Стрелка, показывающая глубину потенциальной ямы D_e.
       line(
         (min-pt.at(0), min-pt.at(1)),
-        (min-pt.at(0), asym-y+0.1),
+        (min-pt.at(0), asym-y + 0.1),
         stroke: (paint: black, thickness: 0.6pt),
-        mark: (start: "stealth", end: "stealth", fill: black, length: 0.14, width: 0.09),
+        mark: (
+          start: "stealth",
+          end: "stealth",
+          fill: black,
+          length: 0.14,
+          width: 0.09,
+        ),
       )
-      content((min-pt.at(0) + 0.3, (min-pt.at(1) + asym-y) / 2), $ D_e $, anchor: "west")
+      content(
+        (min-pt.at(0) + 0.3, (min-pt.at(1) + asym-y) / 2),
+        $ D_e $,
+        anchor: "west",
+      )
 
       // Отметка равновесной точки.
       circle(min-pt, radius: 0.06, fill: black, stroke: none)

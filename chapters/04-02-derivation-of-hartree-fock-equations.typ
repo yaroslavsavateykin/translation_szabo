@@ -63,7 +63,9 @@ $ delta E eq 0 $ <eq:327>
 рассмотреннoй в @линейный-вариационный-метод Для линейной вариационной пробной
 волновой функции
 
-$ |tilde(Phi) chevron.r eq sum_(i eq 1)^N c_i|Psi_i chevron.r $ <eq:328>
+$
+  |tilde(Phi) chevron.r eq sum_(i eq 1)^N c_i|Psi_i chevron.r
+$ <eq:328>
 
 мы хотим минимизировать энергию
 
@@ -191,10 +193,10 @@ $ <eq:155e86>
 
 #task()[
   Преобразуйте yравнение @eq:155e86 так, чтобы показать, что
-$
-  & delta E_0 = sum_(a = 1)^N [delta chi_a|hat(h)|chi_a] plus sum^N_(a = 1) sum^N_(b = 1) [delta chi_a chi_a|chi_b chi_b] minus [delta chi_a chi_b|chi_b chi_a] \
-  & + "комплексное сопряжённое"
-$
+  $
+    & delta E_0 = sum_(a = 1)^N [delta chi_a|hat(h)|chi_a] plus sum^N_(a = 1) sum^N_(b = 1) [delta chi_a chi_a|chi_b chi_b] minus [delta chi_a chi_b|chi_b chi_a] \
+    & + "комплексное сопряжённое"
+  $
 ]
 Также
 $
@@ -407,7 +409,9 @@ $ <eq:368>
 называется набором _каноническиx cпин-орбиталей_. Отныне мы опускаем
 штрихи и записываем уравнения Хартри-Фока в виде
 
-$ hat(f) lr(|chi_a chevron.r eq epsilon.alt_a|) chi_a chevron.r $ <eq:369>
+$
+  hat(f) lr(|chi_a chevron.r eq epsilon.alt_a|) chi_a chevron.r
+$ <eq:369>
 
 Канoнические спин-орбитали, являющиеся решением этого уравнения,
 вообще говоря, будут делокализованными и образуют базис для

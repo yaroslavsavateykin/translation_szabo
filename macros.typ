@@ -96,8 +96,6 @@
 
 #let theorem-numbering(number) = context {
   let chapter = counter(heading).get().first()
-
-
 }
 
 #let reset-theorem-counter(heading-body) = [
@@ -144,8 +142,6 @@
       let number = theorem-counter.display(
         theorem-numbering,
       )
-
-
 
       [
         #(body)
