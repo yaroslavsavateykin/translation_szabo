@@ -103,7 +103,7 @@
 
       draw-cube(ox - 4.2, oy + 2.8, size: 0.8)
       content(
-        (x: ox - 3.8, y: oy + 4.0),
+        (x: ox - 3.58, y: oy + 4.0),
         text(size: 20pt)[$d bold(r)_1$],
         anchor: "south",
       )
@@ -122,9 +122,9 @@
         size: 20pt,
       )[$bold(r)_2$])
 
-      draw-cube(ox + 3.6, oy + 3.2, size: 0.8)
+      draw-cube(ox + 3.67, oy + 3.27, size: 0.8)
       content(
-        (x: ox + 4.0, y: oy + 4.4),
+        (x: ox + 4.27, y: oy + 4.48),
         text(size: 20pt)[$d bold(r)_2$],
         anchor: "south",
       )
