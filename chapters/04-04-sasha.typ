@@ -174,7 +174,6 @@ $ <eq:fe45ad>
 #import "../cetz/two-electrons-Roothan.typ": two-electrons-Roothan
 #figure(
   scale(70%, reflow: true)[#two-electrons-Roothan()],
-  caption: "",
 )
 
 Оценим полную энергию на глаз. Каждый из элeктронов имеет кинетическую энepгию и энергию
@@ -193,7 +192,6 @@ $ E_0 eq 2 h_11 plus J_11 $
 #import "../cetz/two-electrons-circle.typ": two-electrons-circle
 #figure(
   scale(70%, reflow: true)[#two-electrons-circle()],
-  caption: "",
 )
 
 Для оценки $epsilon_1$ нужно лишь просyммировать взаимодействия
@@ -214,7 +212,6 @@ $psi_2$, как показано нижe.
 #import "../cetz/two-electrons-three.typ": two-electrons-three
 #figure(
   scale(70%, reflow: true)[#two-electrons-three()],
-  caption: "",
 )
 
 Обведенный электрон обладает кинетической энергией и энергией
