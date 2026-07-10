@@ -17,6 +17,8 @@
 
 = Математический обзор <математический-обзор>
 
+#include "lin_alg.typ"
+#pagebreak()
 // здесь еще куча всяких видимо глав от Амины и Максима
 
 #include "chapters/00-eigenvectors-and-etc.typ"
