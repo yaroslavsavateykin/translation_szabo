@@ -49,7 +49,7 @@
       line((x: ox, y: oy), (x: ox, y: oy + 7), stroke: axis-stroke)
       content(
         (x: ox, y: oy + 7.3),
-        text(size: 16pt)[$z$],
+        text(size: 1.4em)[$z$],
         anchor: "south",
       )
 
@@ -57,7 +57,7 @@
       line((x: ox, y: oy), (x: ox + 6, y: oy), stroke: axis-stroke)
       content(
         (x: ox + 6.3, y: oy),
-        text(size: 16pt)[$y$],
+        text(size: 1.4em)[$y$],
         anchor: "west",
       )
 
@@ -69,7 +69,7 @@
       )
       content(
         (x: ox - 3.5, y: oy - 3.5),
-        text(size: 16pt)[$x$],
+        text(size: 1.4em)[$x$],
         anchor: "north-east",
       )
 
@@ -81,7 +81,7 @@
       line((x: ox, y: oy), s1, stroke: arrow-stroke, mark: mark-style)
       content(
         (x: 3.52, y: 5.0),
-        text(size: 16pt)[$bold(R)_1$],
+        text(size: 1.4em)[$bold(R)_1$],
         anchor: "north",
       )
 
@@ -89,7 +89,7 @@
       line((x: ox, y: oy), s2, stroke: arrow-stroke, mark: mark-style)
       content(
         (x: 6.52, y: 5.0),
-        text(size: 16pt)[$bold(R)_2$],
+        text(size: 1.4em)[$bold(R)_2$],
         anchor: "north",
       )
 
@@ -97,7 +97,7 @@
       line((x: ox, y: oy), v, stroke: arrow-stroke, mark: mark-style)
       content(
         (x: 5.95, y: 8.0),
-        text(size: 16pt)[$bold(r)$],
+        text(size: 1.4em)[$bold(r)$],
         anchor: "east",
       )
 
@@ -105,7 +105,7 @@
       line(s2, s1, stroke: arrow-stroke, mark: mark-style)
       content(
         (x: 4.2, y: 6.7),
-        text(size: 16pt)[$bold(R)_(12)$],
+        text(size: 1.4em)[$bold(R)_(12)$],
         anchor: "south",
       )
 
@@ -113,7 +113,7 @@
       line(s1, v, stroke: arrow-stroke, mark: mark-style)
       content(
         (x: 4.4, y: 8.45),
-        text(size: 16pt)[$bold(r) - bold(R)_1$],
+        text(size: 1.4em)[$bold(r) - bold(R)_1$],
         anchor: "south-east",
         angle: 40deg,
       )
@@ -122,7 +122,7 @@
       line(s2, v, stroke: arrow-stroke, mark: mark-style)
       content(
         (x: 7.4, y: 8.8),
-        text(size: 16pt)[$bold(r) - bold(R)_2$],
+        text(size: 1.4em)[$bold(r) - bold(R)_2$],
         anchor: "west",
       )
     })

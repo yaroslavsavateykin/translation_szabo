@@ -1,172 +1,119 @@
 #import "@preview/cetz:0.5.2"
 
+// Объявляем функцию, которую можно импортировать
 #let H2-ground-state() = {
   cetz.canvas({
     import cetz.draw: *
 
-    let p(x, y) = (x, y)
+    let level-stroke = (thickness: 1.5pt, paint: black)
+    let arrow-stroke = (thickness: 2pt, paint: black)
+    let mark-style = (end: ">", scale: 0.6)
 
-    let axis-stroke = (thickness: 1.6pt, paint: black)
-    let grid-stroke = (thickness: 0.7pt, paint: luma(180))
-    let border-stroke = (thickness: 1.2pt, paint: black)
-    let point-stroke = (thickness: 1pt, paint: black)
-    let mark-style = (end: ">", scale: 0.75)
+    // БЛОК 1
+    content(
+      (x: 0.8, y: 9.5),
+      text(size: 1.3em)[$|Psi_0 chevron.r =$],
+      anchor: "east",
+    )
+    line((x: 3, y: 8.6), (x: 5, y: 8.6), stroke: level-stroke)
+    content(
+      (x: 2.2, y: 8.6),
+      text(size: 1.3em)[$chi_1$],
+      anchor: "east",
+    )
+    line((x: 3, y: 10.6), (x: 5, y: 10.6), stroke: level-stroke)
+    content(
+      (x: 2.2, y: 10.6),
+      text(size: 16pt)[$chi_3$],
+      anchor: "east",
+    )
+    content((x: 4, y: 8.1), text(size: 66pt, baseline: -2pt)[\*])
+    line((x: 7, y: 8.6), (x: 9, y: 8.6), stroke: level-stroke)
+    content(
+      (x: 10.4, y: 8.6),
+      text(size: 1.3em)[$chi_2$],
+      anchor: "east",
+    )
+    line((x: 7, y: 10.6), (x: 9, y: 10.6), stroke: level-stroke)
+    content(
+      (x: 10.4, y: 10.6),
+      text(size: 1.3em)[$chi_4$],
+      anchor: "east",
+    )
+    content((x: 8, y: 8.1), text(size: 66pt, baseline: -2pt)[\*])
 
-    let x0 = 0.0
-    let y0 = 0.0
-    let cell = 0.9
-
-    let cols = 8
-    let rows = 6
-
-    let x-max = x0 + cols * cell
-    let y-max = y0 + rows * cell
-
-    // Оси
+    // БЛОК 2
+    content(
+      (x: 0.8, y: 5.65),
+      text(size: 1.3em)[$equiv$],
+      anchor: "east",
+    )
+    line((x: 3, y: 4.8), (x: 5, y: 4.8), stroke: level-stroke)
+    content(
+      (x: 2.2, y: 5),
+      text(size: 1.3em)[$chi_1$],
+      anchor: "east",
+    )
+    line((x: 3, y: 6.6), (x: 5, y: 6.6), stroke: level-stroke)
+    content(
+      (x: 2.2, y: 6.6),
+      text(size: 1.3em)[$chi_3$],
+      anchor: "east",
+    )
     line(
-      p(x0, y0),
-      p(x-max + 0.65, y0),
-      stroke: axis-stroke,
+      (x: 4, y: 4),
+      (x: 4, y: 5.9),
+      stroke: arrow-stroke,
       mark: mark-style,
     )
-
-    line(
-      p(x0, y0),
-      p(x0, y-max + 0.65),
-      stroke: axis-stroke,
-      mark: mark-style,
-    )
-
+    line((x: 7, y: 4.8), (x: 9, y: 4.8), stroke: level-stroke)
     content(
-      p(x-max / 2, -0.9),
-      align(center)[
-        Число электронов $N$
-      ],
-      anchor: "center",
-    )
-
-    content(
-      p(-1.45, y-max / 2),
-      align(center)[
-        Число пространственных\
-        базисных функций $K$
-      ],
-      anchor: "center",
-    )
-
-    content(p(x-max + 0.95, y0), [$N$], anchor: "west")
-    content(p(x0, y-max + 0.95), [$K$], anchor: "south")
-
-    // Сетка
-    for i in range(0, cols + 1) {
-      let x = x0 + i * cell
-
-      line(
-        p(x, y0),
-        p(x, y-max),
-        stroke: grid-stroke,
-      )
-    }
-
-    for j in range(0, rows + 1) {
-      let y = y0 + j * cell
-
-      line(
-        p(x0, y),
-        p(x-max, y),
-        stroke: grid-stroke,
-      )
-    }
-
-    // Рамка
-    line(p(x0, y0), p(x-max, y0), stroke: border-stroke)
-    line(p(x-max, y0), p(x-max, y-max), stroke: border-stroke)
-    line(p(x-max, y-max), p(x0, y-max), stroke: border-stroke)
-    line(p(x0, y-max), p(x0, y0), stroke: border-stroke)
-
-    // Подписи по оси N
-    for i in range(1, cols + 1) {
-      let x = x0 + (i - 0.5) * cell
-
-      content(
-        p(x, -0.35),
-        text(size: 8pt)[#i],
-        anchor: "center",
-      )
-    }
-
-    // Подписи по оси K
-    for j in range(1, rows + 1) {
-      let y = y0 + (j - 0.5) * cell
-
-      content(
-        p(-0.35, y),
-        text(size: 8pt)[#j],
-        anchor: "center",
-      )
-    }
-
-    // Область допустимых детерминантов:
-    // N электронов можно разместить по 2K спин-орбиталям,
-    // если N <= 2K.
-    for j in range(1, rows + 1) {
-      let k = j
-
-      for i in range(1, cols + 1) {
-        let n = i
-
-        if n <= 2 * k {
-          let x = x0 + (i - 0.5) * cell
-          let y = y0 + (j - 0.5) * cell
-
-          circle(
-            p(x, y),
-            radius: 0.09,
-            stroke: point-stroke,
-            fill: black,
-          )
-        }
-      }
-    }
-
-    // Граница N = 2K.
-    line(
-      p(x0, y0),
-      p(cols * cell, cols / 2 * cell),
-      stroke: (
-        thickness: 1pt,
-        paint: black,
-        dash: "dashed",
-      ),
-    )
-
-    content(
-      p(cols * cell + 0.25, cols / 2 * cell),
-      [$N = 2 K$],
+      (x: 9.8, y: 4.8),
+      text(size: 1.3em)[$chi_2$],
       anchor: "west",
     )
-
-    // Формула
+    line((x: 7, y: 6.6), (x: 9, y: 6.6), stroke: level-stroke)
     content(
-      p(x-max / 2, y-max + 1.25),
-      align(center)[
-        Число слейтеровских детерминантов:
-        $C(2 K, N)$
-      ],
-      anchor: "center",
+      (x: 9.8, y: 6.6),
+      text(size: 1.3em)[$chi_4$],
+      anchor: "west",
+    )
+    line(
+      (x: 8, y: 5.9),
+      (x: 8, y: 4),
+      stroke: arrow-stroke,
+      mark: mark-style,
     )
 
+    // БЛОК 3
     content(
-      p(x-max / 2, y-max + 0.7),
-      align(center)[
-        где $2 K$ — число спин-орбиталей,\
-        а $N$ — число электронов.
-      ],
-      anchor: "center",
+      (x: 0.8, y: 1.75),
+      text(size: 1.3em)[$equiv$],
+      anchor: "east",
+    )
+    line((x: 4.4, y: 1), (x: 7.6, y: 1), stroke: level-stroke)
+    content(
+      (x: 8.4, y: 1),
+      text(size: 1.3em)[$psi_1$],
+      anchor: "west",
+    )
+    line((x: 4.4, y: 2.8), (x: 7.6, y: 2.8), stroke: level-stroke)
+    content(
+      (x: 8.4, y: 2.8),
+      text(size: 1.3em)[$psi_2$],
+      anchor: "west",
+    )
+    line(
+      (x: 5.2, y: 0),
+      (x: 5.2, y: 2),
+      stroke: arrow-stroke,
+      mark: mark-style,
+    )
+    line(
+      (x: 6.8, y: 2),
+      (x: 6.8, y: 0),
+      stroke: arrow-stroke,
+      mark: mark-style,
     )
   })
 }
-
-#align(center)[
-  #H2-ground-state()
-]

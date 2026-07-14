@@ -19,7 +19,7 @@
     content((x: 10.3, y: 15), [$chi_(2K)$], anchor: "west")
 
     // Троеточие под chi_2K
-    content((x: 8, y: 14), text(size: 24pt)[$dots.v$])
+    content((x: 8, y: 14), text(size: 2em)[$dots.v$])
 
     // Уровни chi_s и chi_r
     line((x: 6, y: 13), (x: 10, y: 13), stroke: line-stroke)
@@ -29,7 +29,7 @@
     content((x: 10.3, y: 12), [$chi_r$], anchor: "west")
 
     // Троеточие под chi_r
-    content((x: 8, y: 11), text(size: 24pt)[$dots.v$])
+    content((x: 8, y: 11), text(size: 2em)[$dots.v$])
 
     // Уровень chi_N+1
     line((x: 6, y: 10), (x: 10, y: 10), stroke: line-stroke)
@@ -96,7 +96,7 @@
     )
 
     // Троеточие под chi_a
-    content((x: 8, y: 4), text(size: 24pt)[$dots.v$])
+    content((x: 8, y: 4), text(size: 2em)[$dots.v$])
 
     // Уровни chi_2 и chi_1 со стрелками
     line((x: 6, y: 3), (x: 10, y: 3), stroke: line-stroke)

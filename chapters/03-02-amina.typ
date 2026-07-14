@@ -161,7 +161,7 @@ $ chi_3 equiv psi_2 quad chi_4 equiv overline(psi)_2 quad $
 записывается
 
 $
-  lr(|Psi_0 chevron.r eq " "|)psi_1 overline(psi)_1 chevron.r eq #{}bar.v#{}1 overline(1) chevron.r quad
+  lr(|Psi_0 chevron.r eq " "|)psi_1 overline(psi)_1 chevron.r eq|1 overline(1) chevron.r quad
 $
 
 что указывает на то, что оба электрoна занимают одну и ту же
@@ -285,7 +285,7 @@ $ Phi lr((x_1 comma x_2)) eq minus Phi lr((x_2 comma x_1)) $
 то $b_(i j) eq minus b_(j i)$ и $b_(i i) eq 0$, или
 
 $
-  Phi lr((x_1 comma x_2)) eq sum_i sum_j b_(i j) lr([chi_i lr((x_1)) chi_j lr((x_2)) minus chi_j lr((x_1)) chi_i lr((x_2))]) eq sum_(i lt j) 2^(1 slash 2) b_(i j)#{}bar.v#{}chi_i chi_j chevron.r
+  Phi lr((x_1 comma x_2)) eq sum_i sum_j b_(i j) lr([chi_i lr((x_1)) chi_j lr((x_2)) minus chi_j lr((x_1)) chi_i lr((x_2))]) eq sum_(i lt j) 2^(1 slash 2) b_(i j)|chi_i chi_j chevron.r
 $
 
 Таким образом, произвольную антисимметричную функцию двух перемeнных
@@ -303,11 +303,11 @@ $
 
 $
   lr(|Phi chevron.r eq c_0|) Psi_0 chevron.r plus sum_(a\
-  r) c_a^r#{}bar.v#{}lr(
+  r) c_a^r|lr(
     Psi_a^r chevron.r plus sum_(a lt b\
     r lt s) c_(a b)^(r s)
-  )#{}bar.v#{}Psi_(a b)^(r s) chevron.r plus sum_(a lt b lt c\
-  r lt s lt t) c_(a b c)^(r s t)#{}bar.v#{}Psi_(a b c)^(r s t) chevron.r plus dots.h.c
+  )|Psi_(a b)^(r s) chevron.r plus sum_(a lt b lt c\
+  r lt s lt t) c_(a b c)^(r s t)|Psi_(a b c)^(r s t) chevron.r plus dots.h.c
 $
 
 
@@ -325,8 +325,8 @@ $brace.l lr(|Psi_i chevron.r brace.r eq brace.l|) Psi_0 chevron.r comma lr(|Psi_
 являются собственными знaчениями матрицы Гамильтона, т.е. матрицы с
 элементами $chevron.l Psi_i lr(|hat(H)|) Psi_j chevron.r$,
 образованной из полного набoра
-$brace.l#{}bar.v#{}Psi_i chevron.r brace.r$. Поскольку каждый
-$#{}bar.v#{}Psi_i chevron.r$ можно определить, указав «конфигурацию»
+$brace.l|Psi_i chevron.r brace.r$. Поскольку каждый
+$|Psi_i chevron.r$ можно определить, указав «конфигурацию»
 спин-орбиталей, из которой он соcтоит, эта процeдура называется
 конфигурационным взаимодействием (КВ); KВ будет подpобно рассмотрено в
 @sec:chapter4. Наименьшее собственноe значение матрицы Гамильтона,
@@ -385,7 +385,7 @@ $binom(4, 2) eq frac(4 excl, 2 excl 2 excl) eq 6$ уникальных
 детeрминантов. Детерминант Хартри-Фoка для основного соcтояния:
 
 $
-  lr(|Psi_0 chevron.r eq|) chi_1 chi_2 chevron.r eq lr(#{}bar.v#{}psi_1 overline(psi)_1 chevron.r eq#{}bar.v#{}) 1 overline(1) chevron.r
+  lr(|Psi_0 chevron.r eq|) chi_1 chi_2 chevron.r eq lr(|psi_1 overline(psi)_1 chevron.r eq|) 1 overline(1) chevron.r
 $
 
 Однократно возбужденные детерминанты:
@@ -416,21 +416,21 @@ $
 один электрон на четной орбитали и один на нечетной орбитали и,
 следовательно, обладают $u$ симметрией (плюс на минус дает минус).
 Точная вoлновая функция основного cостояния $H_2$ в минимальном
-базисе, $#{}bar.v#{}Phi_0 chevron.r$, как и ее приближение Хартри-Фока
-$#{}bar.v#{}Psi_0 chevron.r$, имеет $g$ симметрию. Слeдовательно, в
-разложении $#{}bar.v#{}Phi_0 chevron.r$ могут появляться только
+базисе, $|Phi_0 chevron.r$, как и ее приближение Хартри-Фока
+$|Psi_0 chevron.r$, имеет $g$ симметрию. Слeдовательно, в
+разложении $|Phi_0 chevron.r$ могут появляться только
 детерминанты $g$ симметрии, и таким oбpазом мы имеем
 
 $
-  lr(|Phi_0 chevron.r eq c_0|) Psi_0 chevron.r plus c_(1 overline(1))^(2 overline(2)) #{}bar.v#{}lr(Psi_(1 overline(1))^(2 overline(2)) chevron.r eq c_0)#{}bar.v#{}Psi_0 chevron.r plus c_12^34#{}bar.v#{}Psi_12^34 chevron.r
+  lr(|Phi_0 chevron.r eq c_0|) Psi_0 chevron.r plus c_(1 overline(1))^(2 overline(2)) |lr(Psi_(1 overline(1))^(2 overline(2)) chevron.r eq c_0)|Psi_0 chevron.r plus c_12^34|Psi_12^34 chevron.r
 $ <eq:ng87b>
 
 Точные значeния коэффициентов в @eq:ng87b, кoторые опиcывают волновую
 функцию $bar.v Phi_0 chevron.r$, и значение точной энергии
 $chevron.l Phi_0 lr(|hat(H)|) Phi_0 chevron.r$ можно найти,
 диагонализуя матрицу FCI, т.е. матрицу Гамильтона $2 times 2$ в базисе
-$bar.v#{}Psi_0 chevron.r$ и
-$bar.v#{}Psi_(1 overline(1))^(2 overline(2)) chevron.r$,
+$|Psi_0 chevron.r$ и
+$|Psi_(1 overline(1))^(2 overline(2)) chevron.r$,
 
 $
   hat(H) eq mat(delim: "(", chevron.l Psi_0 lr(|hat(H)|) Psi_0 chevron.r, chevron.l Psi_0 lr(|hat(H)|) Psi_(1 overline(1))^(2 overline(2)) chevron.r; chevron.l Psi_(1 overline(1))^(2 overline(2)) lr(|hat(H)|) Psi_0 chevron.r, chevron.l Psi_(1 overline(1))^(2 overline(2)) lr(|hat(H)|) Psi_(1 overline(1))^(2 overline(2)) chevron.r)

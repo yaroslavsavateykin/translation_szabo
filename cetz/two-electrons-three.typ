@@ -3,7 +3,7 @@
 #let two-electrons-three() = {
   canvas({
     // Задаем масштаб для удобства
-    draw.scale(2)
+    draw.scale(1.5)
 
     // Константы для координат
     let x_start = 0.5
@@ -15,12 +15,12 @@
     draw.line((x_start, y_low), (x_end, y_low), stroke: 2pt)
     draw.content(
       (x_start - 0.1, y_low),
-      text(size: 24pt)[$epsilon_1$],
+      text(size: 1.7em)[$epsilon_1$],
       anchor: "east",
     )
     draw.content(
       (x_end + 0.1, y_low),
-      text(size: 24pt)[$psi_1$],
+      text(size: 1.7em)[$psi_1$],
       anchor: "west",
     )
 
@@ -51,12 +51,12 @@
     draw.line((x_start, y_high), (x_end, y_high), stroke: 2pt)
     draw.content(
       (x_start - 0.1, y_high),
-      text(size: 24pt)[$epsilon_2$],
+      text(size: 1.7em)[$epsilon_2$],
       anchor: "east",
     )
     draw.content(
       (x_end + 0.1, y_high),
-      text(size: 24pt)[$psi_2$],
+      text(size: 1.7em)[$psi_2$],
       anchor: "west",
     )
     draw.circle((2.5, y_high), radius: 0.5, fill: none, stroke: (
