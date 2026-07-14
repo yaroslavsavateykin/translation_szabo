@@ -63,7 +63,7 @@
       line((x: ox, y: oy), (x: ox, y: oy + 6), stroke: axis-stroke)
       content(
         (x: ox, y: oy + 6.3),
-        text(size: 20pt)[$z$],
+        text(size: 1.65em)[$z$],
         anchor: "south",
       )
 
@@ -71,7 +71,7 @@
       line((x: ox, y: oy), (x: ox + 5.8, y: oy), stroke: axis-stroke)
       content(
         (x: ox + 6.1, y: oy),
-        text(size: 20pt)[$y$],
+        text(size: 1.65em)[$y$],
         anchor: "west",
       )
 
@@ -83,7 +83,7 @@
       )
       content(
         (x: ox - 4, y: oy - 4),
-        text(size: 20pt)[$x$],
+        text(size: 1.65em)[$x$],
         anchor: "north-east",
       )
 
@@ -98,13 +98,13 @@
         mark: mark-style,
       )
       content((x: ox - 2.0, y: oy + 1.2), text(
-        size: 20pt,
+        size: 1.65em,
       )[$bold(r)_1$])
 
       draw-cube(ox - 4.2, oy + 2.8, size: 0.8)
       content(
-        (x: ox - 3.8, y: oy + 4.0),
-        text(size: 20pt)[$d bold(r)_1$],
+        (x: ox - 3.58, y: oy + 4.0),
+        text(size: 1.65em)[$d bold(r)_1$],
         anchor: "south",
       )
 
@@ -119,13 +119,13 @@
         mark: mark-style,
       )
       content((x: ox + 1.9, y: oy + 2.5), text(
-        size: 20pt,
+        size: 1.65em,
       )[$bold(r)_2$])
 
-      draw-cube(ox + 3.6, oy + 3.2, size: 0.8)
+      draw-cube(ox + 3.67, oy + 3.27, size: 0.8)
       content(
-        (x: ox + 4.0, y: oy + 4.4),
-        text(size: 20pt)[$d bold(r)_2$],
+        (x: ox + 4.27, y: oy + 4.48),
+        text(size: 1.65em)[$d bold(r)_2$],
         anchor: "south",
       )
 
@@ -136,7 +136,7 @@
       content(
         (x: ox + 3, y: oy - 2),
         text(
-          size: 20pt,
+          size: 1.65em,
         )[$P(bold(r)_1, bold(r)_2) d bold(r)_1 d bold(r)_2$],
         anchor: "north",
       )

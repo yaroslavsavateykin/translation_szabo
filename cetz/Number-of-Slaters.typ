@@ -31,7 +31,7 @@
       line(p(2.2, y), p(2, y), stroke: tick-stroke)
       content(
         p(1.6, y),
-        text(size: 9pt)[#y-labels.at(i)],
+        text(size: 1em)[#y-labels.at(i)],
         anchor: "east",
       )
     }
@@ -44,7 +44,7 @@
       line(p(x, 1), p(x, 1.2), stroke: tick-stroke)
       content(
         p(x, 0.6),
-        text(size: 9pt)[#x-labels.at(i)],
+        text(size: 1em)[#x-labels.at(i)],
         anchor: "north",
       )
     }
