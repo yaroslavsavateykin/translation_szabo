@@ -83,9 +83,10 @@ $brace.l chi_i brace.r$ и вывести из приведённого выше
 спин-орбиталей в UHF имеет следующий вид
 
 $
-  chi_i lr((bold(x))) eq cases(
-    psi_j^alpha lr((bold(r))) alpha lr((omega)) \
-    psi_j^beta lr((bold(r))) beta lr((omega)))
+  chi_i(bold(x)) = cases(
+    psi_j^alpha(bold(r)) alpha(omega),
+    psi_j^beta(bold(r)) beta(omega)
+  )
 $ <eq:b608ef>
 
 То есть электроны со спином $alpha$ описывaются набором
