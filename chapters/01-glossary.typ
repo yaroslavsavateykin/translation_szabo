@@ -1,38 +1,54 @@
-#import "../macros.typ": task
+= Словарь <словарь>
 
-#set text(lang: "ru", font: "New Computer Modern", size: 12pt)
-#set page(
-  paper: "a4",
-  margin: (
-    left: 2cm,
-    right: 2cm,
-    top: 2cm,
-    bottom: 2cm,
-  ),
-  numbering: "1",
-)
+#v(1cm)
 
-#set par(
-  justify: true,
-  leading: 0.65em,
-  first-line-indent: 1.2em,
-)
+#align(center)[
+  #table(
+    columns: (auto, 1.2fr, 1.5fr),
+    align: (center, left, left),
+    inset: 6pt,
+    stroke: none,
 
-#set heading(numbering: "1.1.")
+    table.hline(stroke: 1pt),
+    table.header(
+      [*Сокращение*], [*Английское название*], [*Русское название*]
+    ),
+    table.hline(stroke: 1pt),
 
+    [*HF*],
+    [Hartree–Fock],
+    [метод Хартри — Фока],
+    table.hline(stroke: 0.5pt),
 
-= Словарь
-<словарь>
-- #strong[HF] (Hartree-Fock) - Хартри-Фок
+    [*FCI*],
+    [Full Configuration Interaction],
+    [полное конфигурационное взаимодействие],
+    table.hline(stroke: 0.5pt),
 
-- #strong[FCI] (Full Configuration Interaction) - полное конфигурационное взаимодействие
+    [*SCF*],
+    [Self-Consistent Field],
+    [самосогласованное поле],
+    table.hline(stroke: 0.5pt),
 
-- #strong[SCF] (Self Consistent Field) - самосогласованное поле
+    [*SDCI*],
+    [Singly and Doubly Excited Configuration Interaction],
+    [конфигурационное взаимодействие с однократными и двукратными
+      возбуждениями],
+    table.hline(stroke: 0.5pt),
 
-- #strong[SDCI] (Singly and Doubly excited Configuration Interaction) - конфигурационное взаимодействие с однократными и двукратными возбуждениями
+    [*DCI*],
+    [Doubly Excited Configuration Interaction],
+    [конфигурационное взаимодействие с двукратными возбуждениями],
+    table.hline(stroke: 0.5pt),
 
-- #strong[DCI] (Doubly excited Configuration Interaction) - конфигурационное взаимодействие с двукратными возбуждениями
+    [*MCSCF*],
+    [Multi-Configuration Self-Consistent Field],
+    [метод многоконфигурационного самосогласованного поля],
+    table.hline(stroke: 0.5pt),
 
-- #strong[MCSCF] (Multi-Configuration Self-Consistent Field) - метод многоконфигурационного самосогласованного поля
-
-- #strong[GVB] (Generalized Valence Bond) - обобщённый метод валентных связей
+    [*GVB*],
+    [Generalized Valence Bond],
+    [обобщённый метод валентных связей],
+    table.hline(stroke: 1pt),
+  )
+]
