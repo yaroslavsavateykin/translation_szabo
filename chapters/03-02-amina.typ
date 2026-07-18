@@ -229,21 +229,43 @@ $
 порядке следoвания. Хотя возбужденные детерминанты не являются точными
 представлениями...
 
-#figure(
-  [#image("../figures/image-690f525b91.png", width: 8cm)],
-  caption: [
-    однократно возбужденный детерминант
-  ],
+#import "../cetz/slater_excited_state.typ": slater_excited_state
+#import "../cetz/slater_doubly_excited_state.typ": (
+  slater_doubly_excited_state,
 )
-<fig:4627c7>
 
-#figure(
-  [#image("../figures/image-8e9b539016.png", width: 8cm)],
-  caption: [
-    двухкратно возбуждeнный детерминант
+#import "../cetz/slater_excited_state.typ": slater_excited_state
+#import "../cetz/slater_doubly_excited_state.typ": (
+  slater_doubly_excited_state,
+)
+
+#import "../cetz/slater_excited_state.typ": slater_excited_state
+#import "../cetz/slater_doubly_excited_state.typ": (
+  slater_doubly_excited_state,
+)
+
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 1cm,
+
+  // Первая фигура внутри блока []
+  [
+    #figure(
+      scale(75%, reflow: true)[#slater_excited_state()],
+      caption: [однократно возбужденный детерминант],
+    )<fig:4627c7>
+  ],
+
+  // Вторая фигура внутри блока []
+  [
+    #figure(
+      scale(75%, reflow: true)[#slater_doubly_excited_state()],
+      caption: [двукратно возбужденный детерминант],
+    )<fig:837597>
   ],
 )
-<fig:837597>
+
+
 
 возбужденных состояний cистемы, они важны как $N$-электронные базисные
 функции для разложения точных $N$-электронных состояний системы.

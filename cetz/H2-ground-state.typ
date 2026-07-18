@@ -27,7 +27,7 @@
       text(size: 16pt)[$chi_3$],
       anchor: "east",
     )
-    content((x: 4, y: 8.1), text(size: 66pt, baseline: -2pt)[\*])
+    content((x: 4, y: 8.1), text(size: 60pt, baseline: -2pt)[\*])
     line((x: 7, y: 8.6), (x: 9, y: 8.6), stroke: level-stroke)
     content(
       (x: 10.4, y: 8.6),
@@ -40,7 +40,7 @@
       text(size: 1.3em)[$chi_4$],
       anchor: "east",
     )
-    content((x: 8, y: 8.1), text(size: 66pt, baseline: -2pt)[\*])
+    content((x: 8, y: 8.1), text(size: 60pt, baseline: -2pt)[\*])
 
     // БЛОК 2
     content(
