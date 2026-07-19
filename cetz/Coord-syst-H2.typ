@@ -11,7 +11,7 @@
       let arrow-stroke = (thickness: 1.5pt, paint: black)
       let atom-stroke = (thickness: 1.2pt, paint: black)
       let mark-style = (end: ">", scale: 0.8)
-
+      let axis-mark-style = (end: "stealth", scale: 1.2, fill: black)
       // Начало координат O
       let ox = 5
       let oy = 4
@@ -46,7 +46,12 @@
       // ==========================================
 
       // Ось z (вверх)
-      line((x: ox, y: oy), (x: ox, y: oy + 7), stroke: axis-stroke)
+      line(
+        (x: ox, y: oy),
+        (x: ox, y: oy + 7),
+        stroke: axis-stroke,
+        mark: axis-mark-style,
+      )
       content(
         (x: ox, y: oy + 7.3),
         text(size: 1.4em)[$z$],
@@ -54,7 +59,12 @@
       )
 
       // Ось y (вправо)
-      line((x: ox, y: oy), (x: ox + 6, y: oy), stroke: axis-stroke)
+      line(
+        (x: ox, y: oy),
+        (x: ox + 6, y: oy),
+        stroke: axis-stroke,
+        mark: axis-mark-style,
+      )
       content(
         (x: ox + 6.3, y: oy),
         text(size: 1.4em)[$y$],
@@ -66,6 +76,7 @@
         (x: ox, y: oy),
         (x: ox - 3.3, y: oy - 3.3),
         stroke: axis-stroke,
+        mark: axis-mark-style,
       )
       content(
         (x: ox - 3.5, y: oy - 3.5),
