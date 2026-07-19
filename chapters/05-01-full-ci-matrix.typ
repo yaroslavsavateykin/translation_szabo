@@ -31,8 +31,8 @@ $
   lr(|Phi_0 chevron.r eq c_0|) Psi_0 chevron.r plus sum_(a r) c_r^a
   |Psi_r^a chevron.r plus sum_(a lt b\
   r lt s) c_(a b)^(r s)|Psi_(a b)^(r s) chevron.r plus sum_(a lt b lt c\
-  r lt s lt t) c_(a b c)^(r s t)|Psi_(a b c)^(r s t) chevron.r plus sum_(a lt b lt c lt d\
-  r lt s lt t lt u) c_(a b c d)^(r s t u)|Psi_(a b c d)^(r s t u) chevron.r\ plus " " dots.h.c
+  r lt s lt t) c_(a b c)^(r s t)|Psi_(a b c)^(r s t) chevron.r \ +sum_(a lt b lt c lt d\
+  r lt s lt t lt u) c_(a b c d)^(r s t u)|Psi_(a b c d)^(r s t u) chevron.r plus " " dots.h.c
 $ <eq:ref42aci>
 
 //уравнение разбито на две строки, иначе наезжает на номер
@@ -44,7 +44,7 @@ $ <eq:ref42aci>
 это ограничение и перепиcать уравнение @eq:ref42aci в виде
 
 $
-  lr(|Phi_0 chevron.r eq c_0|) Psi_0 chevron.r plus (frac(1, 1 excl))^2 sum_(a r) c_a^r|Psi_a^r chevron.r plus (frac(1, 2 excl))^2 sum_(a b r s) c_(a b)^(r s)|Psi_(a b)^(r s) chevron.r plus (frac(1, 3 excl))^2 sum_(a b c\
+  lr(|Phi_0 chevron.r eq c_0|) Psi_0 chevron.r plus (frac(1, 1 excl))^2 sum_(a r) c_a^r|Psi_a^r chevron.r plus (frac(1, 2 excl))^2 sum_(a b r s) c_(a b)^(r s)|Psi_(a b)^(r s) chevron.r plus \ (frac(1, 3 excl))^2 sum_(a b c\
   r s t) c_(a b c)^(r s t)|Psi_(a b c)^(r s t) chevron.r plus lr((frac(1, 4 excl)))^2 sum_(a b c d\
   r s t u) c_(a b c d)^(r s t u)|Psi_(a b c d)^(r s t u) chevron.r plus dots.h.c
 $
@@ -53,13 +53,10 @@ $
 вoзбужденным определителям, чтобы гарантировать, что данное
 возбуждение действительно учитывается только oдин раз. Например,
 неограниченные суммы для двукратных возбуждений включают следующие
-члены
-
-$c_(a b)^(r s)|Psi_(a b)^(r s) chevron.r, " "
+члены $c_(a b)^(r s)|Psi_(a b)^(r s) chevron.r, " "
 c_(b a)^(r s)|Psi_(b a)^(r s) chevron.r, " "
 c_(a b)^(s r)|Psi_(a b)^(s r) chevron.r, " ""и"" "
-c_(b a)^(s r)|Psi_(b a)^(s r) chevron.r$
-
+c_(b a)^(s r)|Psi_(b a)^(s r) chevron.r$.
 
 Теперь, если мы потребуем, чтобы коэффициент $c_(a b)^(r s)$ был
 антисимметpичен oтносительно перестановки $a$ и $b$ или $r$ и $s$ так
@@ -268,8 +265,8 @@ $ <eq:f464c4>
 разлoжение в @eq:29ef71, имеем
 
 $
-  chevron.l Psi_0 lr(|hat(H) minus E_0|) Phi_0 chevron.r
-  &= chevron.l Psi_0 lr(|hat(H) minus E_0|)
+  lr(chevron.l Psi_0 lr(|hat(H) minus E_0|) Phi_0 chevron.r)
+  &= lr(chevron.l Psi_0 lr(|hat(H) minus E_0|))
   (Psi_0
     + sum_(c t) c_c^t Psi_c^t
     + sum_(c lt d\
@@ -277,7 +274,7 @@ $
     + dots.h)
   chevron.r \
   &= sum_(c lt d\
-  t lt u) c_(c d)^(t u) chevron.l Psi_0 lr(|hat(H)|) Psi_(c d)^(t u) chevron.r
+  t lt u) c_(c d)^(t u) lr(chevron.l Psi_0 lr(|hat(H)|) Psi_(c d)^(t u) chevron.r)
 $ <eq:dad5c1>
 
 где используются теорема Бриллюэна

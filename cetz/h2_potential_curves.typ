@@ -221,22 +221,22 @@
         let line_thickness = 2.5pt
         line(..generate_smooth_points(rhf_data), stroke: (
           thickness: line_thickness,
-          paint: black,
+          paint: rgb("#ff123a"),
           dash: (12pt, 4pt, 2pt, 4pt),
         ))
         line(..generate_smooth_points(uhf_data), stroke: (
           thickness: line_thickness,
-          paint: black,
+          paint: rgb("#1a74b4"),
           dash: "solid",
         ))
         line(..generate_smooth_points(ci_data), stroke: (
           thickness: line_thickness,
-          paint: black,
+          paint: rgb("#2CA02C"),
           dash: (8pt, 5pt),
         ))
         line(..generate_smooth_points(exact_data), stroke: (
           thickness: line_thickness,
-          paint: black,
+          paint: rgb("#FF7F0E"),
           dash: (2pt, 3.5pt),
         ))
 

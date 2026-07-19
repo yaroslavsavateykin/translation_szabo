@@ -243,27 +243,27 @@
 
         line(..generate_smooth_points(rhf_data), stroke: (
           thickness: line_thickness,
-          paint: black,
+          paint: rgb("#ff123a"),
           dash: (12pt, 4pt, 2pt, 4pt),
         ))
         line(..generate_smooth_points(uhf_data), stroke: (
           thickness: line_thickness,
-          paint: black,
+          paint: rgb("#1a74b4"),
           dash: "solid",
         ))
         line(..generate_smooth_points(gvb_data), stroke: (
-          thickness: line_thickness,
-          paint: black,
+          thickness: line_thickness + 0.8pt,
+          paint: rgb("#9467BD"),
           dash: (4pt, 6pt),
         ))
         line(..generate_smooth_points(ci_data), stroke: (
           thickness: line_thickness,
-          paint: black,
+          paint: rgb("#2CA02C"),
           dash: (8pt, 4pt),
         ))
         line(..generate_smooth_points(exact_data), stroke: (
           thickness: line_thickness,
-          paint: black,
+          paint: rgb("#FF7F0E"),
           dash: (2pt, 3.5pt),
         ))
 
@@ -354,7 +354,7 @@
         // Направляющая Exact
         content(
           (map_x(3.1), map_y(-0.13)),
-          text(size: 1.2em)[*Exact*\ (Колос-Вольневич)],
+          text(size: 1.2em)[*точная кривая*\ (Колос-Вольневич)],
           anchor: "west",
         )
         line(
