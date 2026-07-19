@@ -22,6 +22,9 @@
 #include "chapters/00-eigenvectors-and-etc.typ"
 #pagebreak()
 
+#include "chapters/02-linear-algebra-2.typ"
+#pagebreak()
+
 #include "chapters/02-mathematical-review.typ"
 #pagebreak()
 
