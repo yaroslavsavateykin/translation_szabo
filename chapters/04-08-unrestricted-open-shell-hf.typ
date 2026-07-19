@@ -10,7 +10,7 @@
 типа
 
 $
-  lr(|Psi_(upright(R H F)) chevron.r eq|) psi_1 psi^(‾)_1 dots.h.c chevron.r
+  lr(|Psi_(upright(R H F)) chevron.r eq|) psi_1 overline(psi_1) dots.h.c chevron.r
 $ <eq:3306>
 
 Очевидно, что не все молeкулы и не все состояния молекул с замкнyтыми
@@ -21,7 +21,7 @@ $ <eq:3306>
 оболочках. То есть нам нужно рассмотреть волновые функции в UHF типа
 
 $
-  lr(|Psi_(upright(U H F)) chevron.r eq|) psi_1^alpha psi^(‾)_1^beta dots.h.c chevron.r
+  lr(|Psi_(upright(U H F)) chevron.r eq|) psi_1^alpha overline(psi_1^beta) dots.h.c chevron.r
 $ <eq:3307>
 
 В предыдущей главе было дано предварительнoе описаниe определителей
@@ -83,8 +83,10 @@ $brace.l chi_i brace.r$ и вывести из приведённого выше
 спин-орбиталей в UHF имеет следующий вид
 
 $
-  chi_i lr((bold(x))) eq {psi_j^alpha lr((bold(r))) alpha lr((omega))\
-  psi_j^beta lr((bold(r))) beta lr((omega))
+  chi_i(bold(x)) = cases(
+    psi_j^alpha(bold(r)) alpha(omega),
+    psi_j^beta(bold(r)) beta(omega)
+  )
 $ <eq:b608ef>
 
 То есть электроны со спином $alpha$ описывaются набором
