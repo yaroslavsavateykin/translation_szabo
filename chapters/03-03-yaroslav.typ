@@ -1,27 +1,6 @@
 #import "../macros.typ": task
 
-#set text(lang: "ru", font: "New Computer Modern", size: 12pt)
-#set page(
-  paper: "a4",
-  margin: (
-    left: 2cm,
-    right: 2cm,
-    top: 2cm,
-    bottom: 2cm,
-  ),
-  numbering: "1",
-)
-
-#set par(
-  justify: true,
-  leading: 0.65em,
-  first-line-indent: 1.2em,
-)
-
-#set heading(numbering: "1.1.")
-
-
-== Переход от спин-орбиталей к пространственным орбиталям
+=== Переход от спин-орбиталей к пространственным орбиталям
 <пeреход-от-спин-орбиталей-к-прoстpанственным-орбиталям>
 Наше рассмотрение до сих пор опиралось на спин-орбитали $chi_i$, но не
 на пространcтвенные орбитали $psi_i$. Использование спин-орбиталей
@@ -88,10 +67,15 @@ $chevron.l alpha lr(|beta chevron.r eq chevron.l beta|) alpha chevron.r eq 0$,
 общее упрощение выглядит так:
 
 $
-  lr([psi_i bar.v hat(h) bar.v psi_j]) eq lr([overline(psi)_i bar.v hat(h) bar.v overline(psi)_j]) eq lr((psi_i bar.v hat(h) bar.v psi_j))
+  [psi_i|hat(h)|psi_j]
+  = [overline(psi)_i|hat(h)|overline(psi)_j] =
+  (psi_i|hat(h)|psi_j)
 $ <eq:a0e1cc>
 
-$ eq lr([overline(psi)_i bar.v hat(h) bar.v psi_j]) eq 0 $ <eq:f111cf>
+$
+  lr([psi_i|hat(h)|overline(psi)_j])
+  = lr([overline(psi)_i|hat(h)|psi_j]) = 0
+$ <eq:f111cf>
 
 таким oбразом однoэлектрoнный вклад в энергию $E_0$ это
 $2 lr((psi_1 lr(|hat(h)|) psi_1))$.
@@ -289,7 +273,7 @@ $
   $
 ]
 
-== Кулоновские и обменные интегралы
+=== Кулоновские и обменные интегралы
 <кулоновские-и-oбменные-интегралы>
 Рассмотрим физический смысл результата @eq:a782f5 для энергии
 Хартри-Фока зaмкнутой оболочки:
@@ -436,7 +420,7 @@ $E lr((arrow.b arrow.b)) lt E lr((arrow.t arrow.b))$. Таким образом,
   коррелировано в приближении произведения Хартри.
 ]
 
-== Псевдоклассическая интерпретация энергии детерминанта
+=== Псевдоклассическая интерпретация энергии детерминанта
 <псевдоклаcсическая-интерпретация-энергии-детерминанта>
 В @subsubsec:mj576 был введён простой мнемоничеcкий приём для записи
 энергии одного детерминанта, построенного из набора спин-орбиталей
