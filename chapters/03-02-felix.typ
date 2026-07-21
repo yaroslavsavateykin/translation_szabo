@@ -51,7 +51,7 @@ $brace.l chi_i divides i eq 1, 2, dots.h, 2 K brace.r$:
 
 $
   chi_(2 i minus 1) lr((bold(x))) & eq psi_i lr((bold(r))) alpha lr((omega)) \
-          chi_(2 i) lr((bold(x))) & eq psi_i lr((bold(r))) beta lr((omega)) i eq 1 comma 2 comma dots.h comma K
+  chi_(2 i) lr((bold(x))) & eq psi_i lr((bold(r))) beta lr((omega)) i eq 1 comma 2 comma dots.h comma K
 $
 
 Если пространственные орбитали ортонормированы, то соответствующие
@@ -81,7 +81,7 @@ $
 
 $
   chi_(2 i minus 1) lr((bold(x))) & eq psi_i^alpha lr((bold(r))) alpha lr((omega)) \
-          chi_(2 i) lr((bold(x))) & eq psi_i^beta lr((bold(r))) beta lr((omega)) " " i eq 1 comma 2 comma dots.h comma K
+  chi_(2 i) lr((bold(x))) & eq psi_i^beta lr((bold(r))) beta lr((omega)) " " i eq 1 comma 2 comma dots.h comma K
 $
 
 #block[

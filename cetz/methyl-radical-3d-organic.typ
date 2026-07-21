@@ -96,7 +96,9 @@
       let depth = rr * calc.sin(phi)
       (
         rr * calc.cos(phi),
-        cy + dir * (node-gap + axial-scale * (s - s-min)) + depth-tilt * depth,
+        cy
+          + dir * (node-gap + axial-scale * (s - s-min))
+          + depth-tilt * depth,
       )
     }
 

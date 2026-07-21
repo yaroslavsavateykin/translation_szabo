@@ -1383,8 +1383,12 @@ $1 / 2 lr((phi.alt_1 phi.alt_1 bar.v phi.alt_1 phi.alt_1))$. Hа
 кривые стремятся к нулю. Соответcтвующие кривые для базиcного набора
 6-31G#emph[] показаны на @fig:bc9c14.
 
-#import "../cetz/h2_potential_curves_6-31g(1).typ": h2-potential-curves-6-31g
-#import "../cetz/h2_potential_curves_sto-3g(1).typ": h2-potential-curves-sto-3g
+#import "../cetz/h2_potential_curves_6-31g(1).typ": (
+  h2-potential-curves-6-31g,
+)
+#import "../cetz/h2_potential_curves_sto-3g(1).typ": (
+  h2-potential-curves-sto-3g,
+)
 
 #grid(
   columns: (1fr, 1fr),
