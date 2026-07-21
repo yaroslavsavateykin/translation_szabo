@@ -47,17 +47,28 @@
       anchor: "east",
     )
 
+    // РАЗДЕЛИТЕЛЬНАЯ СИНУСОИДА
     // ==========================================
-    // РАЗДЕЛИТЕЛЬНАЯ ВОЛНИСТАЯ ЛИНИЯ
-    // ==========================================
-    // Рисуем волну вручную через кривую Безье, чтобы не зависеть от версии CeTZ
-    bezier(
-      (x: 1, y: 9),
-      (x: 13, y: 9),
-      (x: 5, y: 9.75),
-      (x: 9, y: 8.25),
-      stroke: line-stroke,
-    )
+    let start-x = 4.0
+    let end-x = 11.0
+    let base-y = 9.1
+    let amplitude = 0.15 // Высота гребней
+    let frequency = 15 // Количество полных волн (гребней)
+    let steps = 200 // Гладкость линии
+
+    // Генерируем массив точек для синусоиды
+    let wave-points = ()
+    for i in range(0, steps + 1) {
+      let t = i / steps
+      let x = start-x + t * (end-x - start-x)
+      let y = (
+        base-y + amplitude * calc.sin(2 * calc.pi * frequency * t)
+      )
+      wave-points.push((x, y))
+    }
+
+    // Отрисовываем синусоиду как единую плавную линию
+    line(..wave-points, stroke: (thickness: 0.35em, paint: black))
 
     // ==========================================
     // НИЖНЯЯ ЧАСТЬ: Занятые спин-орбитали
@@ -67,8 +78,8 @@
     line((x: 6, y: 8), (x: 10, y: 8), stroke: line-stroke)
     content((x: 10.3, y: 8), [$chi_N$], anchor: "west")
     line(
-      (x: 8, y: 7.4),
-      (x: 8, y: 8.6),
+      (x: 8, y: 7.55),
+      (x: 8, y: 8.55),
       stroke: arrow-stroke,
       mark: mark-style,
     )
@@ -80,8 +91,8 @@
     line((x: 6, y: 6), (x: 10, y: 6), stroke: line-stroke)
     content((x: 10.3, y: 6), [$chi_b$], anchor: "west")
     line(
-      (x: 8, y: 5.4),
-      (x: 8, y: 6.6),
+      (x: 8, y: 5.6),
+      (x: 8, y: 6.5),
       stroke: arrow-stroke,
       mark: mark-style,
     )
@@ -89,8 +100,8 @@
     line((x: 6, y: 5), (x: 10, y: 5), stroke: line-stroke)
     content((x: 10.3, y: 5), [$chi_a$], anchor: "west")
     line(
-      (x: 8, y: 4.4),
-      (x: 8, y: 5.6),
+      (x: 8, y: 4.55),
+      (x: 8, y: 5.45),
       stroke: arrow-stroke,
       mark: mark-style,
     )
@@ -102,8 +113,8 @@
     line((x: 6, y: 3), (x: 10, y: 3), stroke: line-stroke)
     content((x: 10.3, y: 3), [$chi_2$], anchor: "west")
     line(
-      (x: 8, y: 2.4),
-      (x: 8, y: 3.6),
+      (x: 8, y: 2.6),
+      (x: 8, y: 3.5),
       stroke: arrow-stroke,
       mark: mark-style,
     )
@@ -111,8 +122,8 @@
     line((x: 6, y: 2), (x: 10, y: 2), stroke: line-stroke)
     content((x: 10.3, y: 2), [$chi_1$], anchor: "west")
     line(
-      (x: 8, y: 1.4),
-      (x: 8, y: 2.6),
+      (x: 8, y: 1.55),
+      (x: 8, y: 2.45),
       stroke: arrow-stroke,
       mark: mark-style,
     )

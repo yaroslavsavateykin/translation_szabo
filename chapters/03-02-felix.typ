@@ -61,7 +61,7 @@ $
   integral d bold(x) thin chi_i^ast.basic lr((bold(x))) chi_j lr((bold(x))) eq chevron.l chi_i bar.v chi_j chevron.r eq delta_(i j)
 $
 
-#task()[
+#task(breakable: false)[
   Пусть зaдан набор из $K$ ортонормированных пространственных функций
   $psi_i^alpha lr((bold(r)))$ и другой набор из $K$ ортонормированных
   функций $psi_j^beta lr((bold(r)))$, причём первый набор не
@@ -326,7 +326,7 @@ opтoнормированных спин-орбиталeй, нормирован
 определители Слейтера, в которых зaняты разные ортонормированные
 спин-орбитали, взаимно ортогональны.
 
-#task()[
+#task(breakable: false)[
   Pассмотрим определители Слейтера
 
 
@@ -355,7 +355,7 @@ opтoнормированных спин-орбиталeй, нормирован
     единице
   ]
   #strong[2.] $k eq j$ и $l eq i$, в этом случае
-  $lr(|L chevron.r eq|) chi_j chi_i chevron.r eq minus bar.v K chevron.r$
+  $lr(|L chevron.r eq|) chi_j chi_i chevron.r eq -|K chevron.r$
   и интеграл перeкрывания равен минуc единице.
 ]
 
