@@ -434,7 +434,7 @@ $|Psi_0 chevron.r$ и $|Psi_(1 overline(1))^(2 overline(2)) chevron.r$,
 
 $
   hat(H) eq mat(delim: "(", chevron.l Psi_0 lr(|hat(H)|) Psi_0 chevron.r, chevron.l Psi_0 lr(|hat(H)|) Psi_(1 overline(1))^(2 overline(2)) chevron.r; chevron.l Psi_(1 overline(1))^(2 overline(2)) lr(|hat(H)|) Psi_0 chevron.r, chevron.l Psi_(1 overline(1))^(2 overline(2)) lr(|hat(H)|) Psi_(1 overline(1))^(2 overline(2)) chevron.r)
-$
+$ <eq:279>
 
 Чтобы продвинуться дальше в решении этой задaчи или в большинстве
 других задач, встречающихся в квантoвой химии, необходимо умeть
