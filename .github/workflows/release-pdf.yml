@@ -1,0 +1,50 @@
+name: Release PDF
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag, for example v0.1.0"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  release-pdf:
+    name: Build and publish PDF
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
+        with:
+          typst-version: "0.15.0"
+
+      - name: Build PDF
+        run: make build
+
+      - name: Prepare release asset
+        run: |
+          tag="${{ inputs.tag || github.ref_name }}"
+          cp main.pdf "TranslationSzabo_${tag}.pdf"
+
+      - name: Publish release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag || github.ref_name }}
+        run: |
+          asset="TranslationSzabo_${TAG}.pdf"
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$asset" --clobber
+          else
+            gh release create "$TAG" "$asset" --title "$TAG" --notes "PDF release $TAG"
+          fi

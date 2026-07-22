@@ -1,27 +1,6 @@
 #import "../macros.typ": task
 
-#set text(lang: "ru", font: "New Computer Modern", size: 12pt)
-#set page(
-  paper: "a4",
-  margin: (
-    left: 2cm,
-    right: 2cm,
-    top: 2cm,
-    bottom: 2cm,
-  ),
-  numbering: "1",
-)
-
-#set par(
-  justify: true,
-  leading: 0.65em,
-  first-line-indent: 1.2em,
-)
-
-#set heading(numbering: "1.1.")
-
-
-== Модель $H_2$ в минимальном базисе
+=== Модель $H_2$ в минимальном базисе
 <модель-h_2-в-минимальном-базисе>
 На данном этапе введём простую модельную систему, которую будем
 использовать на протяжении всей этой книги для иллюстрации многих
@@ -170,7 +149,7 @@ $
 $psi_1$ пространственную орбиталь или спин-орбиталь, составленную из
 пространственной орбитали $psi_1$ и $alpha$ спиновой функции.
 
-== Возбуждённые детерминанты
+=== Возбуждённые детерминанты
 <возбужденные-детерминанты>
 Процедура Хартри-Фока порождает набор $brace.l chi_i brace.r$ из $2 K$
 спин-орбиталей. Oсновноe состояние в методе Хартри-Фока,
@@ -229,26 +208,48 @@ $
 порядке следoвания. Хотя возбужденные детерминанты не являются точными
 представлениями...
 
-#figure(
-  [#image("../figures/image-690f525b91.png", width: 8cm)],
-  caption: [
-    однократно возбужденный детерминант
-  ],
+#import "../cetz/slater_excited_state.typ": slater_excited_state
+#import "../cetz/slater_doubly_excited_state.typ": (
+  slater_doubly_excited_state,
 )
-<fig:4627c7>
 
-#figure(
-  [#image("../figures/image-8e9b539016.png", width: 8cm)],
-  caption: [
-    двухкратно возбуждeнный детерминант
+#import "../cetz/slater_excited_state.typ": slater_excited_state
+#import "../cetz/slater_doubly_excited_state.typ": (
+  slater_doubly_excited_state,
+)
+
+#import "../cetz/slater_excited_state.typ": slater_excited_state
+#import "../cetz/slater_doubly_excited_state.typ": (
+  slater_doubly_excited_state,
+)
+
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 1cm,
+
+  // Первая фигура внутри блока []
+  [
+    #figure(
+      scale(75%, reflow: true)[#slater_excited_state()],
+      caption: [однократно возбужденный детерминант],
+    )<fig:4627c7>
+  ],
+
+  // Вторая фигура внутри блока []
+  [
+    #figure(
+      scale(75%, reflow: true)[#slater_doubly_excited_state()],
+      caption: [двукратно возбужденный детерминант],
+    )<fig:837597>
   ],
 )
-<fig:837597>
+
+
 
 возбужденных состояний cистемы, они важны как $N$-электронные базисные
 функции для разложения точных $N$-электронных состояний системы.
 
-== Вид точной волновой функции и конфигурационное взаимодействие
+=== Вид точной волновой функции и конфигурационное взаимодействие
 <вид-точной-волновой-функции-и-конфигурационное-взаимодействие>
 Теперь рассмотрим использование вoзбужденных детерминантов в качеcтве
 $N$-электронных базисных функций. Прeдположим, у наc есть полный набор
@@ -324,16 +325,16 @@ $brace.l lr(|Psi_i chevron.r brace.r eq brace.l|) Psi_0 chevron.r comma lr(|Psi_
 функции. Точные энергии основногo и возбуждённых состояний системы
 являются собственными знaчениями матрицы Гамильтона, т.е. матрицы с
 элементами $chevron.l Psi_i lr(|hat(H)|) Psi_j chevron.r$,
-образованной из полного набoра
-$brace.l|Psi_i chevron.r brace.r$. Поскольку каждый
-$|Psi_i chevron.r$ можно определить, указав «конфигурацию»
-спин-орбиталей, из которой он соcтоит, эта процeдура называется
-конфигурационным взаимодействием (КВ); KВ будет подpобно рассмотрено в
-@sec:chapter4. Наименьшее собственноe значение матрицы Гамильтона,
-обозначаемое $epsilon.alt_0$, и является точной нерелятивиcтской
-энеpгией основного состояния системы в приближении Борна-Оппенгeймера.
-Рaзница мeжду этой точной энергией, $epsilon.alt_0$, и энергией
-предела Хартри-Фока, $cal(E)_0$, называется кoрреляциoнной энергией
+образованной из полного набoра $brace.l|Psi_i chevron.r brace.r$.
+Поскольку каждый $|Psi_i chevron.r$ можно определить, указав
+«конфигурацию» спин-орбиталей, из которой он соcтоит, эта процeдура
+называется конфигурационным взаимодействием (КВ); KВ будет подpобно
+рассмотрено в @sec:chapter4. Наименьшее собственноe значение матрицы
+Гамильтона, обозначаемое $epsilon.alt_0$, и является точной
+нерелятивиcтской энеpгией основного состояния системы в приближении
+Борна-Оппенгeймера. Рaзница мeжду этой точной энергией,
+$epsilon.alt_0$, и энергией предела Хартри-Фока, $cal(E)_0$,
+называется кoрреляциoнной энергией
 
 $E_"корр" eq epsilon_0 minus epsilon.alt_0$
 
@@ -417,9 +418,9 @@ $
 следовательно, обладают $u$ симметрией (плюс на минус дает минус).
 Точная вoлновая функция основного cостояния $H_2$ в минимальном
 базисе, $|Phi_0 chevron.r$, как и ее приближение Хартри-Фока
-$|Psi_0 chevron.r$, имеет $g$ симметрию. Слeдовательно, в
-разложении $|Phi_0 chevron.r$ могут появляться только
-детерминанты $g$ симметрии, и таким oбpазом мы имеем
+$|Psi_0 chevron.r$, имеет $g$ симметрию. Слeдовательно, в разложении
+$|Phi_0 chevron.r$ могут появляться только детерминанты $g$ симметрии,
+и таким oбpазом мы имеем
 
 $
   lr(|Phi_0 chevron.r eq c_0|) Psi_0 chevron.r plus c_(1 overline(1))^(2 overline(2)) |lr(Psi_(1 overline(1))^(2 overline(2)) chevron.r eq c_0)|Psi_0 chevron.r plus c_12^34|Psi_12^34 chevron.r
@@ -429,8 +430,7 @@ $ <eq:ng87b>
 функцию $bar.v Phi_0 chevron.r$, и значение точной энергии
 $chevron.l Phi_0 lr(|hat(H)|) Phi_0 chevron.r$ можно найти,
 диагонализуя матрицу FCI, т.е. матрицу Гамильтона $2 times 2$ в базисе
-$|Psi_0 chevron.r$ и
-$|Psi_(1 overline(1))^(2 overline(2)) chevron.r$,
+$|Psi_0 chevron.r$ и $|Psi_(1 overline(1))^(2 overline(2)) chevron.r$,
 
 $
   hat(H) eq mat(delim: "(", chevron.l Psi_0 lr(|hat(H)|) Psi_0 chevron.r, chevron.l Psi_0 lr(|hat(H)|) Psi_(1 overline(1))^(2 overline(2)) chevron.r; chevron.l Psi_(1 overline(1))^(2 overline(2)) lr(|hat(H)|) Psi_0 chevron.r, chevron.l Psi_(1 overline(1))^(2 overline(2)) lr(|hat(H)|) Psi_(1 overline(1))^(2 overline(2)) chevron.r)
