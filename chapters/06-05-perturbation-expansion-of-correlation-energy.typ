@@ -41,9 +41,7 @@ $
 функциями координат электрона один, в то время как $j$ и $l$ относятся
 к спин-орбиталям, зависящим от координат электрона два, т. е.,
 
-$ chevron.l i j bar.v k l chevron.r $
-
-(где стрелки указывают на связь $i arrow.l.r k$ и $j arrow.l.r l$).
+#box(fill: red, inset: 3pt)[$ chevron.l i j bar.v k l chevron.r $]
 
 Вспомним, что антисимметризованный двухэлектронный интеграл
 определяется как
@@ -55,7 +53,7 @@ $
 Используя эти обозначения, получаем
 
 $
-  ⟨Psi_0 lr(|sum_(i lt j) r_(i j)^(minus 1)|) Psi_(a b)^(r s)⟩ eq chevron.l a b bar.v r s chevron.r
+  ⟨Psi_0 lr(|sum_(i lt j) r_(i j)^(minus 1)|) Psi_(a b)^(r s)⟩ eq chevron.l a b lr(||) r s chevron.r
 $
 
 и
@@ -102,7 +100,7 @@ Oбщий результат для энергии второго порядка
 @subsec:section6_1, имеет вид
 
 $
-  E_0^(lr((2))) eq sum_n frac(lr(|chevron.l 0|) hat(V) lr(|n chevron.r|)^2, E_0^(lr((0))) minus E_n^(lr((0))))
+  E_0^(lr((2))) eq sum_n prime frac(lr(|chevron.l 0|) hat(V) lr(|n chevron.r|)^2, E_0^(lr((0))) minus E_n^(lr((0))))
 $
 
 где суммирование ведется по всем состояниям, кроме основнoго состояния

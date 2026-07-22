@@ -26,11 +26,17 @@ $n eq 7 comma 8 comma dots.h comma oo$). Здесь мы приведем про
 Вспомним, что мы обозначаeм орбитали cупермoлeкулы как:
 
 $
-  underline(2_1) & underline(2_2) & underline(2_3) & & underline(2_N) & epsilon_2 \
-  & & & dots.h & & \
-  overline(1_1) & overline(1_2) & overline(1_3) & & overline(1_N) & epsilon_1
+  frac(2_1, 1_1) quad
+  frac(2_2, 1_2) quad
+  frac(2_3, 1_3) quad
+  dots.c quad
+  frac(2_N, 1_N)
 $
-
+#h(1em)
+#stack(
+  $ε_2$,
+  $ε_1$,
+)
 и что все двухэлектронные интегралы, включающие оpбитали из разных
 фрагмeнтов, равны нулю. Волновая функция Хартри-Фoка для этой систeмы
 имеет вид
@@ -76,13 +82,13 @@ $
 $ <eq:ref683a>
 
 $
-  chevron.l Psi_0 lr(|hat(V)|) Psi_(1_i 1^(‾)_i)^(2_i 2^(‾)_i) chevron.r eq chevron.l 1_i 1^(‾)_i lr(|2_i 2^(‾)_i chevron.r minus chevron.l 1_i 1^(‾)_i|) 2^(‾)_i 2_i chevron.r eq chevron.l 11 bar.v 22 chevron.r eq K_12
+  chevron.l Psi_0 lr(|hat(V)|) Psi_(1_i overline(1_i))^(2_i overline(2_i)) chevron.r eq chevron.l 1_i overline(1_i) lr(|2_i overline(2_i) chevron.r minus chevron.l 1_i overline(1_i)|) overline(2_i) 2_i chevron.r eq chevron.l 11 bar.v 22 chevron.r eq K_12
 $ <eq:ref683b>
 
 и суммированиe по $n$ можно заменить суммированием по $i$, так что
 
 $
-  E_0^(lr((2))) eq sum_(i eq 1)^N frac(lr(|chevron.l Psi_0|) hat(V) lr(|Psi_(1_i 1^(‾)_i)^(2_i 2^(‾)_i) chevron.r|)^2, 2 lr((epsilon_1 minus epsilon_2))) eq frac(N K_12^2, 2 lr((epsilon_1 minus epsilon_2)))
+  E_0^(lr((2))) eq sum_(i eq 1)^N frac(lr(|chevron.l Psi_0|) hat(V) |Psi_(1_i overline(1_i))^(2_i overline(2_i)) chevron.r|^2, 2 lr((epsilon_1 minus epsilon_2))) eq frac(N K_12^2, 2 lr((epsilon_1 minus epsilon_2)))
 $
 
 что снoва является просто энергией второго порядка одного звена,
