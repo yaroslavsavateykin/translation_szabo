@@ -51,8 +51,16 @@
       ) = {
         let cx = x-start + level-length / 2
 
-        line((x-start, y-top), (x-start + level-length, y-top), stroke: line-stroke)
-        line((x-start, y-bottom), (x-start + level-length, y-bottom), stroke: line-stroke)
+        line(
+          (x-start, y-top),
+          (x-start + level-length, y-top),
+          stroke: line-stroke,
+        )
+        line(
+          (x-start, y-bottom),
+          (x-start + level-length, y-bottom),
+          stroke: line-stroke,
+        )
 
         group({
           translate((0, y-top - 1.0))
@@ -64,15 +72,35 @@
         })
 
         if show-left {
-          content((x-start - 0.15, y-top), text(size: font-size)[2], anchor: "east")
-          content((x-start - 0.15, y-bottom), text(size: font-size)[1], anchor: "east")
+          content(
+            (x-start - 0.15, y-top),
+            text(size: font-size)[2],
+            anchor: "east",
+          )
+          content(
+            (x-start - 0.15, y-bottom),
+            text(size: font-size)[1],
+            anchor: "east",
+          )
         }
         if show-right {
-          content((x-start + level-length + 0.15, y-top), text(size: font-size)[2], anchor: "west")
-          content((x-start + level-length + 0.15, y-bottom), text(size: font-size)[1], anchor: "west")
+          content(
+            (x-start + level-length + 0.15, y-top),
+            text(size: font-size)[2],
+            anchor: "west",
+          )
+          content(
+            (x-start + level-length + 0.15, y-bottom),
+            text(size: font-size)[1],
+            anchor: "west",
+          )
         }
 
-        content((cx, y-bottom - 0.9), text(size: font-size)[#letter], anchor: "north")
+        content(
+          (cx, y-bottom - 0.9),
+          text(size: font-size)[#letter],
+          anchor: "north",
+        )
       }
 
       // Раскладка семи диаграмм слева направо.

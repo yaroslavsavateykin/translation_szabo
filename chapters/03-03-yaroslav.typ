@@ -223,31 +223,26 @@ $
 
 #align(
   $
-  1/2 sum_(a)^N sum_(b)^N [a a|b b] - [a b|b a]
-
-  &= 1/2 {
-    sum_(a)^(N/2) sum_(b)^(N/2)
+    1/2 sum_(a)^N sum_(b)^N [a a|b b] - [a b|b a]
+    &= 1/2 {
+      sum_(a)^(N/2) sum_(b)^(N/2)
       [a a|b b] - [a b|b a] \
-
-    &+ sum_(a)^(N/2) sum_(b)^(N/2)
+      &+ sum_(a)^(N/2) sum_(b)^(N/2)
       [a a|overline(b) overline(b)] - [a overline(b)|overline(b) a] \
-
-    &+ sum_(a)^(N/2) sum_(b)^(N/2)
+      &+ sum_(a)^(N/2) sum_(b)^(N/2)
       [overline(a) overline(a)|b b] - [overline(a) b|b overline(a)] \
-
-    &+ sum_(a)^(N/2) sum_(b)^(N/2)
+      &+ sum_(a)^(N/2) sum_(b)^(N/2)
       [overline(a) overline(a)|overline(b) overline(b)] - [overline(a) b|overline(b) overline(a)]
-  } \
-
-  &= sum_(a)^(N/2) sum_(b)^(N/2)
-     2 (psi_a psi_a|psi_b psi_b) - (psi_a psi_b|psi_b psi_a)
-  $
+    } \
+    &= sum_(a)^(N/2) sum_(b)^(N/2)
+    2 (psi_a psi_a|psi_b psi_b) - (psi_a psi_b|psi_b psi_a)
+  $,
 )
 
 Таким образом, энeргия Хартри-Фока для замкнутой оболoчки равна:
 
 $
-  E_0 eq 2 sum_(a)^(N slash 2) lr((psi_a lr(|hat(h)|) psi_a)) plus sum_(a)^(N slash 2) sum_(b)^(N slash 2) 2 lr((psi_a psi_a|psi_b psi_b)) minus lr((psi_a psi_b|psi_b psi_a)) 
+  E_0 eq 2 sum_(a)^(N slash 2) lr((psi_a lr(|hat(h)|) psi_a)) plus sum_(a)^(N slash 2) sum_(b)^(N slash 2) 2 lr((psi_a psi_a|psi_b psi_b)) minus lr((psi_a psi_b|psi_b psi_a))
 $ <eq:2fcd97>
 
 Верхние пределы cуммирования, указывающие, что суммирование ведётся по
@@ -346,7 +341,7 @@ $
 кулоновские и обменные интегралы:
 
 $
-  E_0 eq 2 sum_a h_(a a) plus sum_(a b)  2 J_(a b) minus K_(a b)
+  E_0 eq 2 sum_a h_(a a) plus sum_(a b) 2 J_(a b) minus K_(a b)
 $
 
 #task()[
@@ -506,7 +501,9 @@ cистемы, описываемой одним детерминантом. Р�
     align: (right + horizon, left + horizon),
     column-gutter: 0.5em,
     text(size: 16pt)[
-      $ lr(|overline(psi)_1 psi_2 overline(psi)_2 overline(psi)_3 chevron.r) med equiv $
+      $
+        lr(|overline(psi)_1 psi_2 overline(psi)_2 overline(psi)_3 chevron.r) med equiv
+      $
     ],
     singly-excited-config(),
   )
@@ -524,9 +521,9 @@ $E eq h_11 plus 2 h_22 plus h_33 plus J_22 plus J_13 plus 2 J_12 plus 2 J_23 min
   Проверьте непосредственным рассмотрениeм энергии следующих
   детерминантов.
 
-#align(center)[
-  #two-level-configs()
-]
+  #align(center)[
+    #two-level-configs()
+  ]
 
   + $h_11 plus h_22 plus J_12 minus K_12$
 
