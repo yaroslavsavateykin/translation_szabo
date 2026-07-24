@@ -393,8 +393,11 @@ $(i minus.plus 1)^*$. Таким образом, графическое
 прeдставление суммы по $j$ и $k$ при $i$, равном, например, 1,
 выглядит так:
 
-#figure([#image("../figures/feynman_diagram.png", width: 70%)], caption: [
-])
+#figure(
+  [#image("../figures/feynman_diagram.png", width: 70%)],
+  caption: [
+  ],
+)
 
 Итак, существует два пути: 1)
 $1 -> 2^* -> 3^* -> 1$ со значением

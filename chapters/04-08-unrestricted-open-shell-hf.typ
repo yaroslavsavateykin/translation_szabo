@@ -161,7 +161,7 @@ $hat(f)^alpha$ и $hat(f)^beta$, рассматривая возможные в�
 #figure(
   scale(80%, reflow: true)[#orbital-diagram()],
   caption: [
-   ],
+  ],
 )
 
 Оператор $hat(f)^alpha lr((1))$ прeдcтавляет собой кинетическую
