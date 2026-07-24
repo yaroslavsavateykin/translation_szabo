@@ -413,7 +413,7 @@ $ <eq:b637f5>
 $chevron.l Psi_0 lr(|hat(H)|) Psi_a^r chevron.r$. Этот матричный
 элемент получается с иcпользовaнием правил вычисления матричных
 элементов между определителями и результат можно непосредственно найти
-из таблиц и 2.6.
+из @tab-hf-one-electron и @tab-hf-two-electron.
 
 $
   chevron.l Psi_0 lr(|hat(H)|) Psi_a^r chevron.r eq chevron.l a lr(|hat(h)|) r chevron.r plus sum_b chevron.l a b lr(| |) r b chevron.r

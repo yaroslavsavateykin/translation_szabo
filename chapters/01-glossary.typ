@@ -21,7 +21,7 @@
     table.hline(stroke: 0.5pt),
 
     [*FCI*],
-    [Full Configuration Inte  raction],
+    [Full Configuration Interaction],
     [полное конфигурационное взаимодействие],
     table.hline(stroke: 0.5pt),
 
