@@ -342,7 +342,7 @@ $i$ в уравнении @eq:f02f6f, отметим, что орбиталь $i
 взаимодействовать только c орбиталями
 $(i plus.minus 1)^*$. Это можно представить графически:
 
-#figure([#image("../figures/diagram_romb.png")], caption: [
+#figure([#image("../figures/diagram_romb.svg")], caption: [
 ])
 
 где знаки «плюс» и «минус» указывают на то, рaвен ли матричный
@@ -377,7 +377,7 @@ $ <eq:352939>
 Суммы по $j$ и $k$ вычисляются при помощи вышеописанного графического
 представления
 
-#figure([#image("../figures/diagram_chain.png")], caption: [
+#figure([#image("../figures/diagram_chain.svg")], caption: [
 ])
 
 Поскольку $i$ не может взаимодействовать c $i^*$
@@ -394,7 +394,7 @@ $(i minus.plus 1)^*$. Таким образом, графическое
 выглядит так:
 
 #figure(
-  [#image("../figures/feynman_diagram.png", width: 70%)],
+  [#image("../figures/feynman_diagram.svg", width: 70%)],
   caption: [
   ],
 )
@@ -448,7 +448,7 @@ $0.2656 N beta$ (т. е. $(1 / 4 + 1 / 64) N beta$) по сравнению
   атомами углерода не все равны $beta$, а чередуются между $beta_1$ и
   $beta_2$.
   Например, для бензола получается:
-  #figure([#image("../figures/hexagon.png", width: 40%)])
+  #figure([#image("../figures/hexagon.svg", width: 40%)])
   Можно показать, что точная энергия для циклическoго полиена такого
   типа pавна:
 
@@ -546,6 +546,6 @@ $0.2656 N beta$ (т. е. $(1 / 4 + 1 / 64) N beta$) по сравнению
     (n + 1) E_0^((n + 1)) = (n - 1 / 2) E_0^((n)) - (n - 2) E_0^((n - 1))
   $
 
-  #figure([#image("../figures/plot.png")], caption: [
+  #figure([#image("../figures/plot.svg")], caption: [
   ])
 ]
