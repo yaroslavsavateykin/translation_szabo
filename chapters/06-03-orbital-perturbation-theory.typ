@@ -377,8 +377,12 @@ $ <eq:352939>
 Суммы по $j$ и $k$ вычисляются при помощи вышеописанного графического
 представления
 
-#figure([#image("../figures/diagram_chain.svg")], caption: [
-])
+
+#import "../cetz/transition-graph.typ": transition-graph
+#figure(
+  scale(80%, reflow: true)[#transition-graph()],
+ 
+)
 
 Поскольку $i$ не может взаимодействовать c $i^*$
 $(i + 2)^*$ или $(i - 2)^*$, значение
@@ -448,7 +452,12 @@ $0.2656 N beta$ (т. е. $(1 / 4 + 1 / 64) N beta$) по сравнению
   атомами углерода не все равны $beta$, а чередуются между $beta_1$ и
   $beta_2$.
   Например, для бензола получается:
-  #figure([#image("../figures/hexagon.svg", width: 40%)])
+  
+#import "../cetz/hexagon_graph.typ": hexagon_graph
+#figure(
+  scale(80%, reflow: true)[#hexagon_graph()],
+ 
+)
   Можно показать, что точная энергия для циклическoго полиена такого
   типа pавна:
 
