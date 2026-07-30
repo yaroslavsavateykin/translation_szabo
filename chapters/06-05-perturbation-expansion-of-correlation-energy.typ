@@ -41,7 +41,10 @@ $
 функциями координат электрона один, в то время как $j$ и $l$ относятся
 к спин-орбиталям, зависящим от координат электрона два, т. е.,
 
-#box(fill: red, inset: 3pt)[$ chevron.l i j bar.v k l chevron.r $]
+#import "../cetz/exchange_graph.typ": exchange-graph
+  #figure(
+    scale(100%, reflow: true)[#exchange-graph()],
+  )
 
 Вспомним, что антисимметризованный двухэлектронный интеграл
 определяется как
