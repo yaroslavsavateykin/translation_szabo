@@ -1,10 +1,10 @@
 Единицы, которые мы используем в данной книге, называются атомными
 единицами. Чтобы увидеть, как они возникают естественным образом,
-рассмотрим уравнение Шрёдингера для атома водорода. В единицах СИ
+рассмотрим уравнение Шрёдингера для атома водорода. В единицах SI
 имеем
 
 $
-  lr([minus frac(planck^2, 2 m_e) nabla^2 minus frac(e^2, 4 pi epsilon.alt_0 r)]) phi.alt eq E phi.alt
+  [minus frac(planck^2, 2 m_e) nabla^2 minus frac(e^2, 4 pi epsilon.alt_0 r)] phi.alt eq E phi.alt
 $ <eq:23>
 
 $planck$ — постоянная Планка, делённая на $2 pi$, $m_e$ — масса
@@ -13,7 +13,7 @@ $planck$ — постоянная Планка, делённая на $2 pi$, $m
 $x, y, z -> lambda x^prime, lambda y^prime, lambda z^prime$ и получим
 
 $
-  lr([minus frac(planck^2, 2 m_e lambda^2) nabla^(prime 2) minus frac(e^2, 4 pi epsilon_0 lambda r^prime)]) phi.alt^prime eq E phi.alt^prime
+  [minus frac(planck^2, 2 m_e lambda^2) nabla^(prime 2) minus frac(e^2, 4 pi epsilon_0 lambda r^prime)] phi.alt^prime eq E phi.alt^prime
 $ <eq:24>
 
 Константы перед операторами потенциальной и кинетической энергии можно
@@ -32,32 +32,36 @@ $ lambda eq frac(4 pi epsilon_0 planck^2, m_e e^2) eq a_0 $ <eq:26>
 атомной единицей длины, называемой Бором. Наконец, поскольку
 
 $
-  E_a lr([minus 1 / 2 nabla^(prime 2) minus 1 / r^prime]) phi.alt^prime eq E phi.alt^prime
+  E_a [minus 1 / 2 nabla^(prime 2) minus 1 / r^prime] phi.alt^prime eq E phi.alt^prime
 $ <eq:27>
 
 Если принять $E prime eq E slash E_a$, то получим безразмерное
 уравнение,
 
 $
-  lr((minus 1 / 2 nabla^(prime 2) minus 1 / r^prime)) phi.alt^prime eq E^prime phi.alt^prime
+  (minus 1 / 2 nabla^(prime 2) minus 1 / r^prime) phi.alt^prime eq E^prime phi.alt^prime
 $ <eq:28>
 
 являющееся уравнением Шрёдингера в атомных единицах. Решение этого
 уравнения для основного состояния атома водорода приводит к значению
 $E' = -0.5$ атомных единиц, то есть $-0.5$ Хартри. В @tab:2b1cb6
 приведены множители $X$ для перехода между атомными единицами и
-единицами СИ, так что значение любой величины $Q$ в СИ связано с её
+единицами SI, так что значение любой величины $Q$ в SI связано с её
 
 #figure(
   kind: table,
-  caption: [Пересчёт атомных единиц в единицы СИ],
+  caption: [Пересчёт атомных единиц в единицы SI],
 )[
   #set text(size: 10pt)
   #table(
     columns: (2.1fr, 1.6fr, 3.3fr),
+    stroke: none,
+
+    table.hline(stroke: 1pt),
+
     [#strong[Физическая величина]],
     [#strong[Коэффициент пересчёта $X$]],
-    [#strong[Значение $X$ в СИ]],
+    [#strong[Значение $X$ в SI]],
 
     [Длина], [$a_0$], [5.2918 × $10^(-11)$ м],
 
@@ -82,6 +86,8 @@ $E' = -0.5$ атомных единиц, то есть $-0.5$ Хартри. В @
     [5.1423 × 10¹¹ В·м⁻¹],
 
     [Волновая функция], [$a_0^(-3/2)$], [2.5978 × $10^15$ $м^(-3/2)$],
+
+    table.hline(stroke: 1pt),
   )
 ]
 <tab:2b1cb6>
@@ -91,7 +97,7 @@ $E' = -0.5$ атомных единиц, то есть $-0.5$ Хартри. В @
 $ Q eq X Q^prime $ <eq:29>
 
 Коэффициенты пересчёта для некоторых других единиц, не относящихся к
-системе СИ, но необходимых для чтения существующей научной литературы,
+системе SI, но необходимых для чтения существующей научной литературы,
 приведены ниже. Одна атомная единица длины равна 0.52918 ангстрема
 (Å). Одна атомная единица дипольного момента (два элементарных заряда,
 разнесённых на расстояние $a_0$) равна 2.5418 дебая (D). Одна атомная

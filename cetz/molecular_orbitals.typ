@@ -62,28 +62,28 @@
       size: font-size,
     )[
       $
-        lr(|1_1 chevron.r) = (2 (1 + S_12))^(-1/2) (phi_1^1 + phi_2^1)
+        |1_1 chevron.r = (2 (1 + S_12))^(-1/2) (phi_1^1 + phi_2^1)
       $
     ])
     content((0.3, formulas-y - 1 * dy), anchor: "west", text(
       size: font-size,
     )[
       $
-        lr(|2_1 chevron.r) = (2 (1 - S_12))^(-1/2) (phi_1^1 - phi_2^1)
+        |2_1 chevron.r = (2 (1 - S_12))^(-1/2) (phi_1^1 - phi_2^1)
       $
     ])
     content((0.3, formulas-y - 2 * dy), anchor: "west", text(
       size: font-size,
     )[
       $
-        lr(|1_2 chevron.r) = (2 (1 + S_12))^(-1/2) (phi_1^2 + phi_2^2)
+        |1_2 chevron.r = (2 (1 + S_12))^(-1/2) (phi_1^2 + phi_2^2)
       $
     ])
     content((0.3, formulas-y - 3 * dy), anchor: "west", text(
       size: font-size,
     )[
       $
-        lr(|2_2 chevron.r) = (2 (1 - S_12))^(-1/2) (phi_1^2 - phi_2^2)
+        |2_2 chevron.r = (2 (1 - S_12))^(-1/2) (phi_1^2 - phi_2^2)
       $
     ])
   })

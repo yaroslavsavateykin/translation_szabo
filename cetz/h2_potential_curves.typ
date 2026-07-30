@@ -168,7 +168,7 @@
 
         content(
           (map_x(4.0) + 0.2, map_y(0.00) + 0.4),
-          text(size: 1.2em)[R (а.е.)],
+          text(size: 1.2em)[R (a.u.)],
           anchor: "west",
         )
         content(

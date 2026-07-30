@@ -12,8 +12,8 @@
 //   r = sqrt(x^2 + y^2 + z^2).
 //
 // После перехода к безразмерным координатам 2 a_0 = 1 имеем
-// psi proportional z exp(-r). Для s = |z| и
-// rho = sqrt(x^2 + y^2) условие |psi| = iso даёт
+// psi proportional z exp(-r). Для s =|z|и
+// rho = sqrt(x^2 + y^2) условие|psi|= iso даёт
 //
 //   rho(s) = sqrt(ln(s / iso)^2 - s^2).
 //
@@ -66,7 +66,7 @@
 
     let cy = 5.10
 
-    // Параметры изоповерхности |z| exp(-beta r) = iso.
+    // Параметры изоповерхности|z|exp(-beta r) = iso.
     let beta = 1.00
     let iso = 0.16
 

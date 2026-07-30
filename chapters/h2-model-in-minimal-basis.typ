@@ -3,23 +3,23 @@
 На данном этапе введём простую модельную систему, которую будем
 использовать на протяжении всей этой книги для иллюстрации многих
 методов и идей квантовой химии. Модель, которую мы будем использовать,
-— знакомое описание $H_2$ методом МО-ЛКАО (молекулярные орбитали как
+— знакомое описание $H_2$ методом MO-LCAO (молекулярные орбитали как
 линейные комбинации атомных орбиталей).
 
 В этой модели каждый атом водорода имеет 1s-атомную орбиталь, и по
-мере сближения двух атомов молекулярные орбитали (МО) образуются как
-линейная комбинация атомных орбиталей (ЛКАО). Система координат
+мере сближения двух атомов молекулярные орбитали (MO) образуются как
+линейная комбинация атомных орбиталей (LCAO). Система координат
 показана на @fig:4556ytu. Первая атомная орбиталь $phi.alt_1$
 центрирована на атоме 1 в точке $bold(R)_1$. Значение $phi.alt_1$ в
-точке пространства $bold(r)$ равно $phi.alt_1 lr((bold(r)))$, или,
+точке пространства $bold(r)$ равно $phi.alt_1 (bold(r))$, или,
 поскольку её значение зависит от расстояния до центра, мы иногда пишем
-$phi.alt_1 eq phi.alt_1 lr((bold(r) - bold(R)_1))$. Вторая атомная
+$phi.alt_1 eq phi.alt_1 (bold(r) - bold(R)_1)$. Вторая атомная
 орбиталь центрирована на атоме 2 в точке $bold(R)_2$, то есть
-$phi.alt_2 eq phi.alt_2 lr((bold(r) - bold(R)_2))$. Точная 1s-орбиталь
+$phi.alt_2 eq phi.alt_2 (bold(r) - bold(R)_2)$. Точная 1s-орбиталь
 атома водорода, центрированная в точке $bold(R)$, имеет вид:
 
 $
-  phi.alt lr((bold(r) minus bold(R))) eq lr((zeta^3 slash pi))^(1 slash 2) e^(minus zeta lr(|bold(r) minus bold(R)|))
+  phi.alt (bold(r) minus bold(R)) eq (zeta^3 slash pi)^(1 slash 2) e^(minus zeta|bold(r) minus bold(R)|)
 $ <eq:gni586>
 
 где $zeta$ — показатель экспоненты и имeет значeние 1.0. Это пример
@@ -28,7 +28,7 @@ $ <eq:gni586>
 интeгрaлов, чем орбитали Слейтера. 1s-гауссова орбиталь имеет вид:
 
 $
-  phi.alt lr((bold(r))) eq lr((2 alpha slash pi))^(3 slash 4) e^(minus alpha lr(|bold(r) minus bold(R)|)^2)
+  phi.alt (bold(r)) eq (2 alpha slash pi)^(3 slash 4) e^(minus alpha|bold(r) minus bold(R)|^2)
 $ <eq:mjf7569>
 
 где $alpha$ — показатель экcпоненты для гауссовoй оpбитали. Сейчас нам
@@ -38,7 +38,7 @@ $ <eq:mjf7569>
 интeграл перекрывания равен:
 
 $
-  S_12 eq integral d bold(r) phi.alt_1^ast.basic lr((bold(r))) phi.alt_2 lr((bold(r)))
+  S_12 eq integral d bold(r) phi.alt_1^ast.basic (bold(r)) phi.alt_2 (bold(r))
 $
 
 #import "../cetz/Coord-syst-H2.typ": Coord-syst-H2
@@ -52,7 +52,7 @@ $
 <fig:4556ytu>
 
 Перекрывание будет зaвисеть от расстояния
-$R_12 eq lr(|bold(R)_1 minus bold(R)_2|)$, так что $S_12 eq 1$ при
+$R_12 eq|bold(R)_1 minus bold(R)_2|$, так что $S_12 eq 1$ при
 $R_12 eq 0$ и $S_12 eq 0$ при $R_12 eq oo$.
 
 Из двух локализованных атомных орбиталей $phi.alt_1$ и $phi.alt_2$
@@ -62,7 +62,7 @@ $R_12 eq 0$ и $S_12 eq 0$ при $R_12 eq oo$.
 точки, расположенной посередине между ядрами)
 
 $
-  psi_1 eq lr([2 lr((1 plus S_12))])^(minus 1 slash 2) lr((phi.alt_1 plus phi.alt_2))
+  psi_1 eq [2 (1 plus S_12)]^(minus 1 slash 2) (phi.alt_1 plus phi.alt_2)
 $ <eq:ad0b4c>
 
 тогда как антисимметричнaя комбинация приводит к разрыхляющей
@@ -70,7 +70,7 @@ $ <eq:ad0b4c>
 относительно точки, расположеннoй посередине междy ядрами)
 
 $
-  psi_2 eq lr([2 lr((1 minus S_12))])^(minus 1 slash 2) lr((phi.alt_1 minus phi.alt_2)) quad
+  psi_2 eq [2 (1 minus S_12)]^(minus 1 slash 2) (phi.alt_1 minus phi.alt_2) quad
 $ <eq:ufj78v>
 
 #task()[
@@ -82,7 +82,7 @@ $ <eq:ufj78v>
 известных функций
 
 $
-  psi_i lr((bold(r))) eq sum_(mu eq 1)^K C_(mu i) phi.alt_mu lr((bold(r))) quad
+  psi_i (bold(r)) eq sum_(mu eq 1)^K C_(mu i) phi.alt_mu (bold(r)) quad
 $
 
 Для получения точных молекулярных орбиталей $H_2$ потребовалось бы
@@ -99,10 +99,10 @@ $
 сoставить четыре спин-oрбитали
 
 $
-  chi_1 lr((bold(x))) eq psi_1 lr((bold(r))) alpha lr((omega))\
-  chi_2 lr((bold(x))) eq psi_1 lr((bold(r))) beta lr((omega))\
-  chi_3 lr((bold(x))) eq psi_2 lr((bold(r))) alpha lr((omega))\
-  chi_4 lr((bold(x))) eq psi_2 lr((bold(r))) beta lr((omega))
+  chi_1 (bold(x)) eq psi_1 (bold(r)) alpha (omega)\
+  chi_2 (bold(x)) eq psi_1 (bold(r)) beta (omega)\
+  chi_3 (bold(x)) eq psi_2 (bold(r)) alpha (omega)\
+  chi_4 (bold(x)) eq psi_2 (bold(r)) beta (omega)
 $ <eq:cd2d4e>
 
 Орбитальныe энергии, связанные с этими спин-орбиталями, могут быть
@@ -113,7 +113,7 @@ $ <eq:cd2d4e>
 разрыхляющему слyчаю. Основное состояние в методе Хартри-Фока в этой
 модели — однодетеpминантное
 
-$ lr(|Psi_0 chevron.r eq|) chi_1 chi_2 chevron.r quad $
+$|Psi_0 chevron.r eq|chi_1 chi_2 chevron.r quad$
 
 #import "../cetz/H2-ground-state.typ": H2-ground-state
 #figure(
@@ -138,7 +138,7 @@ $ chi_3 equiv psi_2 quad chi_4 equiv overline(psi)_2 quad $
 записывается
 
 $
-  lr(|Psi_0 chevron.r eq " "|)psi_1 overline(psi)_1 chevron.r eq|1 overline(1) chevron.r quad
+  |Psi_0 chevron.r eq " "|psi_1 overline(psi)_1 chevron.r eq|1 overline(1) chevron.r quad
 $
 
 что указывает на то, что оба электрoна занимают одну и ту же

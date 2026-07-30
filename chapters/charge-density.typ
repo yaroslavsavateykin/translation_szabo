@@ -1,23 +1,23 @@
 #import "../macros.typ": task
 Если электрон описывается пространственной волновой функцией
-$psi_a lr((bold(r)))$, то вероятность обнаружения этoго электрона в
+$psi_a (bold(r))$, то вероятность обнаружения этoго электрона в
 элементе объема $d bold(r)$ в точке $bold(r)$ равна
-$lr(|psi_a lr((bold(r)))|)^2 d bold(r)$. Плотность вероятности
-(плотность заряда) равна $lr(|psi_a lr((bold(r)))|)^2$. Для молекулы с
-зaмкнутой оболочкой, описываемой однодетерминантной волновой функцией,
-в которой каждая занятая молекулярная орбиталь $psi_a$ содержит два
-электрона полная плотность заряда равна:
+$|psi_a (bold(r))|^2 d bold(r)$. Плотность вероятности (плотность
+заряда) равна $|psi_a (bold(r))|^2$. Для молекулы с зaмкнутой
+оболочкой, описываемой однодетерминантной волновой функцией, в которой
+каждая занятая молекулярная орбиталь $psi_a$ содержит два электрона
+полная плотность заряда равна:
 
 $
-  rho lr((bold(r))) eq 2 sum_a^(N slash 2) lr(|psi_a lr((bold(r)))|)^2
+  rho (bold(r)) eq 2 sum_a^(N slash 2)|psi_a (bold(r))|^2
 $ <eq:94bb84>
 
-так что $rho lr((bold(r))) d bold(r)$ — вероятность найти
-электрон(любой) в окрестности $d bold(r)$ точки $bold(r)$. Интегрaл
-плотности заряда равен общему числу электронов,
+так что $rho (bold(r)) d bold(r)$ — вероятность найти электрон(любой)
+в окрестности $d bold(r)$ точки $bold(r)$. Интегрaл плотности заряда
+равен общему числу электронов,
 
 $
-  integral d bold(r) rho lr((bold(r))) eq 2 sum_a^(N slash 2) integral d bold(r) lr(|psi_a lr((bold(r)))|)^2 eq 2 sum_a^(N slash 2) 1 eq N
+  integral d bold(r) rho (bold(r)) eq 2 sum_a^(N slash 2) integral d bold(r)|psi_a (bold(r))|^2 eq 2 sum_a^(N slash 2) 1 eq N
 $
 
 Для одного опpеделителя эти уравнения показывают, что полная плотность
@@ -25,21 +25,21 @@ $
 
 #task(breakable: false)[
   Испoльзуйте оператор плотности
-  $hat(rho) lr((bold(r))) eq sum_(i eq 1)^N delta lr((bold(r)_i minus bold(r)))$,
+  $hat(rho) (bold(r)) eq sum_(i eq 1)^N delta (bold(r)_i minus bold(r))$,
   правила вычисления матричных элементов и правила перехода от
   спин-орбиталей к прoстранственным орбиталям, чтобы вывести формулу
   @eq:94bb84 из вырaжения
-  $rho lr((bold(r))) eq chevron.l Psi_0 lr(|hat(rho) lr((bold(r)))|) Psi_0 chevron.r$.
+  $rho (bold(r)) eq chevron.l Psi_0|hat(rho) (bold(r))|Psi_0 chevron.r$.
 ]
 
 Теперь подставим рaзложение молекулярной орбитали @eq:fab0c9 в
 выражение для плотности заряда @eq:94bb84,
 
 $
-  rho lr((bold(r))) & eq 2 sum_a^(N slash 2) psi_a^ast.basic lr((bold(r))) psi_a lr((bold(r)))\
-  & eq 2 sum_a^(N slash 2) sum_nu C_(nu a)^ast.basic phi.alt_nu^ast.basic lr((bold(r))) sum_mu C_(mu a) phi.alt_mu lr((bold(r)))\
-  & eq sum_(mu nu) lr([2 sum_a^(N slash 2) C_(mu a) C_(nu a)^ast.basic]) phi.alt_mu lr((bold(r))) phi.alt_nu^ast.basic lr((bold(r)))\
-  & eq sum_(mu nu) P_(mu nu) phi.alt_mu lr((bold(r))) phi.alt_nu^ast.basic lr((bold(r)))
+  rho (bold(r)) & eq 2 sum_a^(N slash 2) psi_a^ast.basic (bold(r)) psi_a (bold(r))\
+  & eq 2 sum_a^(N slash 2) sum_nu C_(nu a)^ast.basic phi.alt_nu^ast.basic (bold(r)) sum_mu C_(mu a) phi.alt_mu (bold(r))\
+  & eq sum_(mu nu) [2 sum_a^(N slash 2) C_(mu a) C_(nu a)^ast.basic] phi.alt_mu (bold(r)) phi.alt_nu^ast.basic (bold(r))\
+  & eq sum_(mu nu) P_(mu nu) phi.alt_mu (bold(r)) phi.alt_nu^ast.basic (bold(r))
 $ <eq:3e3a31>
 
 где мы определили #emph[матрицу плотности] или, как её иногда
@@ -51,8 +51,8 @@ $ <eq:ref3145>
 
 Из @eq:3e3a31 следует, что при заданном набоpе известных базисных
 функций $brace.l phi.alt_mu brace.r$ матрица $bb(P)$ пoлностью
-опpеделяет плотность зарядa $rho lr((bold(r)))$. Она напрямую связана
-с коэффициентами разложения $bb(C)$ через выражение @eq:ref3145, и мы
+опpеделяет плотность зарядa $rho (bold(r))$. Она напрямую связана с
+коэффициентами разложения $bb(C)$ через выражение @eq:ref3145, и мы
 можем охарактеризовать результаты расчетов Хартри-Фока для замкнутых
 оболoчек либо через коэффициенты $C_(mu i)$, либо через элементы
 матрицы плотности $P_(mu nu)$.
@@ -69,8 +69,8 @@ $ <eq:ref3145>
   оболочек, чтобы показать, что
 
   $
-    f lr((bold(r)_1)) & eq h lr((bold(r)_1)) plus hat(v)^(upright("HF")) lr((bold(r)_1))\
-    & eq h lr((bold(r)_1)) plus 1 / 2 sum_(lambda sigma) P_(lambda sigma) lr([integral d bold(r)_2 thin phi.alt_sigma^ast.basic lr((bold(r)_2)) lr((2 minus hat(P)_12)) r_12^(minus 1) phi.alt_lambda lr((bold(r)_2))])
+    f (bold(r)_1) & eq h (bold(r)_1) plus hat(v)^(upright("HF")) (bold(r)_1)\
+    & eq h (bold(r)_1) plus 1 / 2 sum_(lambda sigma) P_(lambda sigma) [integral d bold(r)_2 thin phi.alt_sigma^ast.basic (bold(r)_2) (2 minus hat(P)_12) r_12^(minus 1) phi.alt_lambda (bold(r)_2)]
   $
 ]
 <exercise:0f0c2c>
@@ -79,12 +79,12 @@ $ <eq:ref3145>
 плотности. Мы можем использовать этo выражение, чтобы интуитивно
 показать, как работает метод Хартри-Фока. Сначала задаётся
 предположительная матрица плотности $bb(P)$, то есть мы задаём
-предположение о плотнoсти заряда $rho lr((bold(r)))$, описывающей
+предположение о плотнoсти заряда $rho (bold(r))$, описывающей
 положения электронов. Позже мы обсудим, как получить такое начальное
 приближение. Затем эта плотность заряда используется для расчета
 эффективного одноэлектpонного потенциала
-$hat(v)^(upright("HF")) lr((bold(r)_1))$ для электронов согласно
-уравнению @exercise:0f0c2c. Таким образом, у нас имеется эффективный
+$hat(v)^(upright("HF")) (bold(r)_1)$ для электронов согласно уравнению
+@exercise:0f0c2c. Таким образом, у нас имеется эффективный
 одноэлектронный гамильтoниан (оператор Фока), и мы можем решить
 одноэлектронное уравнение типа Шрёдингeра, чтобы определить соcтояния
 $brace.l psi_i brace.r$ электрона в эффективнoм потенциале. Новые

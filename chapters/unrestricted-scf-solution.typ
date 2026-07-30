@@ -45,7 +45,7 @@ $bb(C)^alpha eq bb(X) bb(C)^(alpha prime)$ и т.д., как и в случае
   что
 
   $
-    E_0 eq 1 / 2 sum_mu sum_nu lr([P_(nu mu)^T H_(mu nu)^(upright(c o r e)) plus P_(nu mu)^alpha F_(mu nu)^alpha plus P_(nu mu)^beta F_(mu nu)^beta])
+    E_0 eq 1 / 2 sum_mu sum_nu [P_(nu mu)^T H_(mu nu)^(upright(c o r e)) plus P_(nu mu)^alpha F_(mu nu)^alpha plus P_(nu mu)^beta F_(mu nu)^beta]
   $
 ]
 

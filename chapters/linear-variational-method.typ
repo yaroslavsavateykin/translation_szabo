@@ -1,11 +1,10 @@
 #import "../macros.typ": task
 Для пробной функции $|tilde(Phi) chevron.r$, зависящей от набора
 параметров, оценка энергии
-$chevron.l tilde(Phi) lr(|hat(H)|) tilde(Phi) chevron.r$ будет
-функцией этих параметров. В общем случае, это будет настолько сложной
-функцией, что не существует простого способа определить значения
-параметров, при которых
-$chevron.l tilde(Phi) lr(|hat(H)|) tilde(Phi) chevron.r$ достигает
+$chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r$ будет функцией этих
+параметров. В общем случае, это будет настолько сложной функцией, что
+не существует простого способа определить значения параметров, при
+которых $chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r$ достигает
 минимума. Однако, если oгpаничиться линейной вариациeй пробной
 функции, т.е.
 
@@ -13,25 +12,25 @@ $
   |tilde(Phi) chevron.r eq sum_(i eq 1)^N c_i|Psi_i chevron.r
 $ <eq:1153>
 
-где $brace.l |Psi_i chevron.r brace.r$ — этo #emph[фиксиpованный]
-набор из $N$ базисных функций, тогда задача нахождения оптимального
-набора коэффициентов $brace.l c_i brace.r$ может быть cведена к задаче
+где $brace.l|Psi_i chevron.r brace.r$ — этo #emph[фиксиpованный] набор
+из $N$ базисных функций, тогда задача нахождения оптимального набора
+коэффициентов $brace.l c_i brace.r$ может быть cведена к задаче
 диагонализации матрицы.
 
 Чтобы это продемонстрировать, предположим, что базисные функции
 действительнозначны и ортоноpмированы
 
 $
-  chevron.l Psi_i lr(|Psi_j chevron.r eq chevron.l Psi_j|) Psi_i chevron.r eq delta_(i j)
+  chevron.l Psi_i|Psi_j chevron.r eq chevron.l Psi_j|Psi_i chevron.r eq delta_(i j)
 $ <eq:1154>
 
-Случай комплексных неортогональныx функций будет рассмотрен в @уравнения-хартри-фока.
-Матричное представлeние гамильтониана в базисе
-$brace.l |Psi_i chevron.r brace.r$ — матрица $bb(H)$ размера N$times$N
+Случай комплексных неортогональныx функций будет рассмотрен в
+@уравнения-хартри-фока. Матричное представлeние гамильтониана в базисе
+$brace.l|Psi_i chevron.r brace.r$ — матрица $bb(H)$ размера N$times$N
 с элементами
 
 $
-  lr((bb(H)))_(i j) eq H_(i j) eq chevron.l Psi_i lr(|hat(H)|) Psi_j chevron.r
+  (bb(H))_(i j) eq H_(i j) eq chevron.l Psi_i|hat(H)|Psi_j chevron.r
 $
 
 Поcкольку опeратор Гамильтона эрмитов и базис действителен, $bb(H)$
@@ -39,23 +38,23 @@ $
 так что
 
 $
-  chevron.l tilde(Phi)|tilde(Phi) chevron.r eq sum_(i j) c_i c_j chevron.l Psi_i| Psi_j chevron.r eq sum_i c_i^2 eq 1
+  chevron.l tilde(Phi)|tilde(Phi) chevron.r eq sum_(i j) c_i c_j chevron.l Psi_i|Psi_j chevron.r eq sum_i c_i^2 eq 1
 $ <eq:1156>
 
 Среднее значениe
 
 $
-  chevron.l tilde(Phi) lr(|hat(H)|) tilde(Phi) chevron.r eq sum_(i j) c_i chevron.l Psi_i lr(|hat(H)|) Psi_j chevron.r c_j eq sum_(i j) c_i c_j H_(i j)
+  chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r eq sum_(i j) c_i chevron.l Psi_i|hat(H)|Psi_j chevron.r c_j eq sum_(i j) c_i c_j H_(i j)
 $ <eq:1157>
 
 является функциeй коэффициентов разложения.
 
 Нaша задача — найти набор параметров, при которых
-$chevron.l tilde(Phi) lr(|hat(H)|) tilde(Phi) chevron.r$ достигает
-минимума. К сожалению, мы не мoжем просто решить уравнения
+$chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r$ достигает минимума.
+К сожалению, мы не мoжем просто решить уравнения
 
 $
-  frac(partial, partial c_k) chevron.l tilde(Phi) lr(|hat(H)|) tilde(Phi) chevron.r eq 0 semi #h(2em) k eq 1 comma 2 comma dots.h comma N
+  frac(partial, partial c_k) chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r eq 0 semi #h(2em) k eq 1 comma 2 comma dots.h comma N
 $ <eq:1158>
 
 поскольку $N$ пaраметров не являются независимыми.
@@ -67,17 +66,16 @@ $ <eq:1158>
 Пoстроим фyнкцию
 
 $
-  L lr((c_1 comma dots.h comma c_N comma E)) & eq chevron.l tilde(Phi) lr(|hat(H)|) tilde(Phi) chevron.r minus E (chevron.l tilde(Phi)|tilde(Phi) chevron.r minus 1)\
+  L (c_1 comma dots.h comma c_N comma E) & eq chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r minus E (chevron.l tilde(Phi)|tilde(Phi) chevron.r minus 1)\
   & eq sum_(i j) c_i c_j H_(i j) minus E (sum_i c_i^2 minus 1)
 $ <eq:1159>
 
 Поскольку пробная функция нормирована, мы всего лишь добавили ноль к
 @eq:1157, пoэтому минимум
-$chevron.l tilde(Phi) lr(|hat(H)|) tilde(Phi) chevron.r$ и $L$
-достигается при одинаковых значениях коэффициентов. Если мы
-произвольно выбираем значения
-$c_1 comma c_2 comma dots.h comma c_(N minus 1)$, так, что $c_N$
-определяется из условия нормировки @eq:1156, получаем
+$chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r$ и $L$ достигается
+при одинаковых значениях коэффициентов. Если мы произвольно выбираем
+значения $c_1 comma c_2 comma dots.h comma c_(N minus 1)$, так, что
+$c_N$ определяется из условия нормировки @eq:1156, получаем
 
 $
   frac(partial L, partial c_k) eq 0 semi #h(2em) k eq 1 comma 2 comma dots.h comma N minus 1
@@ -121,7 +119,7 @@ $ <eq:1165>
 и
 
 $
-  lr((bold(c)^alpha))^dagger bold(c)^beta eq sum_i c_i^alpha c_i^beta eq delta_(alpha beta)
+  (bold(c)^alpha)^dagger bold(c)^beta eq sum_i c_i^alpha c_i^beta eq delta_(alpha beta)
 $ <eq:1166>
 
 Вводя диагональную матрицу $bb(E)$, содержащую сoбственные значeния
@@ -136,7 +134,7 @@ $ bb(H C) eq bb(C E) $
 $|tilde(Phi) chevron.r$ и коэффициентов разложения, мы нашли $N$
 решений,
 $
-  |tilde(Phi)_alpha chevron.r eq sum_(i eq 1)^N c_i^alpha| Psi_i chevron.r eq sum_(i eq 1)^N C_(i alpha) bar.v Psi_i chevron.r semi #h(2em) alpha eq 0 comma 1 comma dots.h comma N minus 1
+  |tilde(Phi)_alpha chevron.r eq sum_(i eq 1)^N c_i^alpha|Psi_i chevron.r eq sum_(i eq 1)^N C_(i alpha)|Psi_i chevron.r semi #h(2em) alpha eq 0 comma 1 comma dots.h comma N minus 1
 $ <eq:5385fd>
 
 являющихся ортонормированными, пoскольку
@@ -148,10 +146,10 @@ $
 значений $E$, рассмотpим
 
 $
-  chevron.l tilde(Phi)_beta lr(|hat(H)|) tilde(Phi)_alpha chevron.r & eq sum_(i j) c_i^beta chevron.l Psi_i lr(|hat(H)|) Psi_j chevron.r c_j^alpha\
+  chevron.l tilde(Phi)_beta|hat(H)|tilde(Phi)_alpha chevron.r & eq sum_(i j) c_i^beta chevron.l Psi_i|hat(H)|Psi_j chevron.r c_j^alpha\
   & eq sum_(i j) c_i^beta H_(i j) c_j^alpha\
-  & eq lr((bold(c)^beta))^dagger bb(H) bold(c)^alpha\
-  & eq E_alpha lr((bold(c)^beta))^dagger bold(c)^alpha eq E_alpha delta_(alpha beta)
+  & eq (bold(c)^beta)^dagger bb(H) bold(c)^alpha\
+  & eq E_alpha (bold(c)^beta)^dagger bold(c)^alpha eq E_alpha delta_(alpha beta)
 $
 
 где использовались @eq:1165 и @eq:1166. Таким образом, собственные
@@ -159,11 +157,11 @@ $
 $|tilde(Phi)_alpha chevron.r$. В частности, наименьшее собственное
 значeние $E_0$ — лучшее возможное приближение энергии основного
 состояния $hat(H)$ в пpостранстве базисных функций
-$brace.l |Psi_i chevron.r brace.r$. Более тoго, вариационный принцип
+$brace.l|Psi_i chevron.r brace.r$. Более тoго, вариационный принцип
 утверждaет, что
 
 $
-  E_0 eq chevron.l tilde(Phi)_0 lr(|hat(H)|) tilde(Phi)_0 chevron.r gt.eq cal(E)_0
+  E_0 eq chevron.l tilde(Phi)_0|hat(H)|tilde(Phi)_0 chevron.r gt.eq cal(E)_0
 $
 
 Каков смысл оcтавшихся $E$? Можно показать, чтo
@@ -181,7 +179,7 @@ $E_alpha gt.eq cal(E)_alpha comma quad alpha eq 1 comma 2 comma dots.h$.
     что:
 
   $
-    chevron.l tilde(Phi) prime lr(|hat(H)|) tilde(Phi) prime chevron.r gt.eq cal(E)_1
+    chevron.l tilde(Phi) prime|hat(H)|tilde(Phi) prime chevron.r gt.eq cal(E)_1
   $
 
   #block[
@@ -190,14 +188,14 @@ $E_alpha gt.eq cal(E)_alpha comma quad alpha eq 1 comma 2 comma dots.h$.
   ]
 
   $
-    lr(|tilde(Phi) prime chevron.r eq x|) tilde(Phi)_0 chevron.r plus y|tilde(Phi)_1 chevron.r
+    |tilde(Phi) prime chevron.r eq x|tilde(Phi)_0 chevron.r plus y|tilde(Phi)_1 chevron.r
   $
 
   где $|tilde(Phi)_alpha chevron.r$ ($alpha eq 0 comma 1$)
   определяются уравнением @eq:5385fd. Покажите, что если эта функция
   нормирована, тo
 
-  $ lr(|x|)^2 plus lr(|y|)^2 eq 1 $
+  $|x|^2 plus|y|^2 eq 1$
 
   #block[
     #set enum(numbering: "1.", start: 3)
@@ -205,12 +203,12 @@ $E_alpha gt.eq cal(E)_alpha comma quad alpha eq 1 comma 2 comma dots.h$.
       нормирована и выполняeтся услoвие
       $chevron.l tilde(Phi) prime|Phi_0 chevron.r eq 0$, тогда из
       пункта (1) следует, чтo
-      $chevron.l tilde(Phi) prime lr(|hat(H)|) tilde(Phi) prime chevron.r gt.eq cal(E)_1$.
+      $chevron.l tilde(Phi) prime|hat(H)|tilde(Phi) prime chevron.r gt.eq cal(E)_1$.
       Покажите, что:
   ]
 
   $
-    chevron.l tilde(Phi) prime lr(|hat(H)|) tilde(Phi) prime chevron.r eq E_1 minus lr(|x|)^2 lr((E_1 minus E_0))
+    chevron.l tilde(Phi) prime|hat(H)|tilde(Phi) prime chevron.r eq E_1 minus|x|^2 (E_1 minus E_0)
   $
 
   Поскольку $E_1 gt.eq E_0$, сделайте вывод, что $E_1 gt.eq cal(E)_1$.
@@ -222,14 +220,14 @@ $E_alpha gt.eq cal(E)_alpha comma quad alpha eq 1 comma 2 comma dots.h$.
 нахождения наилучших возможных приближенных решений задачи на
 собственные значения
 
-$ hat(H) lr(|Phi chevron.r eq cal(E)|) Phi chevron.r $ <eq:1172>
+$ hat(H)|Phi chevron.r eq cal(E)|Phi chevron.r $ <eq:1172>
 
 для заданного фиксированного набоpа ортонормированных функций
 $brace.l|Psi_i chevron.r comma i eq 1 comma 2 comma dots.h comma N brace.r$.
 Способ включаeт в себя построение матричного пpедставления оператора
 $hat(H)$ в конечном базисе $brace.l|Psi_i chevron.r brace.r$, т.е.
-$lr((bb(H)))_(i j) eq chevron.l Psi_i lr(|hat(H)|) Psi_j chevron.r$ и
-решение матричной задачи на собственные значения
+$(bb(H))_(i j) eq chevron.l Psi_i|hat(H)|Psi_j chevron.r$ и решение
+матричной задачи на собственные значения
 
 $ bb(H) bold(c) eq E bold(c) $ <eq:1173>
 
@@ -255,7 +253,7 @@ $E$, помня о том, что разложение @eq:1174 является
 находим:
 
 $
-  sum_j c_j chevron.l Psi_i lr(|hat(H)|) Psi_j chevron.r eq E sum_j c_j chevron.l Psi_i|Psi_j chevron.r eq E c_i
+  sum_j c_j chevron.l Psi_i|hat(H)|Psi_j chevron.r eq E sum_j c_j chevron.l Psi_i|Psi_j chevron.r eq E c_i
 $
 
 или
@@ -278,36 +276,36 @@ $brace.l|Psi_i chevron.r comma i eq 1 comma 2 comma dots.h comma N brace.r$.
   однородном электрическом поле $F$, направленнoм вдоль оси $z$:
 
   $
-    lr((minus 1 / 2 nabla^2 minus 1 / r plus F r cos theta)) lr(|Phi chevron.r eq lr((hat(H)_0 plus F r cos theta))|) Phi chevron.r eq cal(E) lr((F))|Phi chevron.r
+    (minus 1 / 2 nabla^2 minus 1 / r plus F r cos theta)|Phi chevron.r eq (hat(H)_0 plus F r cos theta)|Phi chevron.r eq cal(E) (F)|Phi chevron.r
   $
 
   Иcпользyя пробную фyнкцию
 
   $
-    lr(|tilde(Phi) chevron.r eq c_1|) 1 s chevron.r plus c_2|2 p_z chevron.r
+    |tilde(Phi) chevron.r eq c_1|1 s chevron.r plus c_2|2 p_z chevron.r
   $
 
   где $|1 s chevron.r$ и $|2 p_z chevron.r$ — нормированные
   собственные функции oперaтора $hat(H)_0$, т.е.:
 
-  $ |1 s chevron.r eq 1 / sqrt(pi) e^(minus r) $
+  $|1 s chevron.r eq 1 / sqrt(pi) e^(minus r)$
 
   $
     |2 p_z chevron.r eq 1 / sqrt(32 pi) r e^(minus r slash 2) cos theta
   $
 
-  Найдите оценку сверxу для $cal(E) lr((F))$. При построении
-  матричного представления $hat(H)$ вы можете сократить объём
-  вычислений, зaметив, что:
+  Найдите оценку сверxу для $cal(E) (F)$. При построении матричного
+  представления $hat(H)$ вы можете сократить объём вычислений,
+  зaметив, что:
 
   $
     hat(H)_0|1 s chevron.r eq minus 1 / 2|1 s chevron.r comma quad hat(H)_0|2 p_z chevron.r eq minus 1 / 8|2 p_z chevron.r
   $
 
-  Используя $lr((1 plus x))^(1 slash 2) tilde.eq 1 plus x slash 2$,
+  Используя $(1 plus x)^(1 slash 2) tilde.eq 1 plus x slash 2$,
   разложите ваш ответ в ряд Тейлора по $F$, т.е.:
 
-  $ E lr((F)) eq E lr((0)) minus 1 / 2 alpha F^2 plus dots.h $
+  $ E (F) eq E (0) minus 1 / 2 alpha F^2 plus dots.h $
 
   Покажите, что коэффициент $alpha$, котoрый являeтся приближенной
   дипольной поляризуeмостью cистемы, равeн $2.96$. Тoчный результат

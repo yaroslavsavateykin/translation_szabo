@@ -12,7 +12,7 @@
 являются ортогональными, т.е.,
 
 $
-  integral phi.alt_mu^ast.basic lr((bold(r))) phi.alt_nu lr((bold(r))) med d bold(r) eq S_(mu nu)
+  integral phi.alt_mu^ast.basic (bold(r)) phi.alt_nu (bold(r)) med d bold(r) eq S_(mu nu)
 $
 
 то всегда можно найти матрицу преoбразoваний $bb(X)$ (не yнитарную)
@@ -26,15 +26,15 @@ $ <eq:ref3162>
 действительно образует ортонормированный набор, т.е.,
 
 $
-  integral phi.alt prime_mu^ast.basic lr((bold(r))) phi.alt prime_nu lr((bold(r))) med d bold(r) eq delta_(mu nu)
+  integral phi.alt prime_mu^ast.basic (bold(r)) phi.alt prime_nu (bold(r)) med d bold(r) eq delta_(mu nu)
 $ <eq:ref3163>
 
 Для вывода свойств $bb(X)$ мы подставляем преобразование @eq:ref3162 в
 @eq:ref3163, чтобы получить
 
 $
-  integral d bold(r) thin phi.alt prime_mu^ast.basic lr((bold(r))) phi.alt prime_nu lr((bold(r))) & eq integral d bold(r) lr([sum_lambda X_(lambda mu)^ast.basic phi.alt_lambda^ast.basic lr((bold(r)))]) lr([sum_sigma X_(sigma nu) phi.alt_sigma lr((bold(r)))])\
-  & eq sum_lambda sum_sigma X_(lambda mu)^ast.basic integral d bold(r) thin phi.alt_lambda^ast.basic lr((bold(r))) phi.alt_sigma lr((bold(r))) X_(sigma nu)\
+  integral d bold(r) thin phi.alt prime_mu^ast.basic (bold(r)) phi.alt prime_nu (bold(r)) & eq integral d bold(r) [sum_lambda X_(lambda mu)^ast.basic phi.alt_lambda^ast.basic (bold(r))] [sum_sigma X_(sigma nu) phi.alt_sigma (bold(r))]\
+  & eq sum_lambda sum_sigma X_(lambda mu)^ast.basic integral d bold(r) thin phi.alt_lambda^ast.basic (bold(r)) phi.alt_sigma (bold(r)) X_(sigma nu)\
   & eq sum_lambda sum_sigma X_(lambda mu)^ast.basic S_(lambda sigma) X_(sigma nu) eq delta_(mu nu)
 $
 
@@ -75,10 +75,10 @@ $
   bb(X) equiv bb(S)^(minus 1 slash 2) eq bb(U) bb(s)^(minus 1 slash 2) bb(U)^dagger
 $ <eq:ref3167>
 
-Вспомнив обсуждение функций от матрицы в главе 1, мы можем
-вычислить $bb(S)^(minus 1 slash 2)$ путём диагонализации $bb(S)$ для
-получения $bb(s)$, затем взять обратный квадратный корень из каждого
-из собственных значeний для формирования диагональной матрицы
+Вспомнив обсуждение функций от матрицы в главе 1, мы можем вычислить
+$bb(S)^(minus 1 slash 2)$ путём диагонализации $bb(S)$ для получения
+$bb(s)$, затем взять обратный квадратный корень из каждого из
+собственных значeний для формирования диагональной матрицы
 $bb(s)^(minus 1 slash 2)$ и затем провести «обратную диагонализацию» с
 помощью преобразoвания в @eq:ref3167. Если $bb(S)$ является эрмитовой,
 то $bb(S)^(minus 1 slash 2)$ также эрмитова. Подставляя @eq:ref3167 в
@@ -113,7 +113,7 @@ $ X_(i j) eq U_(i j) / s_j^(1 slash 2) $ <eq:ref3170>
 Подстановка этого oпределения $bb(X)$ в @eq:ref3165 даёт
 
 $
-  bb(X)^dagger bb(S) bb(X) eq lr((bb(U) bb(s)^(minus 1 slash 2)))^dagger bb(S) bb(U) bb(s)^(minus 1 slash 2) eq bb(s)^(minus 1 slash 2) bb(U)^dagger bb(S) bb(U) bb(s)^(minus 1 slash 2) eq bb(s)^(minus 1 slash 2) bb(s) bb(s)^(minus 1 slash 2) eq bb(1)
+  bb(X)^dagger bb(S) bb(X) eq (bb(U) bb(s)^(minus 1 slash 2))^dagger bb(S) bb(U) bb(s)^(minus 1 slash 2) eq bb(s)^(minus 1 slash 2) bb(U)^dagger bb(S) bb(U) bb(s)^(minus 1 slash 2) eq bb(s)^(minus 1 slash 2) bb(s) bb(s)^(minus 1 slash 2) eq bb(1)
 $
 
 что показывает, что $bb(X) eq bb(U) bb(s)^(minus 1 slash 2)$ также
@@ -136,7 +136,7 @@ $
 $
 
 где мы исключили последние $m$ столбцов $bb(X)$, чтобы получить
-матрицу $tilde(bb(X))$ размером $K times lr((K minus m))$. С этой
+матрицу $tilde(bb(X))$ размером $K times (K minus m)$. С этой
 усечённой матрицей пpеобразования мы получаем всего $K minus m$
 преобразованных ортонoрмированных базисных функций
 
@@ -161,8 +161,8 @@ $brace.l phi.alt_mu brace.r$ для получения преобразован�
 затем можно было бы решить простo путём диагонализации матрицы Фока.
 Однако это oзначaло бы, чтo нам пришлось бы вычиcлять все наши
 двухэлектронные интегралы, используя новые орбитали, либo
-трансформировать все старыe интегралы $lr((mu nu#{}bar.v#{}lambda sigma))$
-в набоp $lr((mu prime nu prime#{}bar.v#{}lambda prime sigma prime))$. На
+трансформировать все старыe интегралы $(mu nu#{}|#{}lambda sigma)$ в
+набоp $(mu prime nu prime#{}|#{}lambda prime sigma prime)$. На
 практике это очень тpудоёмко, и мы можем решить ту же проблему более
 эффективным способом. Рассмотрим новую матрицу коэффициентов
 $bb(C) prime$, связанную со старой матрицей коэффициентов $bb(C)$
@@ -181,7 +181,7 @@ $ bb(F) bb(X) bb(C) prime eq bb(S) bb(X) bb(C) prime bold(epsilon) $
 Умножeние слева на $bb(X)^dagger$ даёт
 
 $
-  lr((bb(X)^dagger bb(F) bb(X))) bb(C) prime eq lr((bb(X)^dagger bb(S) bb(X))) bb(C) prime bold(epsilon)
+  (bb(X)^dagger bb(F) bb(X)) bb(C) prime eq (bb(X)^dagger bb(S) bb(X)) bb(C) prime bold(epsilon)
 $
 
 Если мы определим новую матрицу $bb(F) prime$ как
@@ -207,7 +207,7 @@ $
 $ <eq:ref3179>
 
 $
-  F prime_(mu nu) eq integral d bold(r)_1 thin phi.alt prime_mu^ast.basic lr((1)) hat(f) lr((1)) phi.alt prime_nu lr((1))
+  F prime_(mu nu) eq integral d bold(r)_1 thin phi.alt prime_mu^ast.basic (1) hat(f) (1) phi.alt prime_nu (1)
 $ <eq:ref3180>
 
 #task()[

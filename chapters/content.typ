@@ -29,7 +29,7 @@
     ),
     stroke: none,
 
-    table.hline(stroke: 0.8pt),
+    table.hline(stroke: 1pt),
 
     [*$R$*],
     [*$epsilon_1$*],
@@ -161,6 +161,6 @@
     [$0.3873$],
     [$0.3873$],
 
-    table.hline(stroke: 0.8pt),
+    table.hline(stroke: 1pt),
   )
 ] <table-appendix>

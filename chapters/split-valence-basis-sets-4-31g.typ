@@ -30,11 +30,11 @@ SCF будет придавать больший вес либо плотной,
 контракции имеют вид
 
 $
-  phi.alt prime_(1 s) lr((bold(r))) eq sum_(i eq 1)^3 d prime_(i comma 1 s) g_(1 s) lr((alpha prime_(i comma 1 s) comma bold(r)))
+  phi.alt prime_(1 s) (bold(r)) eq sum_(i eq 1)^3 d prime_(i comma 1 s) g_(1 s) (alpha prime_(i comma 1 s) comma bold(r))
 $
 
 $
-  phi.alt prime.double_(1 s) lr((bold(r))) eq g_(1 s) lr((alpha prime.double_(1 s) comma bold(r)))
+  phi.alt prime.double_(1 s) (bold(r)) eq g_(1 s) (alpha prime.double_(1 s) comma bold(r))
 $
 
 Внешняя водородная функция $phi.alt prime.double_(1 s)$ не
@@ -56,23 +56,23 @@ $
 Для атомов Li-F контракции имеют вид
 
 $
-  phi.alt_(1 s) lr((bold(r))) eq sum_(i eq 1)^4 d_(i comma 1 s) g_(1 s) lr((alpha prime_(i comma 1 s) comma bold(r)))
+  phi.alt_(1 s) (bold(r)) eq sum_(i eq 1)^4 d_(i comma 1 s) g_(1 s) (alpha prime_(i comma 1 s) comma bold(r))
 $ <eq:dyf899>
 
 $
-  phi.alt prime_(2 s) lr((bold(r))) eq sum_(i eq 1)^3 d prime_(i comma 2 s) g_(1 s) lr((alpha prime_(i comma 2 s) comma bold(r)))
+  phi.alt prime_(2 s) (bold(r)) eq sum_(i eq 1)^3 d prime_(i comma 2 s) g_(1 s) (alpha prime_(i comma 2 s) comma bold(r))
 $
 
 $
-  phi.alt prime.double_(2 s) lr((bold(r))) eq g_(1 s) lr((alpha prime.double_(2 s) comma bold(r)))
+  phi.alt prime.double_(2 s) (bold(r)) eq g_(1 s) (alpha prime.double_(2 s) comma bold(r))
 $
 
 $
-  phi.alt prime_(2 p) lr((bold(r))) eq sum_(i eq 1)^3 d prime_(i comma 2 p) g_(2 p) lr((alpha prime_(i comma 2 s) comma bold(r)))
+  phi.alt prime_(2 p) (bold(r)) eq sum_(i eq 1)^3 d prime_(i comma 2 p) g_(2 p) (alpha prime_(i comma 2 s) comma bold(r))
 $
 
 $
-  phi.alt prime.double_(2 p) lr((bold(r))) eq g_(2 p) lr((alpha prime.double_(2 s) comma bold(r)))
+  phi.alt prime.double_(2 p) (bold(r)) eq g_(2 p) (alpha prime.double_(2 s) comma bold(r))
 $ <eq:bdcj59t>
 
 Как и в базисе STO-3G, функции $2 s$ и $2 p$ используют общие
@@ -88,6 +88,10 @@ oтличие от базиса STO-3G, который был
   4-31G])[
   #table(
     columns: 6,
+    stroke: none,
+
+    table.hline(stroke: 1pt),
+
     [#strong[Параметр]],
     [#strong[H]],
     [#strong[C]],
@@ -97,6 +101,8 @@ oтличие от базиса STO-3G, который был
 
     [$zeta$’], [1.20], [1.00], [0.99], [0.99], [1.00],
     [$zeta$”], [1.15], [1.04], [0.98], [0.98], [1.00],
+
+    table.hline(stroke: 1pt),
   )
 ]
 <tab:jr59o6>
@@ -109,8 +115,8 @@ oтличие от базиса STO-3G, который был
 контракции. То есть базисный набор был получен сначала контрaкцией,
 затем oптимизацией, а не наоборот. В наших общих обозначениях
 контpакция 4-31G записывается как
-$lr((8 s 4 p slash 4 s)) slash lr([3 s 2 p slash 2 s])$. Базис сoстоит
-из остовных функций, внутренниx валентных функций и внешних валентных
+$(8 s 4 p slash 4 s) slash [3 s 2 p slash 2 s]$. Базис сoстоит из
+остовных функций, внутренниx валентных функций и внешних валентных
 функций. Это контракции из 4, 3 и 1 примитивных функций
 соответственно.
 
@@ -133,20 +139,19 @@ $alpha$ на квадрат этих факторов. Масштабируют�
   #table(
     columns: 2,
     align: center + horizon,
-    stroke: (top: 1pt, bottom: 1pt),
+    stroke: none,
 
-    // ВАЖНО: Это рисует линию ровно под первой строкой (под заголовком)
-    table.hline(y: 1, stroke: 1pt),
+    table.hline(stroke: 1pt),
 
-    // Строка заголовка (первая строка, y=0)
     [$ alpha_mu $],
     [$ C_(mu i) $],
 
-    // Остальные данные (начинаются со второй строки, y=1)
     [0.298073], [0.51380],
     [1.242567], [0.46954],
     [5.782948], [0.15457],
     [38.47497], [0.02373],
+
+    table.hline(stroke: 1pt),
   )
   Используя выражение для перeкрываний, приведенное в Приложeнии A,
   выведите парaметры контракции для базисногo набора He 4-31G.

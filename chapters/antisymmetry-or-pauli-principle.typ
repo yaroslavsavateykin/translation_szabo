@@ -1,27 +1,27 @@
 Электронный гамильтониан @eq:4e0f9a зависит только от пространственных
 координат электронов. Однако для полного описания электрона нужно
 также указать его #emph[спин]. В нерелятивистской теории для этого
-вводятся две спиновые функции $alpha lr((w))$ и $beta lr((w))$,
+вводятся две спиновые функции $alpha (w)$ и $beta (w)$,
 соответствующие спину, направленному вверх или вниз. Они представляют
 собой функции обобщённой спиновой переменной $w$; нужно лишь уточнить,
 что эти функции образуют полный и ортонормированный набор,
 
 $
-  integral d omega thin alpha^ast.basic lr((omega)) alpha lr((omega)) eq integral d omega thin beta^ast.basic lr((omega)) beta lr((omega)) eq 1
+  integral d omega thin alpha^ast.basic (omega) alpha (omega) eq integral d omega thin beta^ast.basic (omega) beta (omega) eq 1
 $ <eq:219a>
 
 $
-  chevron.l alpha lr(|alpha chevron.r eq chevron.l beta|) beta chevron.r eq 1
+  chevron.l alpha|alpha chevron.r eq chevron.l beta|beta chevron.r eq 1
 $ <eq:219b>
 
 и
 
 $
-  integral d omega thin alpha^ast.basic lr((omega)) beta lr((omega)) eq integral d omega thin beta^ast.basic lr((omega)) alpha lr((omega)) eq 0
+  integral d omega thin alpha^ast.basic (omega) beta (omega) eq integral d omega thin beta^ast.basic (omega) alpha (omega) eq 0
 $ <eq:220a>
 
 $
-  chevron.l alpha lr(|beta chevron.r eq chevron.l beta|) alpha chevron.r eq 0
+  chevron.l alpha|beta chevron.r eq chevron.l beta|alpha chevron.r eq 0
 $ <eq:220b>
 
 В данном формализме электрон описывается не только тремя
@@ -32,7 +32,7 @@ $ bold(x) = { bold(r), omega } $ <eq:221>
 
 Тогда волновая функция $N$-электронной системы является функцией
 $x_1, x_2, dots.h, x_N$. Таким образом, мы пишем
-$Phi lr((x_1, dots.h, x_N))$.
+$Phi (x_1, dots.h, x_N)$.
 
 Поскольку гамильтониан не учитывает спин, просто сделать волновую
 функцию зависящей от спина, как только что описано, недостаточно.

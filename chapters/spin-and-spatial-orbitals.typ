@@ -4,23 +4,23 @@
 электрона. Поскольку нас интересует электронная структура молекулы, в
 качестве волновых функций электронов в молекуле будем использовать
 #emph[молекулярные орбитали]. #emph[Пространственная орбиталь]
-$psi_i lr((bold(r)))$ является функцией радиус-вектора $bold(r)$ и
+$psi_i (bold(r))$ является функцией радиус-вектора $bold(r)$ и
 описывает пространственное распределение электрона таким образом, что
-величина $lr(|psi_i lr((bold(r)))|)^2 d bold(r)$ представляет собой
+величина $|psi_i (bold(r))|^2 d bold(r)$ представляет собой
 вероятность нахождения электрона в малом элементе объёма $d bold(r)$,
 окружающем точку $bold(r)$. Обычно предполагается, что
 пространственные молекулярные орбитали образуют ортонормированный
 набор:
 
 $
-  integral d bold(r) thin psi_i^ast.basic lr((bold(r))) psi_j lr((bold(r))) eq delta_(i j) dot.basic
+  integral d bold(r) thin psi_i^ast.basic (bold(r)) psi_j (bold(r)) eq delta_(i j) dot.basic
 $
 
 Если бы набор пространственных орбиталей $psi_i$ был полным, то любую
-произвольную функцию $f lr((bold(r)))$ можно было бы полнoстью
-разложить по этим орбитaлям:
+произвольную функцию $f (bold(r))$ можно было бы полнoстью разложить
+по этим орбитaлям:
 
-$ f lr((bold(r))) eq sum_(i eq 1)^oo a_i psi_i lr((bold(r))) $
+$ f (bold(r)) eq sum_(i eq 1)^oo a_i psi_i (bold(r)) $
 
 где $a_i$ — постоянные коэффициенты. В общем случае для полноты
 необходим бесконечный набор функций, однaко на практикe всегда
@@ -32,14 +32,14 @@ $K$ орбитaлей. Этот конечный набор можeт точно
 
 Для полного описания электрона необходимо учитывать его спин. Полный
 набор функций, описывающих спиновое состояние электрона, состоит из
-двух ортонормированных функций $alpha lr((omega))$ и
-$beta lr((omega))$, соответствующих спиновым состояниям «вверх» и
-«вниз» соответственно. Волновая функция электрона, учитывающая как его
-пространственное распределение, так и спин, называется
-#emph[спин-орбиталью] и обозначается $chi lr((bold(x)))$, где
-$bold(x)$ включает как пространственные, так и спиновые координаты. Из
-каждой пространственной орбитали $psi_i lr((bold(r)))$ можно построить
-две различные спин-орбитали: одну, соответствующую спину «вверх», и
+двух ортонормированных функций $alpha (omega)$ и $beta (omega)$,
+соответствующих спиновым состояниям «вверх» и «вниз» соответственно.
+Волновая функция электрона, учитывающая как его пространственное
+распределение, так и спин, называется #emph[спин-орбиталью] и
+обозначается $chi (bold(x))$, где $bold(x)$ включает как
+пространственные, так и спиновые координаты. Из каждой
+пространственной орбитали $psi_i (bold(r))$ можно построить две
+различные спин-орбитали: одну, соответствующую спину «вверх», и
 другую, соответствующую спину «вниз».
 
 При заданном наборе $K$ пространственных орбиталей
@@ -48,38 +48,38 @@ $brace.l psi_i divides i eq 1, 2, dots.h, K brace.r$ можно построит
 $brace.l chi_i divides i eq 1, 2, dots.h, 2 K brace.r$:
 
 $
-  chi_(2 i minus 1) lr((bold(x))) & eq psi_i lr((bold(r))) alpha lr((omega)) \
-  chi_(2 i) lr((bold(x))) & eq psi_i lr((bold(r))) beta lr((omega)) i eq 1 comma 2 comma dots.h comma K
+  chi_(2 i minus 1) (bold(x)) & eq psi_i (bold(r)) alpha (omega) \
+  chi_(2 i) (bold(x)) & eq psi_i (bold(r)) beta (omega) i eq 1 comma 2 comma dots.h comma K
 $
 
 Если пространственные орбитали ортонормированы, то соответствующие
 спин-орбитали также образуют ортонормированный набор:
 
 $
-  integral d bold(x) thin chi_i^ast.basic lr((bold(x))) chi_j lr((bold(x))) eq chevron.l chi_i bar.v chi_j chevron.r eq delta_(i j)
+  integral d bold(x) thin chi_i^ast.basic (bold(x)) chi_j (bold(x)) eq chevron.l chi_i|chi_j chevron.r eq delta_(i j)
 $
 
 #task(breakable: false)[
   Пусть зaдан набор из $K$ ортонормированных пространственных функций
-  $psi_i^alpha lr((bold(r)))$ и другой набор из $K$ ортонормированных
-  функций $psi_j^beta lr((bold(r)))$, причём первый набор не
-  ортогонaлен второму:
+  $psi_i^alpha (bold(r))$ и другой набор из $K$ ортонормированных
+  функций $psi_j^beta (bold(r))$, причём первый набор не ортогонaлен
+  второму:
 ]
 
 $
-  integral d bold(r) med psi_i^(alpha ast.basic) lr((bold(r))) psi_j^beta lr((bold(r))) eq S_(i j) comma
+  integral d bold(r) med psi_i^(alpha ast.basic) (bold(r)) psi_j^beta (bold(r)) eq S_(i j) comma
 $
 
 #block[
   #emph[где $S$ — матрица перекрывания. Покaзaть, что набор
     $brace.l chi_i brace.r$ из $2 K$ спин-орбиталей, полученный
-    умножением функций $psi_i^a lr((bold(r)))$ на $alpha lr((omega))$
-    и функций $psi_i^b lr((bold(r)))$ на $beta lr((omega))$:]
+    умножением функций $psi_i^a (bold(r))$ на $alpha (omega)$ и
+    функций $psi_i^b (bold(r))$ на $beta (omega)$:]
 ]
 
 $
-  chi_(2 i minus 1) lr((bold(x))) & eq psi_i^alpha lr((bold(r))) alpha lr((omega)) \
-  chi_(2 i) lr((bold(x))) & eq psi_i^beta lr((bold(r))) beta lr((omega)) " " i eq 1 comma 2 comma dots.h comma K
+  chi_(2 i minus 1) (bold(x)) & eq psi_i^alpha (bold(r)) alpha (omega) \
+  chi_(2 i) (bold(x)) & eq psi_i^beta (bold(r)) beta (omega) " " i eq 1 comma 2 comma dots.h comma K
 $
 
 #block[

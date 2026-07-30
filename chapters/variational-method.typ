@@ -6,27 +6,27 @@
 В этом разделе рассматривается важный подход к нахождению приближённых
 решений уравнения на собственные значения
 
-$ hat(O) Phi lr((x)) eq omega Phi lr((x)) $
+$ hat(O) Phi (x) eq omega Phi (x) $
 
 Уравнения на собственные значения важны, поскольку стационарное
 уравнение Шрёдингера представляет собой уравнение на собственные
 значения:
 
-$ hat(H) lr(|Phi chevron.r eq E|) Phi chevron.r $ <eq:b7deab>
+$ hat(H)|Phi chevron.r eq E|Phi chevron.r $ <eq:b7deab>
 
 $hat(H)$ — эрмитов оператор, называемый гамильтонианом,
-$lr(bar.v Phi) chevron.r$ — волновая функция, $E$ — энергия.
-Необходимо найти приближённые решения уравнений на собственные
-значения, поскольку уравнение Шрёдингера не может быть решено точно за
-исключением простейших случаев. Хотя нижеизложенное справедливо для
-любой задачи на собственные значения, мы будем использовать нотацию и
-терминологию, связанные с уравнением Шрёдингера @eq:b7deab.
+$|Phi chevron.r$ — волновая функция, $E$ — энергия. Необходимо найти
+приближённые решения уравнений на собственные значения, поскольку
+уравнение Шрёдингера не может быть решено точно за исключением
+простейших случаев. Хотя нижеизложенное справедливо для любой задачи
+на собственные значения, мы будем использовать нотацию и терминологию,
+связанные с уравнением Шрёдингера @eq:b7deab.
 
 При условии, что задан оператор $hat(H)$, существует бесконечный набор
 точных решений уравнения Шрёдингера, пронумерованных индексом $alpha$,
 
 $
-  hat(H) lr(|Phi_alpha chevron.r eq E_alpha|) Phi_alpha chevron.r quad alpha eq 0 comma 1 comma dots.h
+  hat(H)|Phi_alpha chevron.r eq E_alpha|Phi_alpha chevron.r quad alpha eq 0 comma 1 comma dots.h
 $
 
 где
@@ -38,28 +38,28 @@ $ E_0 lt.eq E_1 lt.eq E_2 lt.eq dots.h lt.eq E_alpha lt.eq dots.h $
 действительны и соответствующие волновые функции ортонормированы
 
 $
-  chevron.l Phi_alpha bar.v Phi_beta chevron.r eq delta_(alpha beta)
+  chevron.l Phi_alpha|Phi_beta chevron.r eq delta_(alpha beta)
 $ <eq:1144>
 
-Таким образом, умножая @eq:b7deab слева на $chevron.l Phi_beta bar.v$,
+Таким образом, умножая @eq:b7deab слева на $chevron.l Phi_beta|$,
 получим
 
 $
-  chevron.l Phi_beta lr(|hat(H)|) Phi_alpha chevron.r eq E_alpha delta_(alpha beta)
+  chevron.l Phi_beta|hat(H)|Phi_alpha chevron.r eq E_alpha delta_(alpha beta)
 $ <eq:dc952f>
 
 Более того, мы предполагаем, что собственные функции $hat(H)$ образуют
-полный набор, и любая функция $lr(bar.v tilde(Phi)) chevron.r$,
-удовлетворяющая тем же граничным условиям, что и набор
-$brace.l lr(bar.v Phi_alpha) chevron.r brace.r$, может быть
-представлена как линейная комбинация $lr(bar.v Phi_alpha) chevron.r$
+полный набор, и любая функция $|tilde(Phi) chevron.r$, удовлетворяющая
+тем же граничным условиям, что и набор
+$brace.l|Phi_alpha chevron.r brace.r$, может быть представлена как
+линейная комбинация $|Phi_alpha chevron.r$
 
 $
-  lr(|tilde(Phi)) chevron.r eq sum_alpha lr(bar.v Phi_alpha) chevron.r c_alpha eq sum_alpha lr(bar.v Phi_alpha) chevron.r chevron.l Phi_alpha| tilde(Phi) chevron.r
+  |tilde(Phi) chevron.r eq sum_alpha|Phi_alpha chevron.r c_alpha eq sum_alpha|Phi_alpha chevron.r chevron.l Phi_alpha|tilde(Phi) chevron.r
 $ <eq:1146>
 
 и
 
 $
-  chevron.l lr(tilde(Phi) bar.v) eq sum_alpha c_alpha^ast.basic chevron.l Phi_alpha| eq sum_alpha chevron.l tilde(Phi) lr(|Phi_alpha chevron.r chevron.l Phi_alpha|)
+  chevron.l tilde(Phi)|eq sum_alpha c_alpha^ast.basic chevron.l Phi_alpha|eq sum_alpha chevron.l tilde(Phi)|Phi_alpha chevron.r chevron.l Phi_alpha|
 $ <eq:1147>
