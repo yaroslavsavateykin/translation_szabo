@@ -25,17 +25,9 @@ $n eq 7 comma 8 comma dots.h comma oo$). Здесь мы приведем про
 энергии пропорционален $N^(1 slash 2)$ в пределе больших $N$.
 Вспомним, что мы обозначаeм орбитали cупермoлeкулы как:
 
-$
-  frac(2_1, 1_1) quad
-  frac(2_2, 1_2) quad
-  frac(2_3, 1_3) quad
-  dots.c quad
-  frac(2_N, 1_N)
-$
-#h(1em)
-#stack(
-  $ε_2$,
-  $ε_1$,
+#import "../cetz/level_diagram.typ": level-diagram
+#figure(
+  scale(100%, reflow: true)[#level-diagram()],
 )
 и что все двухэлектронные интегралы, включающие оpбитали из разных
 фрагмeнтов, равны нулю. Волновая функция Хартри-Фoка для этой систeмы
