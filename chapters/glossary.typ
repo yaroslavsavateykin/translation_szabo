@@ -81,7 +81,7 @@
     [первый порядок],
     table.hline(stroke: 0.5pt),
 
-    [*HO*],
+    [*NO*],
     [Natural Orbitals],
     [натуральные орбитали],
     table.hline(stroke: 0.5pt),
@@ -91,12 +91,12 @@
     [потенциал ионизации],
     table.hline(stroke: 0.5pt),
 
-    [*KO*],
+    [*CO*],
     [Canonical Orbitals],
     [канонические орбитали],
     table.hline(stroke: 0.5pt),
 
-    [*ЛКАО*],
+    [*LCAO*],
     [Linear Combination of Atomic Orbitals],
     [линейная комбинация атомных орбиталей],
     table.hline(stroke: 0.5pt),
@@ -106,7 +106,7 @@
     [молекулярная орбиталь],
     table.hline(stroke: 0.5pt),
 
-    [*МО-ЛКАО*],
+    [*MO-LCAO*],
     [Molecular Orbital - Linear Combination of Atomic Orbitals],
     [молекулярные орбитали как линейная комбинация атомных орбиталей],
     table.hline(stroke: 0.5pt),
@@ -141,14 +141,9 @@
     [слейтеровская функция],
     table.hline(stroke: 0.5pt),
 
-    [*СИ*],
+    [*SI*],
     [International System of Units],
     [Международная система единиц],
-    table.hline(stroke: 0.5pt),
-
-    [*ССП*],
-    [Self-Consistent Field],
-    [самосогласованное поле],
     table.hline(stroke: 0.5pt),
 
     [*STO*],
@@ -179,11 +174,6 @@
     [*VB*],
     [Valence Bond],
     [метод валентных связей],
-    table.hline(stroke: 0.5pt),
-
-    [*ХФ*],
-    [Hartree–Fock],
-    [Хартри — Фок],
     table.hline(stroke: 0.5pt),
 
     [*4-31G*],

@@ -5,7 +5,7 @@
   // Увеличенный размер шрифта для оси Y с нативным поворотом без пробелов у|
   let y_axis_label = scale(reflow: false, rotate(-90deg)[#text(
     size: 1.2em,
-  )[$E("H"_2)-2E("H") space ("а.е.")$]])
+  )[$E("H"_2)-2E("H") space ("a.u.")$]])
 
   scale(scale-factor, reflow: true)[
     #block(breakable: false, width: 100%)[
@@ -189,7 +189,7 @@
 
         content(
           (map_x(4.0) + 0.2, map_y(0.00) + 0.4),
-          text(size: 1.2em)[R (а.е.)],
+          text(size: 1.2em)[R (a.u.)],
           anchor: "west",
         )
         content(
