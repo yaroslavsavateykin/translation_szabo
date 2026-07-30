@@ -21,6 +21,9 @@
 #pagebreak()
 // здесь еще куча всяких видимо глав от Амины и Максима
 
+#include "chapters/02-linear-algebra-2.typ"
+#pagebreak()
+
 #include "chapters/00-eigenvectors-and-etc.typ"
 #pagebreak()
 
