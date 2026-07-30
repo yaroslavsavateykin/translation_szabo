@@ -31,7 +31,7 @@ jobs:
           typstyle \
             --line-width 70 \
             --indent-width 2 \
-            --wrap-text
+            --wrap-text \
             --no-reorder-import-items \
             --check .
 
