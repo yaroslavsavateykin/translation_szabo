@@ -3,14 +3,14 @@
 // Функция генерирует графическую матрицу КВ с поддержкой масштабирования
 #let ci_matrix(scale-factor: 100%) = {
   // Базовые математические стили без пробелов вокруг |
-  let mel(x, y) = $lr(chevron.l #x|hat(H)|#y chevron.r)$
-  let bra(x) = $lr(chevron.l #x |)$
-  let ket(x) = $lr(| #x chevron.r)$
+  let mel(x, y) = $chevron.l #x|hat(H)|#y chevron.r$
+  let bra(x) = $chevron.l #x |$
+  let ket(x) = $| #x chevron.r$
 
-  let S = $lr(| S chevron.r)$
-  let D = $lr(| D chevron.r)$
-  let T = $lr(| T chevron.r)$
-  let Q = $lr(| Q chevron.r)$
+  let S = $| S chevron.r$
+  let D = $| D chevron.r$
+  let T = $| T chevron.r$
+  let Q = $| Q chevron.r$
 
   scale(scale-factor, reflow: true)[
     #block(breakable: false, width: 100%)[
@@ -181,12 +181,12 @@
 
         content(
           (center-matrix-x, caption-y),
-          $lr(chevron.l S|hat(H)|T chevron.r) <-> lr(chevron.l Psi_a^r|hat(H)|Psi_(c d e)^(t u v) chevron.r)$,
+          $chevron.l S|hat(H)|T chevron.r <-> chevron.l Psi_a^r|hat(H)|Psi_(c d e)^(t u v) chevron.r$,
           anchor: "center",
         )
         content(
           (center-matrix-x, caption-y - 0.8),
-          $lr(chevron.l D|hat(H)|D chevron.r) <-> lr(chevron.l Psi_(a b)^(r s)|hat(H)|Psi_(c d)^(t u) chevron.r)$,
+          $chevron.l D|hat(H)|D chevron.r <-> chevron.l Psi_(a b)^(r s)|hat(H)|Psi_(c d)^(t u) chevron.r$,
           anchor: "center",
         )
       })

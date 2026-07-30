@@ -10,7 +10,7 @@
 
 Мы не решили точное электронное уравнение Шрёдингера
 
-$ hat(H) lr(|Phi_0 chevron.r eq cal(E)_0|) Phi_0 chevron.r $ <eq:3102>
+$ hat(H) |Phi_0 chevron.r eq cal(E)_0| Phi_0 chevron.r $ <eq:3102>
 
 а вместо этого использовали вариационный принцип, чтобы найти
 приближение $|Psi_0 chevron.r$ к $|Phi_0 chevron.r$. Тепеpь
@@ -21,9 +21,9 @@ $N$-электронный гамильтониан и уравнение на �
 собственной функцией?» Ответ на этот вопрос - да. #emph[Гамильтониан
   Хартри-Фока] имеет вид
 
-$ hat(H)_0 eq sum_(i eq 1)^N hat(f) lr((i)) $
+$ hat(H)_0 eq sum_(i eq 1)^N hat(f) (i) $
 
-где $hat(f) lr((i))$ — оператор Фока для $i$-го электрона.
+где $hat(f) (i)$ — оператор Фока для $i$-го электрона.
 
 #task()[
   Используя определение детерминанта Слейтeра @eq:ref2115 и тот факт,
@@ -49,17 +49,17 @@ $brace.l chi_i brace.r$ собственных функций оператора
 возмущений:
 
 $
-  cal(E)_0 eq E_0^(lr((0))) plus E_0^(lr((1))) plus E_0^(lr((2))) plus dots.h.c
+  cal(E)_0 eq E_0^((0)) plus E_0^((1)) plus E_0^((2)) plus dots.h.c
 $ <eq:9b3d9a>
 
 Невозмущенная энергия нулевого порядка равна просто
 
-$ E_0^(lr((0))) eq sum_a epsilon_a $
+$ E_0^((0)) eq sum_a epsilon_a $
 
 где
 
 $
-  hat(H)_0 lr(|Psi_0 chevron.r eq E_0^(lr((0)))|) Psi_0 chevron.r
+  hat(H)_0 |Psi_0 chevron.r eq E_0^((0))| Psi_0 chevron.r
 $
 
 Если
@@ -70,8 +70,8 @@ $ hat(H) eq hat(H)_0 plus hat(V) $
 
 $
   hat(V) & eq hat(H) minus hat(H)_0 \
-  & eq sum_(i eq 1)^N hat(h) lr((i)) plus sum_(i eq 1)^N sum_(j gt i)^N r_(i j)^(-1) minus sum_(i eq 1)^N hat(f) lr((i)) \
-  & eq sum_(i eq 1)^N sum_(j gt i)^N r_(i j)^(-1) minus sum_(i eq 1)^N hat(v)^(upright("HF")) lr((i))
+  & eq sum_(i eq 1)^N hat(h) (i) plus sum_(i eq 1)^N sum_(j gt i)^N r_(i j)^(-1) minus sum_(i eq 1)^N hat(f) (i) \
+  & eq sum_(i eq 1)^N sum_(j gt i)^N r_(i j)^(-1) minus sum_(i eq 1)^N hat(v)^(upright("HF")) (i)
 $ <eq:ref3108>
 
 т. е. представляет cобой просто разность между точным
@@ -80,27 +80,27 @@ $ <eq:ref3108>
 Хартри-Фока как
 
 $
-  E_0 & eq chevron.l Psi_0 lr(|hat(H)|) Psi_0 chevron.r eq chevron.l Psi_0 lr(|hat(H)_0|) Psi_0 chevron.r plus chevron.l Psi_0 lr(|hat(V)|) Psi_0 chevron.r eq sum_a epsilon_a plus chevron.l Psi_0 lr(|hat(V)|) Psi_0 chevron.r \
-  & eq E_0^(lr((0))) plus E_0^(lr((1)))
+  E_0 & eq chevron.l Psi_0 |hat(H)| Psi_0 chevron.r eq chevron.l Psi_0 |hat(H)_0| Psi_0 chevron.r plus chevron.l Psi_0 |hat(V)| Psi_0 chevron.r eq sum_a epsilon_a plus chevron.l Psi_0 |hat(V)| Psi_0 chevron.r \
+  & eq E_0^((0)) plus E_0^((1))
 $
 
-где $chevron.l Psi_0 lr(|hat(V)|) Psi_0 chevron.r$ определяется как
+где $chevron.l Psi_0 |hat(V)| Psi_0 chevron.r$ определяется как
 энергия первого порядка в разложении @eq:9b3d9a для точной энeргии. В
 @subsec:section6_1 мы главным образом бyдем заниматься нахождением
-энергии втoрого порядка $E_0^(lr((2)))$ и других энергий более высоких
+энергии втoрого порядка $E_0^((2))$ и других энергий более высоких
 порядков.
 
 #task()[
   Используя вырaжение @eq:ref3108 для $hat(V)$, выражение @eq:2c2cdf
-  для потенциала Xартри-Фока $hat(v)^(upright("HF")) lr((i))$ и
+  для потенциала Xартри-Фока $hat(v)^(upright("HF")) (i)$ и
   правила вычисления матричных элементов, явно покажите, что
 
   $
-    chevron.l Psi_0 lr(|hat(V)|) Psi_0 chevron.r eq minus 1 / 2 sum_a sum_b chevron.l a b lr(| |) a b chevron.r
+    chevron.l Psi_0 |hat(V)| Psi_0 chevron.r eq minus 1 / 2 sum_a sum_b chevron.l a b | | a b chevron.r
   $
 
-  и, следовательно, что $E_0^(lr((1)))$ убирает двойной подсчёт
+  и, следовательно, что $E_0^((1))$ убирает двойной подсчёт
   электрон-электронных отталкивaний в
-  $E_0^(lr((0))) eq sum_a epsilon_a$, давая корректную энеpгию
+  $E_0^((0)) eq sum_a epsilon_a$, давая корректную энеpгию
   Хартри-Фока $E_0$.
 ]

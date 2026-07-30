@@ -118,8 +118,8 @@ $bar.v j chevron.r$ и получим
 Заметим, что
 
 $
-  chevron.l j bar.v a chevron.r eq lr((chevron.l a bar.v j chevron.r))^ast.basic
-  eq lr((chevron.l a bar.v j chevron.r))^dagger
+  chevron.l j bar.v a chevron.r eq (chevron.l a bar.v j chevron.r)^ast.basic
+  eq (chevron.l a bar.v j chevron.r)^dagger
 $ <eq:149>
 
 Используя эти результаты, можно переписать уравнения @eq:141 и @eq:146 в
@@ -188,7 +188,7 @@ $ <eq:155>
 Сравнение с уравнением @eq:153 даёт
 
 $
-  chevron.l j bar.v hat(O) bar.v i chevron.r eq lr((bb(O)))_(j i) eq O_(j i)
+  chevron.l j bar.v hat(O) bar.v i chevron.r eq (bb(O))_(j i) eq O_(j i)
 $ <eq:156>
 
 В качестве ещё одной иллюстрации использования соотношения полноты, а также
@@ -198,9 +198,9 @@ $ <eq:156>
 
 $
   chevron.l i bar.v hat(C) bar.v j chevron.r
-  & eq lr((bb(C)))_(i j) eq chevron.l i bar.v hat(A) hat(B) bar.v j chevron.r \
+  & eq (bb(C))_(i j) eq chevron.l i bar.v hat(A) hat(B) bar.v j chevron.r \
   & eq sum_k chevron.l i bar.v hat(A) bar.v k chevron.r chevron.l k bar.v hat(B) bar.v j chevron.r \
-  & eq sum_k lr((bb(A)))_(i k) lr((bb(B)))_(k j)
+  & eq sum_k (bb(A))_(i k) (bb(B))_(k j)
 $
 
 Теперь введём сопряжённый к $hat(O)$ оператор, обозначаемый
@@ -227,11 +227,11 @@ $
 $
 
 Так как $chevron.l b bar.v c chevron.r eq
-lr((chevron.l c bar.v b chevron.r))^ast.basic$, следует, что
+(chevron.l c bar.v b chevron.r)^ast.basic$, следует, что
 
 $
   chevron.l a bar.v hat(O)^dagger bar.v c chevron.r
-  eq lr((chevron.l c bar.v hat(O) bar.v a chevron.r))^ast.basic
+  eq (chevron.l c bar.v hat(O) bar.v a chevron.r)^ast.basic
 $ <eq:158>
 
 Поскольку метки $a$, $b$ и $c$ произвольны, мы показали, что матричное
@@ -240,8 +240,8 @@ $ <eq:158>
 
 $
   chevron.l i bar.v hat(O)^dagger bar.v j chevron.r
-  eq lr((bb(O)^dagger))_(i j)
-  eq lr((chevron.l j bar.v hat(O) bar.v i chevron.r))^ast.basic
+  eq (bb(O)^dagger)_(i j)
+  eq (chevron.l j bar.v hat(O) bar.v i chevron.r)^ast.basic
   eq O_(j i)^ast.basic
 $ <eq:159>
 
@@ -257,5 +257,5 @@ $ <eq:160>
 $
   chevron.l a bar.v hat(O) bar.v b chevron.r
   eq chevron.l a bar.v hat(O)^dagger bar.v b chevron.r
-  eq lr((chevron.l b bar.v hat(O) bar.v a chevron.r))^ast.basic
+  eq (chevron.l b bar.v hat(O) bar.v a chevron.r)^ast.basic
 $ <eq:161>

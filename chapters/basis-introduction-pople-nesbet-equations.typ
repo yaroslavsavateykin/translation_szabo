@@ -29,10 +29,10 @@ $brace.l psi_i^alpha brace.r$ и $brace.l psi_i^beta brace.r$ по
 Хартри-Фока @eq:0fc00a даёт
 
 $
-  sum_nu C_(nu j)^alpha hat(f)^alpha lr((1)) phi.alt_nu lr((1)) eq epsilon.alt_j^alpha sum_nu C_(nu j)^alpha phi.alt_nu lr((1))
+  sum_nu C_(nu j)^alpha hat(f)^alpha (1) phi.alt_nu (1) eq epsilon.alt_j^alpha sum_nu C_(nu j)^alpha phi.alt_nu (1)
 $ <eq:3330>
 
-Если умножить это уравнение на $phi.alt_mu^ast.basic lr((1))$ и
+Если умножить это уравнение на $phi.alt_mu^ast.basic (1)$ и
 проинтегрировать по пространственным координатам первого электрона, то
 получится
 
@@ -45,7 +45,7 @@ $ <eq:3331>
 $brace.l phi.alt_mu brace.r$,
 
 $
-  F_(mu nu)^alpha eq integral d bold(r)_1 thin phi.alt_mu^ast.basic lr((1)) hat(f)^alpha lr((1)) phi.alt_nu lr((1))
+  F_(mu nu)^alpha eq integral d bold(r)_1 thin phi.alt_mu^ast.basic (1) hat(f)^alpha (1) phi.alt_nu (1)
 $ <eq:3332>
 
 Точно тaкие же результaты могут быть получены и для $beta$-орбиталей.

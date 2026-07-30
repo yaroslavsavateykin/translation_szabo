@@ -39,7 +39,7 @@ $ <eq:163>
 где мы определили элементы матрицы преобразования $bb(U)$ как
 
 $
-  chevron.l i bar.v alpha chevron.r eq U_(i alpha) eq lr((bb(U)))_(i alpha)
+  chevron.l i bar.v alpha chevron.r eq U_(i alpha) eq (bb(U))_(i alpha)
 $ <eq:164>
 
 При преобразовании в противоположном направлении получаем
@@ -48,15 +48,15 @@ $
   bar.v i chevron.r eq 1 bar.v i chevron.r
   eq sum_alpha bar.v alpha chevron.r chevron.l alpha bar.v i chevron.r
   eq sum_alpha bar.v alpha chevron.r U_(i alpha)^ast.basic
-  eq sum_alpha bar.v alpha chevron.r lr((bb(U)^dagger))_(alpha i)
+  eq sum_alpha bar.v alpha chevron.r (bb(U)^dagger)_(alpha i)
 $ <eq:165>
 
 где использованы уравнение @eq:149 и определение сопряжённой матрицы,
 показывающие, что
 
 $
-  chevron.l alpha bar.v i chevron.r eq lr((chevron.l i bar.v alpha chevron.r))^ast.basic
-  eq U_(i alpha)^ast.basic eq lr((bb(U)^dagger))_(alpha i)
+  chevron.l alpha bar.v i chevron.r eq (chevron.l i bar.v alpha chevron.r)^ast.basic
+  eq U_(i alpha)^ast.basic eq (bb(U)^dagger)_(alpha i)
 $ <eq:166>
 
 Важно помнить, что, поскольку $bb(U)$ определена уравнением @eq:164,
@@ -68,8 +68,8 @@ $
   delta_(i j) eq chevron.l i bar.v j chevron.r
   & eq sum_(alpha beta) chevron.l i bar.v alpha chevron.r
   chevron.l alpha bar.v beta chevron.r chevron.l beta bar.v j chevron.r \
-  & eq sum_alpha lr((bb(U)))_(i alpha) lr((bb(U)^dagger))_(alpha j) \
-  & eq lr((bb(U) bb(U)^dagger))_(i j)
+  & eq sum_alpha (bb(U))_(i alpha) (bb(U)^dagger)_(alpha j) \
+  & eq (bb(U) bb(U)^dagger)_(i j)
 $
 
 В матричной записи это просто
@@ -126,7 +126,7 @@ $
   & eq sum_(i j) chevron.l alpha bar.v i chevron.r
   chevron.l i bar.v hat(O) bar.v j chevron.r
   chevron.l j bar.v beta chevron.r \
-  & eq sum_(i j) lr((bb(U)^dagger))_(alpha i) O_(i j) U_(j beta)
+  & eq sum_(i j) (bb(U)^dagger)_(alpha i) O_(i j) U_(j beta)
 $ <eq:169>
 
 Следовательно,

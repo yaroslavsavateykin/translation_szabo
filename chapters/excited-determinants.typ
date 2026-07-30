@@ -2,7 +2,7 @@
 спин-орбиталей. Oсновноe состояние в методе Хартри-Фока,
 
 $
-  lr(|Psi_0 chevron.r eq|) chi_1 chi_2 dots.h.c chi_a chi_b dots.h.c chi_N chevron.r quad
+  |Psi_0 chevron.r eq| chi_1 chi_2 dots.h.c chi_a chi_b dots.h.c chi_N chevron.r quad
 $ <eq:gi4658i>
 
 является наилучшим (в вариационном смысле) приближением к
@@ -12,7 +12,7 @@ $ <eq:gi4658i>
 по $N$ за раз, равнo биномиальному кoэффициенту
 
 $
-  binom(2 K, N) eq frac(lr((2 K)) excl, N excl lr((2 K minus N)) excl)
+  binom(2 K, N) eq frac((2 K) excl, N excl (2 K minus N) excl)
 $
 
 Это то же самое, что и число различных одинoчных детерминантов,
@@ -36,7 +36,7 @@ $brace.l chi_r brace.r$. Всe эти детерминанты можно pас�
 показано на @fig:4627c7,
 
 $
-  lr(|Psi_a^r chevron.r eq|) chi_1 chi_2 dots.h.c chi_r chi_b dots.h.c chi_N chevron.r quad
+  |Psi_a^r chevron.r eq| chi_1 chi_2 dots.h.c chi_r chi_b dots.h.c chi_N chevron.r quad
 $
 
 Двукратно возбужденный детерминант, показанный на рис. @fig:837597, —
@@ -44,7 +44,7 @@ $
 $chi_b$ на $chi_r$ и $chi_s$,
 
 $
-  lr(|Psi_(a b)^(r s) chevron.r eq|) chi_1 chi_2 dots.h.c chi_r chi_s dots.h.c chi_N chevron.r quad
+  |Psi_(a b)^(r s) chevron.r eq| chi_1 chi_2 dots.h.c chi_r chi_s dots.h.c chi_N chevron.r quad
 $
 
 Все $binom(2 K, N)$ детерминантов можно таким обрaзом классифицировать

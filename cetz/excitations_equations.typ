@@ -25,12 +25,12 @@
         row(0, strong("Однократные возбуждения"), is-heading: true)
         row(
           1,
-          $ lr(chevron.l Psi_0|hat(H)|""^1 Psi_a^r chevron.r) = 0 $,
+          $ chevron.l Psi_0|hat(H)|""^1 Psi_a^r chevron.r = 0 $,
         )
         row(
           2,
           $
-            lr(chevron.l ""^1 Psi_a^r|hat(H) - E_0|""^1 Psi_b^s chevron.r) = (epsilon_r - epsilon_a) delta_(r s) delta_(a b) - (r s|b a) + 2(r a|b s)
+            chevron.l ""^1 Psi_a^r|hat(H) - E_0|""^1 Psi_b^s chevron.r = (epsilon_r - epsilon_a) delta_(r s) delta_(a b) - (r s|b a) + 2(r a|b s)
           $,
         )
         // ==========================================
@@ -40,56 +40,56 @@
         row(
           4,
           $
-            lr(chevron.l Psi_0|hat(H)|""^1 Psi_(a a)^(r r) chevron.r) = K_(r a)
+            chevron.l Psi_0|hat(H)|""^1 Psi_(a a)^(r r) chevron.r = K_(r a)
           $,
         )
         row(
           5,
           $
-            lr(chevron.l Psi_0|hat(H)|""^1 Psi_(a a)^(r s) chevron.r) = 2^(1/2) (s a|r a)
+            chevron.l Psi_0|hat(H)|""^1 Psi_(a a)^(r s) chevron.r = 2^(1/2) (s a|r a)
           $,
         )
         row(
           6,
           $
-            lr(chevron.l Psi_0|hat(H)|""^1 Psi_(a b)^(r r) chevron.r) = 2^(1/2) (r b|r a)
+            chevron.l Psi_0|hat(H)|""^1 Psi_(a b)^(r r) chevron.r = 2^(1/2) (r b|r a)
           $,
         )
         row(
           7,
           $
-            lr(chevron.l ""^A Psi_(a b)^(r s)|hat(H)|""^A Psi_(a b)^(r s) chevron.r) = 3^(1/2) ((r a|s b) - (r b|s a))
+            chevron.l ""^A Psi_(a b)^(r s)|hat(H)|""^A Psi_(a b)^(r s) chevron.r = 3^(1/2) ((r a|s b) - (r b|s a))
           $,
         )
         row(
           8,
           $
-            lr(chevron.l ""^B Psi_(a b)^(r s)|hat(H)|""^B Psi_(a b)^(r s) chevron.r) = (r a|s b) + (r b|s a)
+            chevron.l ""^B Psi_(a b)^(r s)|hat(H)|""^B Psi_(a b)^(r s) chevron.r = (r a|s b) + (r b|s a)
           $,
         )
         row(
           9,
           $
-            lr(chevron.l ""^1 Psi_(a a)^(r r)|hat(H) - E_0|""^1 Psi_(a a)^(r r) chevron.r) = 2(epsilon_r - epsilon_a) + J_(a a) + J_(r r) - 4J_(r a) + 2K_(r a)
+            chevron.l ""^1 Psi_(a a)^(r r)|hat(H) - E_0|""^1 Psi_(a a)^(r r) chevron.r = 2(epsilon_r - epsilon_a) + J_(a a) + J_(r r) - 4J_(r a) + 2K_(r a)
           $,
         )
         row(
           10,
           $
-            lr(chevron.l ""^1 Psi_(a a)^(r r)|hat(H) - E_0|""^1 Psi_(a a)^(r s) chevron.r) = epsilon_r + epsilon_s - 2epsilon_a + J_(a a) + J_(r s) + K_(r s) - 2J_(s a) - 2J_(r a) + K_(s a) + K_(r a)
+            chevron.l ""^1 Psi_(a a)^(r r)|hat(H) - E_0|""^1 Psi_(a a)^(r s) chevron.r = epsilon_r + epsilon_s - 2epsilon_a + J_(a a) + J_(r s) + K_(r s) - 2J_(s a) - 2J_(r a) + K_(s a) + K_(r a)
           $,
         )
         row(
           11,
           $
-            lr(chevron.l ""^1 Psi_(a a)^(r r)|hat(H) - E_0|""^1 Psi_(a b)^(r r) chevron.r) = 2epsilon_r - epsilon_a - epsilon_b + J_(r r) + J_(a b) + K_(a b) - 2J_(r b) - 2J_(r a) + K_(r b) + K_(r a)
+            chevron.l ""^1 Psi_(a a)^(r r)|hat(H) - E_0|""^1 Psi_(a b)^(r r) chevron.r = 2epsilon_r - epsilon_a - epsilon_b + J_(r r) + J_(a b) + K_(a b) - 2J_(r b) - 2J_(r a) + K_(r b) + K_(r a)
           $,
         )
         // Первая длинная формула без пробелов
         row(
           12,
           $
-            lr(chevron.l ""^A Psi_(a b)^(r s)|hat(H) - E_0|""^A Psi_(a b)^(r s) chevron.r) = epsilon_r + epsilon_s - epsilon_a - epsilon_b + J_(a b) + J_(r s) - K_(a b)
+            chevron.l ""^A Psi_(a b)^(r s)|hat(H) - E_0|""^A Psi_(a b)^(r s) chevron.r = epsilon_r + epsilon_s - epsilon_a - epsilon_b + J_(a b) + J_(r s) - K_(a b)
           $,
         )
         row(
@@ -102,7 +102,7 @@
         row(
           14,
           $
-            lr(chevron.l ""^B Psi_(a b)^(r s)|hat(H) - E_0|""^B Psi_(a b)^(r s) chevron.r) = epsilon_r + epsilon_s - epsilon_a - epsilon_b + J_(a b) + J_(r s) + K_(a b)
+            chevron.l ""^B Psi_(a b)^(r s)|hat(H) - E_0|""^B Psi_(a b)^(r s) chevron.r = epsilon_r + epsilon_s - epsilon_a - epsilon_b + J_(a b) + J_(r s) + K_(a b)
           $,
         )
         row(
@@ -115,7 +115,7 @@
         row(
           16.15,
           $
-            lr(chevron.l ""^A Psi_(a b)^(r s)|hat(H)|""^B Psi_(a b)^(r s) chevron.r) = (3/4)^(1/2) (K_(s b) - K_(s a) - K_(r b) + K_(r a))
+            chevron.l ""^A Psi_(a b)^(r s)|hat(H)|""^B Psi_(a b)^(r s) chevron.r = (3/4)^(1/2) (K_(s b) - K_(s a) - K_(r b) + K_(r a))
           $,
         )
       })

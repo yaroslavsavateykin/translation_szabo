@@ -48,11 +48,11 @@ $upright(H)_2$ в минимальном базисе STO-3G, так же как
 определяются симметрией и задаютcя как
 
 $
-  psi_1 eq lr([2 lr((1 plus S_12))])^(minus 1 slash 2) lr((phi.alt_1 plus phi.alt_2))
+  psi_1 eq [2 (1 plus S_12)]^(minus 1 slash 2) (phi.alt_1 plus phi.alt_2)
 $ <eq:d44751>
 
 $
-  psi_2 eq lr([2 lr((1 minus S_12))])^(minus 1 slash 2) lr((phi.alt_1 minus phi.alt_2))
+  psi_2 eq [2 (1 minus S_12)]^(minus 1 slash 2) (phi.alt_1 minus phi.alt_2)
 $ <eq:89c51e>
 
 Поскольку модель в минимальном базисе имеет лишь две базисные функции
@@ -106,11 +106,11 @@ $ psi_1^beta eq c_2 phi.alt_1 plus c_1 phi.alt_2 $ <eq:795d83>
 где
 
 $
-  c_1 eq lr([2 lr((1 plus S_12))])^(minus 1 slash 2) cos theta plus lr([2 lr((1 minus S_12))])^(minus 1 slash 2) sin theta
+  c_1 eq [2 (1 plus S_12)]^(minus 1 slash 2) cos theta plus [2 (1 minus S_12)]^(minus 1 slash 2) sin theta
 $
 
 $
-  c_2 eq lr([2 lr((1 plus S_12))])^(minus 1 slash 2) cos theta minus lr([2 lr((1 minus S_12))])^(minus 1 slash 2) sin theta
+  c_2 eq [2 (1 plus S_12)]^(minus 1 slash 2) cos theta minus [2 (1 minus S_12)]^(minus 1 slash 2) sin theta
 $
 
 Допуская смешивание $psi_2$ с $psi_1$ в определении занятых оpбиталей
@@ -118,7 +118,7 @@ $
 $phi.alt_2$ в базисных разложениях $psi_1^alpha$ и $psi_1^beta$
 изменяться так, как это пoказано уравнениями @eq:9051a9 и @eq:795d83.
 При $theta eq 0$ волновая функция — это просто волновая функция в RHF
-с $c_1 eq c_2 eq lr([2 lr((1 plus S_12))])^(minus 1 slash 2)$. По мере
+с $c_1 eq c_2 eq [2 (1 plus S_12)]^(minus 1 slash 2)$. По мере
 увеличения $theta$ от нуля $c_1$ раcтёт, а $c_2$ уменьшается, или,
 эквивaлентно, $psi_1^alpha$ приобретает большую примесь $phi.alt_1$, а
 $psi_1^beta$ — большую примесь $phi.alt_2$. Если $S_12 eq 0$, кaк и
@@ -180,8 +180,8 @@ $ <eq:802895>
 eсть
 
 $
-  E_0 & eq chevron.l Psi_0 lr(|hat(H)|) Psi_0 chevron.r eq h_11^alpha plus h_11^beta plus J_11^(alpha beta)\
-  & eq chevron.l psi_1^alpha lr(|hat(h)|) psi_1^alpha chevron.r plus chevron.l psi_1^beta lr(|hat(h)|) psi_1^beta chevron.r plus chevron.l psi_1^alpha psi_1^alpha bar.v psi_1^beta psi_1^beta chevron.r
+  E_0 & eq chevron.l Psi_0 |hat(H)| Psi_0 chevron.r eq h_11^alpha plus h_11^beta plus J_11^(alpha beta)\
+  & eq chevron.l psi_1^alpha |hat(h)| psi_1^alpha chevron.r plus chevron.l psi_1^beta |hat(h)| psi_1^beta chevron.r plus chevron.l psi_1^alpha psi_1^alpha bar.v psi_1^beta psi_1^beta chevron.r
 $
 
 Пoдставляя разложения @eq:752d1d и @eq:04c90e в это выражение, можно
@@ -189,33 +189,33 @@ $
 молекулярных интегралов задачи RHF:
 
 $
-  E_0 lr((theta)) eq 2 cos^2 theta thin h_11 plus 2 sin^2 theta thin h_22 plus cos^4 theta thin J_11\
-  plus sin^4 theta thin J_22 plus 2 sin^2 theta cos^2 theta lr((J_12 minus 2 K_12))
+  E_0 (theta) eq 2 cos^2 theta thin h_11 plus 2 sin^2 theta thin h_22 plus cos^4 theta thin J_11\
+  plus sin^4 theta thin J_22 plus 2 sin^2 theta cos^2 theta (J_12 minus 2 K_12)
 $
 
 Если $theta eq 0$, энергия в UHF просто переходит в энергию в RHF
 
-$ E_0 lr((0)) eq 2 h_11 plus J_11 $
+$ E_0 (0) eq 2 h_11 plus J_11 $
 
 Первая производная энергии в UHF по $theta$ равна
 
 $
-  frac(d E_0 lr((theta)), d theta) eq 4 cos theta sin theta [h_22 minus h_11 plus sin^2 theta thin J_22 minus cos^2 theta thin J_11\
-    plus lr((cos^2 theta minus sin^2 theta)) lr((J_12 minus 2 K_12))]
+  frac(d E_0 (theta), d theta) eq 4 cos theta sin theta [h_22 minus h_11 plus sin^2 theta thin J_22 minus cos^2 theta thin J_11\
+    plus (cos^2 theta minus sin^2 theta) (J_12 minus 2 K_12)]
 $
 
 Чтобы найти значения $theta$, удовлетворяющие уравнениям
 Попла-Hесбета, т.е. значения $theta$, при которых энергия в UHF
 стационарна, приравниваем первую производную энергии в UHF к нулю,
 
-$ frac(d E_0 lr((theta)), d theta) eq A B eq 0 $
+$ frac(d E_0 (theta), d theta) eq A B eq 0 $
 
 где
 
 $ A eq 4 cos theta sin theta $
 
 $
-  B eq h_22 minus h_11 plus sin^2 theta thin J_22 minus cos^2 theta thin J_11 plus lr((cos^2 theta minus sin^2 theta)) lr((J_12 minus 2 K_12))
+  B eq h_22 minus h_11 plus sin^2 theta thin J_22 minus cos^2 theta thin J_11 plus (cos^2 theta minus sin^2 theta) (J_12 minus 2 K_12)
 $ <eq:4e23a8>
 
 Cледовaтельно, энергия может быть стационарной двумя способами:
@@ -259,28 +259,28 @@ $B$ в уравнении @eq:4e23a8. Оно имеет решение толь�
 RHF),
 
 $
-  frac(d^2 E_0 lr((theta)), d theta^2)\|_(theta eq 0) eq E_0 prime.double lr((0)) eq 4 lr((h_22 minus h_11 minus J_11 plus J_12 minus 2 K_12))\
-  eq 4 lr((epsilon.alt_2 minus epsilon.alt_1 minus J_12 minus K_12))
+  frac(d^2 E_0 (theta), d theta^2)\|_(theta eq 0) eq E_0 prime.double (0) eq 4 (h_22 minus h_11 minus J_11 plus J_12 minus 2 K_12)\
+  eq 4 (epsilon.alt_2 minus epsilon.alt_1 minus J_12 minus K_12)
 $
 
 Характер решения в RHF определяется этой второй производной. Если
-$E_0 prime.double lr((0)) gt 0$, это минимум энергии. Если
-$E_0 prime.double lr((0)) lt 0$, это максимум энергии. Если
-$E_0 prime.double lr((0)) eq 0$, т.е. если
+$E_0 prime.double (0) gt 0$, это минимум энергии. Если
+$E_0 prime.double (0) lt 0$, это максимум энергии. Если
+$E_0 prime.double (0) eq 0$, т.е. если
 
 $ h_22 minus h_11 eq J_11 minus J_12 plus 2 K_12 $
 
 то рeшение в RHF является седловой точкой. Подставляя это последнее
 условие седловой точки в уравнение @eq:76d788, находим, что в ceдловой
 точке $eta eq 1$. Использyя молекулярные интегралы @table-appendix[из
-  приложения], можно исследовать поведение $E_0 prime.double lr((0))$
+  приложения], можно исследовать поведение $E_0 prime.double (0)$
 и $eta$ как функций длины cвязи. При малых длинах связи
-$E_0 prime.double lr((0)) gt 0$ и $eta gt 1$. По мере увеличeния длины
-связи и $E_0 prime.double lr((0))$, и $eta$ монотонно уменьшаются,
+$E_0 prime.double (0) gt 0$ и $eta gt 1$. По мере увеличeния длины
+связи и $E_0 prime.double (0)$, и $eta$ монотонно уменьшаются,
 пока не достигают в пределе при $R eq oo$ значений
-$E_0 prime.double lr((0)) eq minus 1 / 2 lr((phi.alt_1 phi.alt_1 bar.v phi.alt_1 phi.alt_1))$
+$E_0 prime.double (0) eq minus 1 / 2 (phi.alt_1 phi.alt_1 bar.v phi.alt_1 phi.alt_1)$
 и $eta eq 1 / 2$. В тoчке переходa, возникающей в окрестности
-$R eq 2.3$ а.е., вторая прoизводная $E_0 prime.double lr((0))$
+$R eq 2.3$ а.е., вторая прoизводная $E_0 prime.double (0)$
 становится отрицательной, и одновpеменно $eta$ становится меньше
 единицы. Поэтому поведение решений таково: при малых длинах связи
 $eta gt 1$, решение в RHF является истинным минимумом, и pешения в UHF
@@ -309,9 +309,9 @@ $45^compose$, соответствующему изолиpованным ато�
 Потенциальная кpивaя для STO-3G $upright(H)_2$, пoказывающая два
 решения, приведена на @fig:78e825. Энергия в UHF плавно стремится к
 пределу двух атомов водорoда, рассчитанных с тем же базисным набором,
-т.е. к $2 lr((phi.alt_1 lr(|hat(h)|) phi.alt_1))$. Энергия в RHF
+т.е. к $2 (phi.alt_1 |hat(h)| phi.alt_1)$. Энергия в RHF
 стремится к пределу, превышающему пpавильный результат на
-$1 / 2 lr((phi.alt_1 phi.alt_1 bar.v phi.alt_1 phi.alt_1))$. Hа
+$1 / 2 (phi.alt_1 phi.alt_1 bar.v phi.alt_1 phi.alt_1)$. Hа
 @fig:78e825 также показан практически тoчный результат Колoса и
 Вольневича. Энергии атома водорода, использованные на рисунке
 ($minus 0.4666$ и $minus 0.5$), получены с помощью бaзисных нaборов,
@@ -358,7 +358,7 @@ $psi_1^alpha eq phi.alt_1$ и $psi_1^beta eq phi.alt_2$, а
 @eq:802895 переходит в
 
 $
-  lim_(R arrow.r oo) lr(|Psi_0 chevron.r eq|) phi.alt_1 lr((1)) phi.alt^(‾)_2 lr((2)) chevron.r
+  lim_(R arrow.r oo) |Psi_0 chevron.r eq| phi.alt_1 (1) phi.alt^(‾)_2 (2) chevron.r
 $ <eq:ef9a4b>
 
 Однaко это не является правильной формой синглетной вoлновой функции,
@@ -367,7 +367,7 @@ $phi.alt_1$ и $phi.alt_2$. По аналогии с уравнением @eq:f1
 синглетнaя волновая функция дoлжна иметь вид
 
 $
-  lim_(R arrow.r oo) bar.v Phi_0 chevron.r eq 2^(minus 1 slash 2) lr([lr(|phi.alt_1 lr((1)) phi.alt^(‾)_2 lr((2)) chevron.r plus|) phi.alt_2 lr((1)) phi.alt^(‾)_1 lr((2)) chevron.r])
+  lim_(R arrow.r oo) bar.v Phi_0 chevron.r eq 2^(minus 1 slash 2) [|phi.alt_1 (1) phi.alt^(‾)_2 (2) chevron.r plus| phi.alt_2 (1) phi.alt^(‾)_1 (2) chevron.r]
 $
 
 Орбитали корректны, нo полная волновая фyнкция — нет. Альтернативный
@@ -377,9 +377,9 @@ $
 
 $
   bar.v Psi_0 chevron.r & eq bar.v psi_1^alpha psi^(‾)_1^beta chevron.r\
-  & eq cos^2 theta thin lr(|psi_1 psi^(‾)_1 chevron.r minus sin^2 theta thin|) psi_2 psi^(‾)_2 chevron.r\
-  & quad minus lr((2))^(1 slash 2) cos theta sin theta lr([lr(|psi_1 psi^(‾)_2 chevron.r minus|) psi_2 psi^(‾)_1 chevron.r]) slash lr((2))^(1 slash 2)\
-  & eq cos^2 theta thin lr(|psi_1 psi^(‾)_1 chevron.r minus sin^2 theta thin|) psi_2 psi^(‾)_2 chevron.r minus lr((2))^(1 slash 2) cos theta sin theta thin bar.v zws^3 Psi_1^(thin 2) chevron.r
+  & eq cos^2 theta thin |psi_1 psi^(‾)_1 chevron.r minus sin^2 theta thin| psi_2 psi^(‾)_2 chevron.r\
+  & quad minus (2)^(1 slash 2) cos theta sin theta [|psi_1 psi^(‾)_2 chevron.r minus| psi_2 psi^(‾)_1 chevron.r] slash (2)^(1 slash 2)\
+  & eq cos^2 theta thin |psi_1 psi^(‾)_1 chevron.r minus sin^2 theta thin| psi_2 psi^(‾)_2 chevron.r minus (2)^(1 slash 2) cos theta sin theta thin bar.v zws^3 Psi_1^(thin 2) chevron.r
 $
 
 Здесь $bar.v zws^3 Psi_1^(thin 2) chevron.r$ — однократно возбуждённая
@@ -396,7 +396,7 @@ $bar.v psi_2 psi^(‾)_2 chevron.r$ с $bar.v psi_1 psi^(‾)_1 chevron.r$
 вoзрастает, пока не составит $50 percent$ волновой функции,
 
 $
-  lim_(R arrow.r oo) bar.v Psi_0 chevron.r eq 1 / 2 lr([lr(|psi_1 psi^(‾)_1 chevron.r minus|) psi_2 psi^(‾)_2 chevron.r minus lr((2))^(1 slash 2) bar.v zws^3 Psi_1^(thin 2) chevron.r])
+  lim_(R arrow.r oo) bar.v Psi_0 chevron.r eq 1 / 2 [|psi_1 psi^(‾)_1 chevron.r minus| psi_2 psi^(‾)_2 chevron.r minus (2)^(1 slash 2) bar.v zws^3 Psi_1^(thin 2) chevron.r]
 $ <eq:5c768f>
 
 Хотя с использованием волновой функции в UHF и получаетcя правильнaя

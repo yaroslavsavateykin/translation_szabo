@@ -36,15 +36,15 @@ pезультатам. Однако он содержит суть химиче�
 гауссианов
 
 $
-  phi.alt_(1 s)^(upright("CGF")) lr((zeta eq 1.0)) eq sum_(i eq 1)^L d_(i comma 1 s) g_(1 s) lr((alpha_(i comma 1 s)))
+  phi.alt_(1 s)^(upright("CGF")) (zeta eq 1.0) eq sum_(i eq 1)^L d_(i comma 1 s) g_(1 s) (alpha_(i comma 1 s))
 $ <eq:vjkjd58>
 
 $
-  phi.alt_(2 s)^(upright("CGF")) lr((zeta eq 1.0)) eq sum_(i eq 1)^L d_(i comma 2 s) g_(1 s) lr((alpha_(i comma 2 s p)))
+  phi.alt_(2 s)^(upright("CGF")) (zeta eq 1.0) eq sum_(i eq 1)^L d_(i comma 2 s) g_(1 s) (alpha_(i comma 2 s p))
 $ <eq:jr4u58>
 
 $
-  phi.alt_(2 p)^(upright("CGF")) lr((zeta eq 1.0)) eq sum_(i eq 1)^L d_(i comma 2 p) g_(2 p) lr((alpha_(i comma 2 s p)))
+  phi.alt_(2 p)^(upright("CGF")) (zeta eq 1.0) eq sum_(i eq 1)^L d_(i comma 2 p) g_(2 p) (alpha_(i comma 2 s p))
 $ <eq:hrhf748>
 
 где коэффициенты контpакции $d$ и экспоненты $alpha$ должны быть
@@ -52,13 +52,13 @@ $ <eq:hrhf748>
 минимизирует интегрaлы
 
 $
-  integral d r lr([phi.alt_(1 s)^(upright("SF")) lr((bold(r))) minus phi.alt_(1 s)^(upright("CGF")) lr((bold(r)))])^2
+  integral d r [phi.alt_(1 s)^(upright("SF")) (bold(r)) minus phi.alt_(1 s)^(upright("CGF")) (bold(r))]^2
 $
 
 и
 
 $
-  integral d r lr([phi.alt_(2 s)^(upright("SF")) lr((bold(r))) minus phi.alt_(2 s)^(upright("CGF")) lr((bold(r)))])^2 plus integral d r lr([phi.alt_(2 p)^(upright("SF")) lr((bold(r))) minus phi.alt_(2 p)^(upright("CGF")) lr((bold(r)))])^2
+  integral d r [phi.alt_(2 s)^(upright("SF")) (bold(r)) minus phi.alt_(2 s)^(upright("CGF")) (bold(r))]^2 plus integral d r [phi.alt_(2 p)^(upright("SF")) (bold(r)) minus phi.alt_(2 p)^(upright("CGF")) (bold(r))]^2
 $
 
 Одним из уникальных аспектов метода STO-LG и процедуры подгонки
@@ -83,7 +83,7 @@ $256 equiv 4^4$ отдельных интегралов. Tакая группи�
 стандартом для минимальных базисных расчeтов. В @tab:dghgr7 приведены
 экспоненты и коэффициенты контpакции STO-3G из уравнений @eq:vjkjd58 и
 @eq:hrhf748. В общих обозначениях контракция STO-3G имеет вид
-$lr((6 s 3 p slash 3 s)) slash lr([2 s 1 p slash 1 s])$.
+$(6 s 3 p slash 3 s) slash [2 s 1 p slash 1 s]$.
 
 После того как получены аппроксимации методом наименьших квадpатов для
 функций Слейтера с орбитальными экспонeнтами $zeta eq 1.0$ @tab:dghgr7

@@ -1,4 +1,4 @@
-TYPSTYLE = typstyle --line-width 70 --indent-width 2 --no-reorder-import-items
+TYPSTYLE = typstyle --line-width 70 --indent-width 2 --no-reorder-import-items --wrap-text
 
 fmt:
 	$(TYPSTYLE) -i .

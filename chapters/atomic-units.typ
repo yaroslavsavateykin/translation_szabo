@@ -4,7 +4,7 @@
 имеем
 
 $
-  lr([minus frac(planck^2, 2 m_e) nabla^2 minus frac(e^2, 4 pi epsilon.alt_0 r)]) phi.alt eq E phi.alt
+  [minus frac(planck^2, 2 m_e) nabla^2 minus frac(e^2, 4 pi epsilon.alt_0 r)] phi.alt eq E phi.alt
 $ <eq:23>
 
 $planck$ — постоянная Планка, делённая на $2 pi$, $m_e$ — масса
@@ -13,7 +13,7 @@ $planck$ — постоянная Планка, делённая на $2 pi$, $m
 $x, y, z -> lambda x^prime, lambda y^prime, lambda z^prime$ и получим
 
 $
-  lr([minus frac(planck^2, 2 m_e lambda^2) nabla^(prime 2) minus frac(e^2, 4 pi epsilon_0 lambda r^prime)]) phi.alt^prime eq E phi.alt^prime
+  [minus frac(planck^2, 2 m_e lambda^2) nabla^(prime 2) minus frac(e^2, 4 pi epsilon_0 lambda r^prime)] phi.alt^prime eq E phi.alt^prime
 $ <eq:24>
 
 Константы перед операторами потенциальной и кинетической энергии можно
@@ -32,14 +32,14 @@ $ lambda eq frac(4 pi epsilon_0 planck^2, m_e e^2) eq a_0 $ <eq:26>
 атомной единицей длины, называемой Бором. Наконец, поскольку
 
 $
-  E_a lr([minus 1 / 2 nabla^(prime 2) minus 1 / r^prime]) phi.alt^prime eq E phi.alt^prime
+  E_a [minus 1 / 2 nabla^(prime 2) minus 1 / r^prime] phi.alt^prime eq E phi.alt^prime
 $ <eq:27>
 
 Если принять $E prime eq E slash E_a$, то получим безразмерное
 уравнение,
 
 $
-  lr((minus 1 / 2 nabla^(prime 2) minus 1 / r^prime)) phi.alt^prime eq E^prime phi.alt^prime
+  (minus 1 / 2 nabla^(prime 2) minus 1 / r^prime) phi.alt^prime eq E^prime phi.alt^prime
 $ <eq:28>
 
 являющееся уравнением Шрёдингера в атомных единицах. Решение этого

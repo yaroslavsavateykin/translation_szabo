@@ -27,7 +27,7 @@ $ <eq:173>
 $
   chevron.l alpha bar.v hat(O) bar.v alpha chevron.r
   eq chevron.l alpha bar.v hat(O)^dagger bar.v alpha chevron.r
-  eq lr((chevron.l alpha bar.v hat(O) bar.v alpha chevron.r))^ast.basic
+  eq (chevron.l alpha bar.v hat(O) bar.v alpha chevron.r)^ast.basic
 $ <eq:174>
 
 Умножая соотношение для собственного значения @eq:172 слева на
@@ -64,7 +64,7 @@ $ <eq:176>
 $bar.v alpha chevron.r$ и вычитая получающиеся выражения, находим
 
 $
-  lr((omega_beta minus omega_alpha)) chevron.l beta bar.v alpha chevron.r eq 0
+  (omega_beta minus omega_alpha) chevron.l beta bar.v alpha chevron.r eq 0
 $ <eq:177>
 
 так что $chevron.l beta bar.v alpha chevron.r eq 0$, если
@@ -85,9 +85,9 @@ $ <eq:178>
 же собственным значением, т. е.
 
 $
-  hat(O) lr((x bar.v 1 chevron.r plus y bar.v 2 chevron.r))
+  hat(O) (x bar.v 1 chevron.r plus y bar.v 2 chevron.r)
   eq x omega bar.v 1 chevron.r plus y omega bar.v 2 chevron.r
-  eq omega lr((x bar.v 1 chevron.r plus y bar.v 2 chevron.r))
+  eq omega (x bar.v 1 chevron.r plus y bar.v 2 chevron.r)
 $ <eq:179>
 
 Существует много способов найти две линейные комбинации
@@ -103,8 +103,8 @@ $chevron.l upright(I) bar.v upright(II)' chevron.r eq 0 eq 1 plus c S$.
 Наконец, нормируем $bar.v upright(II)' chevron.r$ и получаем
 
 $
-  bar.v upright(II) chevron.r eq lr((S^(-2) minus 1))^(-1 slash 2)
-  lr((bar.v 1 chevron.r minus S^(-1) bar.v 2 chevron.r))
+  bar.v upright(II) chevron.r eq (S^(-2) minus 1)^(-1 slash 2)
+  (bar.v 1 chevron.r minus S^(-1) bar.v 2 chevron.r)
 $ <eq:180>
 
 Таким образом, собственные векторы
@@ -184,7 +184,7 @@ $N times N$ нужно найти все различные матрицы-ст�
 
 #sub-eq("b", same: true)[
   $
-    lr((bb(O) minus omega bb(1))) bold(c) eq 0
+    (bb(O) minus omega bb(1)) bold(c) eq 0
   $ <eq:184b>
 ]
 
@@ -192,7 +192,7 @@ $N times N$ нужно найти все различные матрицы-ст�
 решение ($bold(c) != 0$) только тогда, когда
 
 $
-  det lr((bb(O) minus omega bb(1))) eq 0
+  det (bb(O) minus omega bb(1)) eq 0
 $ <eq:185>
 
 Это называется секулярным определителем. Такой определитель является
@@ -207,7 +207,7 @@ $alpha eq 1 comma 2 comma dots.h comma N$, которые в данном слу
 условием нормировки $bold(c)^alpha$:
 
 $
-  sum_i lr((c_i^alpha))^ast.basic c_i^alpha eq 1
+  sum_i (c_i^alpha)^ast.basic c_i^alpha eq 1
 $ <eq:186>
 
 Так мы можем найти $N$ решений уравнения @eq:184a:
@@ -221,7 +221,7 @@ $ <eq:187>
 собственные векторы ортогональны:
 
 $
-  sum_i lr((c_i^alpha))^ast.basic c_i^beta eq delta_(alpha beta)
+  sum_i (c_i^alpha)^ast.basic c_i^beta eq delta_(alpha beta)
 $ <eq:188>
 
 Чтобы установить связь с предыдущими результатами, построим матрицу
@@ -235,7 +235,7 @@ $
     dots.v, dots.v, dots.down, dots.v;
     c_N^1, c_N^2, dots.h, c_N^N
   )
-  eq lr((bold(c)^1 bold(c)^2 dots.h bold(c)^N))
+  eq (bold(c)^1 bold(c)^2 dots.h bold(c)^N)
 $ <eq:189>
 
 Таким образом, $alpha$-й столбец $bb(U)$ — это просто матрица-столбец
@@ -256,8 +256,8 @@ $ <eq:190>
 @eq:188 эквивалентно
 
 $
-  sum_i lr((c_i^alpha))^ast.basic c_i^beta
-  eq sum_i lr((bb(U)^dagger))_(alpha i) U_(i beta)
+  sum_i (c_i^alpha)^ast.basic c_i^beta
+  eq sum_i (bb(U)^dagger)_(alpha i) U_(i beta)
   eq delta_(alpha beta)
 $ <eq:191>
 
@@ -305,20 +305,20 @@ $ <eq:194>
 
 $
   det mat(delim: "(", O_11 minus omega, O_12; O_21, O_22 minus omega)
-  eq omega^2 minus omega lr((O_22 plus O_11)) plus O_11 O_22 minus O_12 O_21 eq 0
+  eq omega^2 minus omega (O_22 plus O_11) plus O_11 O_22 minus O_12 O_21 eq 0
 $ <eq:195>
 
 Это квадратное уравнение имеет два решения:
 
 #sub-eq("a")[
   $
-    omega_1 eq frac(1, 2) lr([O_11 plus O_22 minus lr(((O_22 minus O_11)^2 plus 4 O_12 O_21))^(1 slash 2)])
+    omega_1 eq frac(1, 2) [O_11 plus O_22 minus ((O_22 minus O_11)^2 plus 4 O_12 O_21)^(1 slash 2)]
   $ <eq:196a>
 ]
 
 #sub-eq("b", same: true)[
   $
-    omega_2 eq frac(1, 2) lr([O_11 plus O_22 plus lr(((O_22 minus O_11)^2 plus 4 O_12 O_21))^(1 slash 2)])
+    omega_2 eq frac(1, 2) [O_11 plus O_22 plus ((O_22 minus O_11)^2 plus 4 O_12 O_21)^(1 slash 2)]
   $ <eq:196b>
 ]
 
@@ -343,7 +343,7 @@ $ <eq:195>
 условие нормировки
 
 $
-  lr((c_1^2))^2 plus lr((c_2^2))^2 eq 1
+  (c_1^2)^2 plus (c_2^2)^2 eq 1
 $ <eq:198>
 
 для нахождения $c_1^2$ и $c_2^2$. В качестве простой иллюстрации рассмотрим
@@ -366,7 +366,7 @@ $ <eq:198>
 уравнение @eq:197a, которое в данном случае даёт
 
 $
-  a c_1^2 plus b c_2^2 eq lr((a plus b)) c_1^2
+  a c_1^2 plus b c_2^2 eq (a plus b) c_1^2
 $
 
 откуда получаем
@@ -469,8 +469,8 @@ $
   & eq mat(
     delim: "(",
     O_11 cos^2 theta plus O_22 sin^2 theta plus O_12 sin 2 theta,
-    frac(1, 2) lr((O_11 minus O_22)) sin 2 theta minus O_12 cos 2 theta;
-    frac(1, 2) lr((O_11 minus O_22)) sin 2 theta minus O_12 cos 2 theta,
+    frac(1, 2) (O_11 minus O_22) sin 2 theta minus O_12 cos 2 theta;
+    frac(1, 2) (O_11 minus O_22) sin 2 theta minus O_12 cos 2 theta,
     O_11 sin^2 theta plus O_22 cos^2 theta minus O_12 sin 2 theta
   )
 $
@@ -478,7 +478,7 @@ $
 была диагональной. Это выполняется, если выбрать $theta$ так, чтобы
 
 $
-  frac(1, 2) lr((O_11 minus O_22)) sin 2 theta minus O_12 cos 2 theta eq 0
+  frac(1, 2) (O_11 minus O_22) sin 2 theta minus O_12 cos 2 theta eq 0
 $
 
 Это уравнение имеет решение

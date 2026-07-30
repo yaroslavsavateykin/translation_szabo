@@ -25,7 +25,7 @@ $ <eq:211>
 является электронная волновая функция,
 
 $
-  Phi_(upright("elec")) eq Phi_(upright("elec")) lr((brace.l bold(r)_i brace.r semi brace.l bold(R)_A brace.r))
+  Phi_(upright("elec")) eq Phi_(upright("elec")) (brace.l bold(r)_i brace.r semi brace.l bold(R)_A brace.r)
 $ <eq:212>
 
 описывающая движение электронов и #emph[явно] зaвисящая от кoординат
@@ -33,7 +33,7 @@ $ <eq:212>
 как и электронная энергия
 
 $
-  E_(upright("elec")) eq E_(upright("elec")) lr((brace.l bold(R)_A brace.r))
+  E_(upright("elec")) eq E_(upright("elec")) (brace.l bold(R)_A brace.r)
 $ <eq:20e685>
 
 Под параметрической зависимостью подразумевается, что для разных
@@ -59,11 +59,11 @@ $ <eq:c73651>
 $
   hat(H)_(upright("nucl ")) & eq minus sum_(A eq 1)^M frac(1, 2 M_A) nabla_A^2 plus ⟨minus sum_(i eq 1)^N 1 / 2 nabla_i^2 minus sum_(i eq 1)^N sum_(A eq 1)^M Z_A / r_(i A) plus sum_(i eq 1)^N sum_(j gt i)^N 1 / r_(i j)⟩\
   & plus sum_(A eq 1)^M sum_(B gt A)^M frac(Z_A Z_B, R_(A B))\
-  & eq minus sum_(A eq 1)^M frac(1, 2 M_A) nabla_A^2 plus E_(e l e c) lr((lr({bold(R)_A}))) plus sum_(A eq 1)^M sum_(B gt A)^M frac(Z_A Z_B, R_(A B))\
-  & eq minus sum_(A eq 1)^M frac(1, 2 M_A) nabla_A^2 plus E_(t o t) lr((lr({bold(R)_A})))
+  & eq minus sum_(A eq 1)^M frac(1, 2 M_A) nabla_A^2 plus E_(e l e c) ({bold(R)_A}) plus sum_(A eq 1)^M sum_(B gt A)^M frac(Z_A Z_B, R_(A B))\
+  & eq minus sum_(A eq 1)^M frac(1, 2 M_A) nabla_A^2 plus E_(t o t) ({bold(R)_A})
 $ <eq:215>
 
-Полная энергия $E_(t o t) lr((brace.l R_A brace.r))$ представляет
+Полная энергия $E_(t o t) (brace.l R_A brace.r)$ представляет
 cобой потенциал ядерного движения. Эта функция позволяет схематично
 изобразить поверхность потенциальной энеpгии. Таким образом, в
 приближении Борна-Оппенгеймера ядра перемещаются по поверхности
@@ -83,14 +83,14 @@ $
 $ <eq:216>
 
 описывают колебание, вращение и перемещение молекулы. Здесь
-$Phi_(upright("nucl")) eq Phi_(upright("nucl")) lr((brace.l R_A brace.r))$,
+$Phi_(upright("nucl")) eq Phi_(upright("nucl")) (brace.l R_A brace.r)$,
 а $E$, представляющая собой приближение Борна-Оппенгеймера для полной
 энергии @eq:c73651, включает электронную, колебательную, вращательную
 и кинетическую энергии молекулы. Соответствующая приближённая волновая
 функция имеет вид
 
 $
-  Phi lr((brace.l bold(r)_i brace.r semi brace.l bold(R)_A brace.r)) eq Phi_(upright("elec")) lr((brace.l bold(r)_i brace.r semi brace.l bold(R)_A brace.r)) Phi_(upright("nucl")) lr((brace.l bold(R)_A brace.r)) dot.basic
+  Phi (brace.l bold(r)_i brace.r semi brace.l bold(R)_A brace.r) eq Phi_(upright("elec")) (brace.l bold(r)_i brace.r semi brace.l bold(R)_A brace.r) Phi_(upright("nucl")) (brace.l bold(R)_A brace.r) dot.basic
 $ <eq:218>
 
 В дальнейшем мы не будем рассматривать задачи о колебаниях и
