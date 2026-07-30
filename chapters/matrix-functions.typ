@@ -193,9 +193,9 @@ $f (a_i) eq 1 / a_i eq oo$, и поэтому $bb(A)^(-1)$ не существу
 
     $
       (bb(G) (omega))_(i j)
-      eq chevron.l i bar.v bb(G) (omega) bar.v j chevron.r
+      eq chevron.l i|bb(G) (omega)|j chevron.r
       eq sum_alpha frac(
-        chevron.l i bar.v alpha chevron.r chevron.l alpha bar.v j chevron.r,
+        chevron.l i|alpha chevron.r chevron.l alpha|j chevron.r,
         omega minus a_alpha
       )
     $
