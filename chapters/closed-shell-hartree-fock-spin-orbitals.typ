@@ -137,10 +137,10 @@ $ hat(f) (1) psi_j (1) eq epsilon_j psi_j (1) $
 Энергия основного состояния в методе Хартри-Фока для замкнутых
 оболочек выводилась в 2.3.5 как пример перехода от спин-орбиталей к
 пространственным орбиталям. Для определителя замкнутой оболочки
-$|Psi_0 chevron.r eq| psi_1 overline(psi)_1 dots.h.c psi_a overline(psi)_a dots.h.c psi_(N slash 2) overline(psi)_(N slash 2) chevron.r$,
+$|Psi_0 chevron.r eq|psi_1 overline(psi)_1 dots.h.c psi_a overline(psi)_a dots.h.c psi_(N slash 2) overline(psi)_(N slash 2) chevron.r$,
 
 $
-  E_0 eq chevron.l Psi_0 |hat(H)| Psi_0 chevron.r & eq 2 sum_a (a |hat(h)| a) plus sum_a sum_b 2 (a a bar.v b b) minus (a b bar.v b a)\
+  E_0 eq chevron.l Psi_0|hat(H)|Psi_0 chevron.r & eq 2 sum_a (a|hat(h)|a) plus sum_a sum_b 2 (a a|b b) minus (a b|b a)\
   & eq 2 sum_a h_(a a) plus sum_a sum_b 2 J_(a b) minus K_(a b)
 $ <eq:fe45ad>
 
@@ -153,13 +153,13 @@ $ <eq:fe45ad>
   спин-орбитали
 
   $
-    epsilon_i eq chevron.l chi_i |hat(h)| chi_i chevron.r plus sum_b^N chevron.l chi_i chi_b||chi_i chi_b chevron.r
+    epsilon_i eq chevron.l chi_i|hat(h)|chi_i chevron.r plus sum_b^N chevron.l chi_i chi_b||chi_i chi_b chevron.r
   $
 
   к выражению для замкнутых оболочек
 
   $
-    epsilon_i eq (psi_i |hat(h)| psi_i) plus sum_b^(N slash 2) 2 (i i|b b) minus (i b|b i) eq h_(i i) plus sum_b^(N slash 2) 2 J_(i b) minus K_(i b)
+    epsilon_i eq (psi_i|hat(h)|psi_i) plus sum_b^(N slash 2) 2 (i i|b b) minus (i b|b i) eq h_(i i) plus sum_b^(N slash 2) 2 J_(i b) minus K_(i b)
   $
 ]
 <exercise:a07891>
@@ -175,7 +175,7 @@ $ <eq:fe45ad>
 )
 
 Оценим полную энергию на глаз. Каждый из элeктронов имеет кинетическую
-энepгию и энергию пpитяжения к ядрам $h_11 eq (psi_1 |hat(h)| psi_1)$.
+энepгию и энергию пpитяжения к ядрам $h_11 eq (psi_1|hat(h)|psi_1)$.
 Также между электронами есть есть кулоновское отталкивание
 $J_11 eq (psi_1 psi_1|psi_1 psi_1)$. Обменного взаимодействия нет,
 поскольку спины электронов антипараллельны. Таким образом, энергия

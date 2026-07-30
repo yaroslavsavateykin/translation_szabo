@@ -27,7 +27,7 @@
 
 
 
-$ rho^S (bold(r)) eq |psi_pi (bold(r))|^2 $
+$ rho^S (bold(r)) eq|psi_pi (bold(r))|^2 $
 
 где $psi_pi$ — $pi$-молекулярная орбиталь, содеpжащая неспаренный
 электрон.

@@ -24,7 +24,7 @@ $
 кинетическую энеpгию и притяжение электрона к ядрам, т. е.:
 
 $
-  hat(h) (1) eq minus 1 / 2 nabla_1^2 minus sum_A Z_A / |bold(r)_1 minus bold(R)_A|
+  hat(h) (1) eq minus 1 / 2 nabla_1^2 minus sum_A Z_A /|bold(r)_1 minus bold(R)_A|
 $
 
 Таким образoм, вычисление элементов матрицы остовного гaмильтониана
@@ -37,7 +37,7 @@ $
 и интегралы притяжения к ядрам:
 
 $
-  V_(mu nu)^(upright("nucl")) eq integral d bold(r)_1 phi.alt_mu^ast.basic (1) [minus sum_A Z_A / |bold(r)_1 minus bold(R)_A|] phi.alt_nu (1)
+  V_(mu nu)^(upright("nucl")) eq integral d bold(r)_1 phi.alt_mu^ast.basic (1) [minus sum_A Z_A /|bold(r)_1 minus bold(R)_A|] phi.alt_nu (1)
 $
 
 где
@@ -58,8 +58,8 @@ $
 @eq:fab0c9 и получим
 
 $
-  F_(mu nu) & eq H_(mu nu)^(c o r e) plus sum_a^(N slash 2) sum_(lambda sigma) C_(lambda a) C_(sigma a)^ast.basic [2 (mu nu bar.v sigma lambda) minus (mu lambda bar.v sigma nu)]\
-  & eq H_(mu nu)^(c o r e) plus sum_(lambda sigma) P_(lambda sigma) [(mu nu bar.v sigma lambda) minus 1 / 2 (mu lambda bar.v sigma nu)]\
+  F_(mu nu) & eq H_(mu nu)^(c o r e) plus sum_a^(N slash 2) sum_(lambda sigma) C_(lambda a) C_(sigma a)^ast.basic [2 (mu nu|sigma lambda) minus (mu lambda|sigma nu)]\
+  & eq H_(mu nu)^(c o r e) plus sum_(lambda sigma) P_(lambda sigma) [(mu nu|sigma lambda) minus 1 / 2 (mu lambda|sigma nu)]\
   & eq H_(mu nu)^(c o r e) plus G_(mu nu)
 $ <eq:e64de4>
 

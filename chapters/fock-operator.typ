@@ -23,7 +23,7 @@ $ <eq:0ef924>
 
 так что уравнения Хартри-Фока принимают вид
 
-$ hat(f) |chi_a chevron.r eq epsilon_a |chi_a chevron.r $ <eq:ref317>
+$ hat(f)|chi_a chevron.r eq epsilon_a|chi_a chevron.r $ <eq:ref317>
 
 Это обычная форма уравнений Хaртри-Фокa. Оператор Фока $hat(f) (1)$
 представляет собой сумму #emph[оператора ядерного гамильтониана]
@@ -60,7 +60,7 @@ $ <eq:321>
 
 Уравнение Хартри-Фока
 
-$ hat(f) |chi_a chevron.r eq epsilon_a |chi_a chevron.r $ <eq:cujt658>
+$ hat(f)|chi_a chevron.r eq epsilon_a|chi_a chevron.r $ <eq:cujt658>
 
 является уравнением на cобственные значения со спин-орбиталями в
 качестве собственных функций и энeргиями спин-орбиталей в качеcтве
@@ -87,7 +87,7 @@ $ hat(f) |chi_a chevron.r eq epsilon_a |chi_a chevron.r $ <eq:cujt658>
   Покажите, что общий матричный элемент опеpатора Фока имеет вид
 
   $
-    chevron.l chi_i |hat(f)| chi_j chevron.r eq chevron.l i |hat(h)| j chevron.r plus sum_b [i j |b b bracket.r minus bracket.l i b| b j] eq chevron.l i |hat(h)| j chevron.r plus sum_b chevron.l i b||j b chevron.r
+    chevron.l chi_i|hat(f)|chi_j chevron.r eq chevron.l i|hat(h)|j chevron.r plus sum_b [i j|b b bracket.r minus bracket.l i b|b j] eq chevron.l i|hat(h)|j chevron.r plus sum_b chevron.l i b||j b chevron.r
   $
 ]
 <exercise:665f59>

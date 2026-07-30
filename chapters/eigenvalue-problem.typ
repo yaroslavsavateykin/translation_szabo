@@ -1,20 +1,20 @@
 #import "../macros.typ": sub-eq, task
 
-Когда оператор $hat(O)$ действует на вектор $bar.v alpha chevron.r$,
+Когда оператор $hat(O)$ действует на вектор $|alpha chevron.r$,
 получающийся вектор в общем случае отличается от
-$bar.v alpha chevron.r$. Если $hat(O) bar.v alpha chevron.r$ является
-просто постоянной, умноженной на $bar.v alpha chevron.r$, т. е.
+$|alpha chevron.r$. Если $hat(O)|alpha chevron.r$ является
+просто постоянной, умноженной на $|alpha chevron.r$, т. е.
 
 $
-  hat(O) bar.v alpha chevron.r eq omega_alpha bar.v alpha chevron.r
+  hat(O)|alpha chevron.r eq omega_alpha|alpha chevron.r
 $ <eq:172>
 
-то $bar.v alpha chevron.r$ называется собственным вектором оператора
+то $|alpha chevron.r$ называется собственным вектором оператора
 $hat(O)$ с собственным значением $omega_alpha$. Без потери общности
 собственные векторы можно выбрать нормированными:
 
 $
-  chevron.l alpha bar.v alpha chevron.r eq 1
+  chevron.l alpha|alpha chevron.r eq 1
 $ <eq:173>
 
 В этой книге нас интересуют собственные векторы и собственные значения
@@ -25,13 +25,13 @@ $ <eq:173>
 непосредственно следует из уравнения @eq:161, которое утверждает, что
 
 $
-  chevron.l alpha bar.v hat(O) bar.v alpha chevron.r
-  eq chevron.l alpha bar.v hat(O)^dagger bar.v alpha chevron.r
-  eq (chevron.l alpha bar.v hat(O) bar.v alpha chevron.r)^ast.basic
+  chevron.l alpha|hat(O)|alpha chevron.r
+  eq chevron.l alpha|hat(O)^dagger|alpha chevron.r
+  eq (chevron.l alpha|hat(O)|alpha chevron.r)^ast.basic
 $ <eq:174>
 
 Умножая соотношение для собственного значения @eq:172 слева на
-$chevron.l alpha bar.v$ и подставляя результат в @eq:174, получаем
+$chevron.l alpha|$ и подставляя результат в @eq:174, получаем
 
 $
   omega_alpha eq omega_alpha^ast.basic
@@ -43,13 +43,13 @@ $ <eq:175>
 доказательства рассмотрим
 
 $
-  hat(O) bar.v beta chevron.r eq omega_beta bar.v beta chevron.r
+  hat(O)|beta chevron.r eq omega_beta|beta chevron.r
 $
 
 Сопряжённое к этому уравнению имеет вид
 
 $
-  chevron.l beta bar.v hat(O)^dagger eq chevron.l beta bar.v omega_beta^ast.basic
+  chevron.l beta|hat(O)^dagger eq chevron.l beta|omega_beta^ast.basic
 $
 
 где мы использовали @eq:157 и тот факт, что сопряжением числа является
@@ -57,26 +57,26 @@ $
 действителен, получаем
 
 $
-  chevron.l beta bar.v hat(O) eq chevron.l beta bar.v omega_beta
+  chevron.l beta|hat(O) eq chevron.l beta|omega_beta
 $ <eq:176>
 
-Умножая @eq:172 слева на $chevron.l beta bar.v$, а @eq:176 справа на
-$bar.v alpha chevron.r$ и вычитая получающиеся выражения, находим
+Умножая @eq:172 слева на $chevron.l beta|$, а @eq:176 справа на
+$|alpha chevron.r$ и вычитая получающиеся выражения, находим
 
 $
-  (omega_beta minus omega_alpha) chevron.l beta bar.v alpha chevron.r eq 0
+  (omega_beta minus omega_alpha) chevron.l beta|alpha chevron.r eq 0
 $ <eq:177>
 
-так что $chevron.l beta bar.v alpha chevron.r eq 0$, если
+так что $chevron.l beta|alpha chevron.r eq 0$, если
 $omega_alpha != omega_beta$. Следовательно, ортогональность немедленно
 вытекает, если два собственных значения не совпадают, т. е. если они
-невырождены. Два собственных вектора $bar.v 1 chevron.r$ и
-$bar.v 2 chevron.r$ являются вырожденными, если им соответствует одно
+невырождены. Два собственных вектора $|1 chevron.r$ и
+$|2 chevron.r$ являются вырожденными, если им соответствует одно
 и то же собственное значение:
 
 $
-  hat(O) bar.v 1 chevron.r eq omega bar.v 1 chevron.r comma quad
-  hat(O) bar.v 2 chevron.r eq omega bar.v 2 chevron.r
+  hat(O)|1 chevron.r eq omega|1 chevron.r comma quad
+  hat(O)|2 chevron.r eq omega|2 chevron.r
 $ <eq:178>
 
 Теперь покажем, что вырожденные собственные векторы всегда можно
@@ -85,55 +85,55 @@ $ <eq:178>
 тем же собственным значением, т. е.
 
 $
-  hat(O) (x bar.v 1 chevron.r plus y bar.v 2 chevron.r)
-  eq x omega bar.v 1 chevron.r plus y omega bar.v 2 chevron.r
-  eq omega (x bar.v 1 chevron.r plus y bar.v 2 chevron.r)
+  hat(O) (x|1 chevron.r plus y|2 chevron.r)
+  eq x omega|1 chevron.r plus y omega|2 chevron.r
+  eq omega (x|1 chevron.r plus y|2 chevron.r)
 $ <eq:179>
 
 Существует много способов найти две линейные комбинации
-$bar.v 1 chevron.r$ и $bar.v 2 chevron.r$, которые ортогональны. Одна
+$|1 chevron.r$ и $|2 chevron.r$, которые ортогональны. Одна
 из таких процедур называется ортогонализацией Шмидта. Предположим, что
-$bar.v 1 chevron.r$ и $bar.v 2 chevron.r$ нормированы, и пусть
-$chevron.l 1 bar.v 2 chevron.r eq S != 0$. Выберем
-$bar.v upright(I) chevron.r eq bar.v 1 chevron.r$, так что
-$chevron.l upright(I) bar.v upright(I) chevron.r eq 1$. Положим
-$bar.v upright(II)' chevron.r eq bar.v 1 chevron.r plus c bar.v 2 chevron.r$
+$|1 chevron.r$ и $|2 chevron.r$ нормированы, и пусть
+$chevron.l 1|2 chevron.r eq S != 0$. Выберем
+$|upright(I) chevron.r eq|1 chevron.r$, так что
+$chevron.l upright(I)|upright(I) chevron.r eq 1$. Положим
+$|upright(II)' chevron.r eq|1 chevron.r plus c|2 chevron.r$
 и выберем $c$ так, чтобы
-$chevron.l upright(I) bar.v upright(II)' chevron.r eq 0 eq 1 plus c S$.
-Наконец, нормируем $bar.v upright(II)' chevron.r$ и получаем
+$chevron.l upright(I)|upright(II)' chevron.r eq 0 eq 1 plus c S$.
+Наконец, нормируем $|upright(II)' chevron.r$ и получаем
 
 $
-  bar.v upright(II) chevron.r eq (S^(-2) minus 1)^(-1 slash 2)
-  (bar.v 1 chevron.r minus S^(-1) bar.v 2 chevron.r)
+  | upright(II) chevron.r eq (S^(-2) minus 1)^(-1 slash 2)
+  (|1 chevron.r minus S^(-1)|2 chevron.r)
 $ <eq:180>
 
 Таким образом, собственные векторы
-$brace.l bar.v alpha chevron.r brace.r$ эрмитова оператора можно
+$brace.l|alpha chevron.r brace.r$ эрмитова оператора можно
 выбрать так, чтобы они образовывали ортонормированный набор:
 
 $
-  chevron.l alpha bar.v beta chevron.r eq delta_(alpha beta)
+  chevron.l alpha|beta chevron.r eq delta_(alpha beta)
 $ <eq:181>
 
 Матричное представление эрмитова оператора $hat(O)$ в произвольном
-базисе $brace.l bar.v i chevron.r brace.r$ в общем случае не
+базисе $brace.l|i chevron.r brace.r$ в общем случае не
 диагонально. Однако его матричное представление в базисе, образованном
 его собственными векторами, диагонально. Чтобы показать это, умножим
 уравнение для собственного значения @eq:172 слева на
-$chevron.l beta bar.v$ и используем соотношение ортонормированности
+$chevron.l beta|$ и используем соотношение ортонормированности
 @eq:181:
 
 $
-  chevron.l beta bar.v hat(O) bar.v alpha chevron.r eq omega_alpha delta_(alpha beta)
+  chevron.l beta|hat(O)|alpha chevron.r eq omega_alpha delta_(alpha beta)
 $ <eq:182>
 
 Задачу на собственные значения, которую мы хотим решить, можно
 сформулировать следующим образом. Пусть дана матрица $bb(O)$ —
 матричное представление эрмитова оператора $hat(O)$ в
 ортонормированном базисе
-$brace.l bar.v i chevron.r comma i eq 1 comma 2 comma dots.h comma N brace.r$.
+$brace.l|i chevron.r comma i eq 1 comma 2 comma dots.h comma N brace.r$.
 Нужно найти ортонормированный базис
-$brace.l bar.v alpha chevron.r comma alpha eq 1 comma 2 comma dots.h comma N brace.r$,
+$brace.l|alpha chevron.r comma alpha eq 1 comma 2 comma dots.h comma N brace.r$,
 в котором матричное представление $bb(Omega)$ оператора $hat(O)$
 диагонально, т. е.
 $Omega_(alpha beta) eq omega_alpha delta_(alpha beta)$. Иными словами,

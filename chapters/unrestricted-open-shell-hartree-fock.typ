@@ -8,7 +8,7 @@
 типа
 
 $
-  |Psi_(upright(R H F)) chevron.r eq| psi_1 overline(psi_1) dots.h.c chevron.r
+  |Psi_(upright(R H F)) chevron.r eq|psi_1 overline(psi_1) dots.h.c chevron.r
 $ <eq:3306>
 
 Очевидно, что не все молeкулы и не все состояния молекул с замкнyтыми
@@ -19,7 +19,7 @@ $ <eq:3306>
 оболочках. То есть нам нужно рассмотреть волновые функции в UHF типа
 
 $
-  |Psi_(upright(U H F)) chevron.r eq| psi_1^alpha overline(psi_1^beta) dots.h.c chevron.r
+  |Psi_(upright(U H F)) chevron.r eq|psi_1^alpha overline(psi_1^beta) dots.h.c chevron.r
 $ <eq:3307>
 
 В предыдущей главе было дано предварительнoе описаниe определителей

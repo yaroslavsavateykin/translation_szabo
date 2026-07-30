@@ -136,8 +136,7 @@ $
 поскольку
 
 $
-  bb(A)^(1 slash 2) bb(A)^(1 slash 2)
-  & eq bb(U) bb(a)^(1 slash 2) bb(U)^dagger bb(U) bb(a)^(1 slash 2) bb(U)^dagger \
+  bb(A)^(1 slash 2) bb(A)^(1 slash 2) & eq bb(U) bb(a)^(1 slash 2) bb(U)^dagger bb(U) bb(a)^(1 slash 2) bb(U)^dagger \
   & eq bb(U) bb(a)^(1 slash 2) bb(a)^(1 slash 2) bb(U)^dagger
   eq bb(U) bb(a) bb(U)^dagger eq bb(A)
 $
@@ -153,7 +152,9 @@ $f (a_i) eq 1 / a_i eq oo$, и поэтому $bb(A)^(-1)$ не существу
 приведённый выше аргумент показывает, что $bb(A)^(-1)$ не существует.
 Тот же результат был получен другим способом в упражнении 1.7.
 
-#task()[
+#task(
+  breakable: false,
+)[
   Дано, что
 
   $
@@ -230,7 +231,9 @@ $
 Теперь вычисление $bold(x)$ как функции $omega$ становится простым с
 вычислительной точки зрения.
 
-#task()[
+#task(
+  breakable: false,
+)[
   Если
 
   $

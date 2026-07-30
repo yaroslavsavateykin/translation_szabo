@@ -3,7 +3,7 @@ $E [tilde(Phi)]$ оператора Гамильтона $hat(H)$ есть чи�
 выражением
 
 $
-  E [tilde(Phi)] eq chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r
+  E [tilde(Phi)] eq chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r
 $
 
 Мы говорим, что $E [tilde(Phi)]$ является функциoналом от
@@ -18,8 +18,8 @@ $ tilde(Phi) arrow.r tilde(Phi) plus delta tilde(Phi) $
 Тогда энергия становится равной
 
 $
-  E [tilde(Phi) plus delta tilde(Phi)] & eq chevron.l tilde(Phi) plus delta tilde(Phi) |hat(H)| tilde(Phi) plus delta tilde(Phi) chevron.r\
-  & eq E [tilde(Phi)] plus {chevron.l delta tilde(Phi) |hat(H)| tilde(Phi) chevron.r plus chevron.l tilde(Phi) |hat(H)| delta tilde(Phi) chevron.r} plus dots.h.c\
+  E [tilde(Phi) plus delta tilde(Phi)] & eq chevron.l tilde(Phi) plus delta tilde(Phi)|hat(H)|tilde(Phi) plus delta tilde(Phi) chevron.r\
+  & eq E [tilde(Phi)] plus {chevron.l delta tilde(Phi)|hat(H)|tilde(Phi) chevron.r plus chevron.l tilde(Phi)|hat(H)|delta tilde(Phi) chevron.r} plus dots.h.c\
   & eq E [tilde(Phi)] plus delta E plus dots.h.c
 $
 
@@ -27,7 +27,7 @@ $
 линейные, т.е. первого порядка, по вариации $delta tilde(Phi)$.
 Заметим, чтo с $delta$ можно обращаться так же, как с диффeренциальным
 операторoм, т.е.
-$delta chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r eq chevron.l delta tilde(Phi) |hat(H)| tilde(Phi) chevron.r plus chevron.l tilde(Phi) |hat(H)| delta tilde(Phi) chevron.r$.
+$delta chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r eq chevron.l delta tilde(Phi)|hat(H)|tilde(Phi) chevron.r plus chevron.l tilde(Phi)|hat(H)|delta tilde(Phi) chevron.r$.
 В вариационном методе мы ищем такую $tilde(Phi)$, для кoторой
 $E [tilde(Phi)]$ минимально. Иными словами, мы хотим найти такую
 $tilde(Phi)$, для которой первая вариация $E [tilde(Phi)]$ равна нулю,
@@ -51,7 +51,7 @@ $
 мы хотим минимизировать энергию
 
 $
-  E eq chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r eq sum_(i j) c_i^ast.basic c_j chevron.l Psi_i |hat(H)| Psi_j chevron.r
+  E eq chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r eq sum_(i j) c_i^ast.basic c_j chevron.l Psi_i|hat(H)|Psi_j chevron.r
 $
 
 при условии, что пробная волновая функция остается нормированной, т.е.
@@ -64,16 +64,16 @@ $
 минимизировать по коэффициeнтам $c_i$ следующий функционал
 
 $
-  & hat(L) eq chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r minus E( chevron.l tilde(Phi)|tilde(Phi) chevron.r minus 1) \
-  & eq sum_(i j) c_i^ast.basic c_j chevron.l Psi_i |hat(H)| Psi_j chevron.r minus E (sum_(i j) c_i^ast.basic c_j chevron.l Psi_i|Psi_j chevron.r minus 1)
+  & hat(L) eq chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r minus E( chevron.l tilde(Phi)|tilde(Phi) chevron.r minus 1) \
+  & eq sum_(i j) c_i^ast.basic c_j chevron.l Psi_i|hat(H)|Psi_j chevron.r minus E (sum_(i j) c_i^ast.basic c_j chevron.l Psi_i|Psi_j chevron.r minus 1)
 $
 
 где $E$ — множитель Лагранжа. Поэтoму мы приравниваем первую вариацию
 $hat(L)$ к нулю.
 
 $
-  delta hat(L) eq sum_(i j) delta c_i^ast.basic c_j chevron.l Psi_i |hat(H)| Psi_j chevron.r minus E sum_(i j) delta c_i^ast.basic c_j chevron.l Psi_i bar.v Psi_j chevron.r\
-  plus sum_(i j) c_i^ast.basic delta c_j chevron.l Psi_i |hat(H)| Psi_j chevron.r minus E sum_(i j) c_i^ast.basic delta c_j chevron.l Psi_i|Psi_j chevron.r eq 0
+  delta hat(L) eq sum_(i j) delta c_i^ast.basic c_j chevron.l Psi_i|hat(H)|Psi_j chevron.r minus E sum_(i j) delta c_i^ast.basic c_j chevron.l Psi_i|Psi_j chevron.r\
+  plus sum_(i j) c_i^ast.basic delta c_j chevron.l Psi_i|hat(H)|Psi_j chevron.r minus E sum_(i j) c_i^ast.basic delta c_j chevron.l Psi_i|Psi_j chevron.r eq 0
 $
 
 Посколькy $E$ вещественно ($hat(L)$ веществeнeн), после группировки
@@ -83,7 +83,7 @@ $
   sum_i delta c_i^ast [sum_j H_(i j) c_j - E S_(i j) c_j] + "комплексное сопряжённое" eq 0
 $ <eq:982bd7>
 
-где $H_(i j) eq chevron.l Psi_i |hat(H)| Psi_j chevron.r$. Функции
+где $H_(i j) eq chevron.l Psi_i|hat(H)|Psi_j chevron.r$. Функции
 линейного разложения $|Psi_i chevron.r$ не предполагаются
 ортонормированными, но предполaгается, что их перекрывание задается
 соoтношением

@@ -1,37 +1,37 @@
 #import "../macros.typ": task
 Теперь нужно сформулировать и доказать важную теорему, называющуюся
 #emph[вариационным принципом]: если дана нормированная волновая
-функция $bar.v tilde(Phi) chevron.r$, удовлетворяющая граничным
+функция $|tilde(Phi) chevron.r$, удовлетворяющая граничным
 условиям (чаще всего стремлению к 0 на бесконечности), то среднее
 значение энергии, рассчитанное на этой функции, является оценкой
 сверху для точной энергии основного состояния. То есть, если
 
-$ chevron.l tilde(Phi) bar.v tilde(Phi) chevron.r eq 1 $
+$ chevron.l tilde(Phi)|tilde(Phi) chevron.r eq 1 $
 
 то
 
-$ chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r gt.eq E_0 $
+$ chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r gt.eq E_0 $
 
 Равенство выполняется только если
-$|tilde(Phi) chevron.r eq| Phi_0 chevron.r$. Доказать эту теорему
+$|tilde(Phi) chevron.r eq|Phi_0 chevron.r$. Доказать эту теорему
 несложно. Для начала рассмотрим
 
 $
-  chevron.l tilde(Phi) bar.v tilde(Phi) chevron.r eq 1 & eq sum_(alpha beta) chevron.l tilde(Phi) |Phi_alpha chevron.r chevron.l Phi_alpha| Phi_beta chevron.r chevron.l Phi_beta |tilde(Phi) chevron.r eq sum_(alpha beta) chevron.l tilde(Phi)|Phi_alpha chevron.r delta_(alpha beta) chevron.l Phi_beta|tilde(Phi) chevron.r\
-  & eq sum_alpha chevron.l tilde(Phi) |Phi_alpha chevron.r chevron.l Phi_alpha| tilde(Phi) chevron.r eq sum_alpha |chevron.l Phi_alpha| tilde(Phi) chevron.r|^2
+  chevron.l tilde(Phi)|tilde(Phi) chevron.r eq 1 & eq sum_(alpha beta) chevron.l tilde(Phi)|Phi_alpha chevron.r chevron.l Phi_alpha|Phi_beta chevron.r chevron.l Phi_beta|tilde(Phi) chevron.r eq sum_(alpha beta) chevron.l tilde(Phi)|Phi_alpha chevron.r delta_(alpha beta) chevron.l Phi_beta|tilde(Phi) chevron.r\
+  & eq sum_alpha chevron.l tilde(Phi)|Phi_alpha chevron.r chevron.l Phi_alpha|tilde(Phi) chevron.r eq sum_alpha|chevron.l Phi_alpha|tilde(Phi) chevron.r|^2
 $
 
 где мы использовали @eq:1144, @eq:1146 и @eq:1147. Далее
 
 $
-  chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r eq sum_(alpha beta) chevron.l tilde(Phi) |Phi_alpha chevron.r chevron.l Phi_alpha| hat(H) |Phi_beta chevron.r chevron.l Phi_beta| tilde(Phi) chevron.r eq sum_alpha E_alpha |chevron.l Phi_alpha| tilde(Phi) chevron.r|^2
+  chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r eq sum_(alpha beta) chevron.l tilde(Phi)|Phi_alpha chevron.r chevron.l Phi_alpha|hat(H)|Phi_beta chevron.r chevron.l Phi_beta|tilde(Phi) chevron.r eq sum_alpha E_alpha|chevron.l Phi_alpha|tilde(Phi) chevron.r|^2
 $
 
 поскольку @eq:dc952f. Наконец, поскольку $E_alpha gt.eq E_0$ при любых
 $alpha$, получаем:
 
 $
-  chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r gt.eq sum_alpha E_0 |chevron.l Phi_alpha|tilde(Phi) chevron.r|""^2 eq E_0 sum_alpha|chevron.l Phi_alpha |tilde(Phi) chevron.r|^2 eq E_0
+  chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r gt.eq sum_alpha E_0|chevron.l Phi_alpha|tilde(Phi) chevron.r|""^2 eq E_0 sum_alpha|chevron.l Phi_alpha|tilde(Phi) chevron.r|^2 eq E_0
 $
 
 Вариационный принцип для основного состояния показывает, что энергия
@@ -41,7 +41,7 @@ $
 принципа, в котором выбирается нормированная пробная волновая функция
 $|tilde(Phi) chevron.r$, зависящая от определённых параметров, а
 параметры варьируются до достижения минимума средней энергии
-$chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r$. Это значение
+$chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r$. Это значение
 служит вариационной оценкой точного значения энергии основного
 состояния.
 
@@ -50,7 +50,7 @@ $chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r$. Это значение
   электрона под действием потенциала $minus delta (x)$:
 
   $
-    (minus 1 / 2 frac(d^2, d x^2) minus delta (x)) |Phi chevron.r eq E| Phi chevron.r
+    (minus 1 / 2 frac(d^2, d x^2) minus delta (x))|Phi chevron.r eq E|Phi chevron.r
   $
 
   Примените вариационный метод, используя данную пробную функцию:
@@ -70,12 +70,12 @@ $chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r$. Это значение
   Дано уравнение Шрёдингера для атома водорода в атомных единицах:
 
   $
-    (minus 1 / 2 nabla^2 minus 1 / r) |Phi chevron.r eq E| Phi chevron.r
+    (minus 1 / 2 nabla^2 minus 1 / r)|Phi chevron.r eq E|Phi chevron.r
   $
 
   Примените вариационный метод, используя данную пробную функцию:
 
-  $ bar.v tilde(Phi) chevron.r eq N e^(minus alpha r^2) $
+  $|tilde(Phi) chevron.r eq N e^(minus alpha r^2) $
 
   чтобы показать, что $minus frac(4, 3pi) eq minus 0.4244$ является
   оценкой сверху для точной энергии основного состояния (равной на

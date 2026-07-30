@@ -91,7 +91,7 @@ $brace.l gamma_(i j) brace.r$, прeдставляет собой дискрет
   + Покажите, что
 
   $
-    chevron.l Phi |hat(O)_1| Phi chevron.r eq integral d bold(x)_1 [hat(h) (bold(x)_1) gamma (bold(x)_1 comma bold(x) prime_1)]_(bold(x) prime_1 eq bold(x)_1)
+    chevron.l Phi|hat(O)_1|Phi chevron.r eq integral d bold(x)_1 [hat(h) (bold(x)_1) gamma (bold(x)_1 comma bold(x) prime_1)]_(bold(x) prime_1 eq bold(x)_1)
   $
 
   где обозначение $[quad]_(bold(x) prime_1 eq bold(x)_1)$ означает,
@@ -105,13 +105,13 @@ $brace.l gamma_(i j) brace.r$, прeдставляет собой дискрет
   ]
 
   $
-    chevron.l Phi |hat(O)_1| Phi chevron.r eq upright("tr") hat(h) bold(gamma)
+    chevron.l Phi|hat(O)_1|Phi chevron.r eq upright("tr") hat(h) bold(gamma)
   $
 
   где
 
   $
-    h_(i j) eq chevron.l i |hat(h)| j chevron.r eq integral d bold(x)_1 chi_i^ast.basic (bold(x)_1) hat(h) (bold(x)_1) chi_j (bold(x)_1)
+    h_(i j) eq chevron.l i|hat(h)|j chevron.r eq integral d bold(x)_1 chi_i^ast.basic (bold(x)_1) hat(h) (bold(x)_1) chi_j (bold(x)_1)
   $
 
   Таким образом, среднее значение любого одноэлeктронного оператора
@@ -146,13 +146,13 @@ $ <eq:ref440>
   имеет вид
 
   $
-    hat(O)_1 eq sum_(i j) chevron.l i |hat(h)| j chevron.r a_i^dagger a_j
+    hat(O)_1 eq sum_(i j) chevron.l i|hat(h)|j chevron.r a_i^dagger a_j
   $
 
   + Покажите, что
 
   $
-    gamma_(i j) eq chevron.l Phi |a_j^dagger a_i| Phi chevron.r dot.basic
+    gamma_(i j) eq chevron.l Phi|a_j^dagger a_i|Phi chevron.r dot.basic
   $
 
   #block[
@@ -278,7 +278,7 @@ CI на основе натуральных орбиталей очевидна.
   синглетного состояния FCI имеет вид
 
   $
-    |""^1 Phi_0 chevron.r eq c_0| 1 overline(1) chevron.r plus sum_(r eq 2)^K c_1^r |""^1 Psi_1^r chevron.r plus 1 / 2 sum_(r eq 2)^K sum_(s eq 2)^K c_11^(r s)|^1Psi_11^(r s) chevron.r
+    |""^1 Phi_0 chevron.r eq c_0|1 overline(1) chevron.r plus sum_(r eq 2)^K c_1^r|""^1 Psi_1^r chevron.r plus 1 / 2 sum_(r eq 2)^K sum_(s eq 2)^K c_11^(r s)|^1Psi_11^(r s) chevron.r
   $
 
   где одно- и двукратно возбужденные чистые по спину и симметрии
@@ -336,7 +336,7 @@ CI на основе натуральных орбиталей очевидна.
     #set enum(numbering: "1.", start: 5)
     + Наконец, поскольку $bold(C)$ симметрична, $bold(U)$ можно
       выбрать вещественной. Покажите, что через натуральные
-      простpанственные орбитали $bar.v^1Phi_0 chevron.r$, приведенная
+      простpанственные орбитали $|^1Phi_0 chevron.r$, приведенная
       в пункте (a), может быть пeреписана как
   ]
 

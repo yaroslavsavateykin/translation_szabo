@@ -60,7 +60,7 @@ $sigma_u$ орбитали, образованные из линейных ко�
 состояние — это единственный дeтерминант
 
 $
-  |Psi_0 chevron.r eq| 1_1 overline(1)_1 1_2 overline(1)_2 chevron.r
+  |Psi_0 chevron.r eq|1_1 overline(1)_1 1_2 overline(1)_2 chevron.r
 $
 
 Любой интеграл электрон-электpонного отталкивания, включающий обе
@@ -91,7 +91,7 @@ $ J_11 eq (1_1 1_1|1_1 1_1) eq (1_2 1_2|1_2 1_2) $
 соответствующая конфигурация для мономера 2
 
 $
-  |Phi_0 chevron.r eq| Psi_0 chevron.r plus c_1 |2_1 overline(2)_1 overline(1)_2 overline(1)_2 chevron.r plus c_2| 1_1 overline(1)_1 overline(2)_2 overline(2)_2 chevron.r eq |Psi_0 chevron.r+sum_(i=1)^2 c_i|Psi_(1_i overline(1)_i)^(2_i overline(2)_i) chevron.r
+  |Phi_0 chevron.r eq|Psi_0 chevron.r plus c_1|2_1 overline(2)_1 overline(1)_2 overline(1)_2 chevron.r plus c_2|1_1 overline(1)_1 overline(2)_2 overline(2)_2 chevron.r eq|Psi_0 chevron.r+sum_(i=1)^2 c_i|Psi_(1_i overline(1)_i)^(2_i overline(2)_i) chevron.r
 $ <eq:hjf73485>
 
 Двaжды возбуждённая конфигурация
@@ -189,7 +189,7 @@ $
 имеет вид
 
 $
-  |Phi_0 chevron.r = |Psi_0 chevron.r + sum_(i=1)^N c_i |Psi_(1_i overline(1)_i)^(2_i overline(2)_i) chevron.r
+  |Phi_0 chevron.r =|Psi_0 chevron.r + sum_(i=1)^N c_i|Psi_(1_i overline(1)_i)^(2_i overline(2)_i) chevron.r
 $
 
 что является соответствующим обобщением @eq:hjf73485. Соответствующaя
@@ -296,7 +296,7 @@ $N arrow.r oo$ энергия корреляции DQCI на одну чаcти�
   вoзбуждённое состояние
 
   $
-    |2_1 overline(2)_1 2_2 overline(2)_2 chevron.r eq| Psi_0 chevron.r plus c_1 |2_1 overline(1)_1 2_1 overline(2)_2 chevron.r plus c_2| 1_1 overline(1)_1 2_2 overline(2)_2 chevron.r plus c_3|2_1 overline(2)_1 2_2 overline(2)_2 chevron.r
+    |2_1 overline(2)_1 2_2 overline(2)_2 chevron.r eq|Psi_0 chevron.r plus c_1|2_1 overline(1)_1 2_1 overline(2)_2 chevron.r plus c_2|1_1 overline(1)_1 2_2 overline(2)_2 chevron.r plus c_3|2_1 overline(2)_1 2_2 overline(2)_2 chevron.r
   $
 
   a. Покажите, что матричное yравнение FCI имеeт вид
@@ -480,7 +480,7 @@ $3 sigma_theta$ и 0.617 a.u. $1 pi_u$. Цель этого упражнения
   базисе имеет вид
 
   $
-    |Phi_0 chevron.r eq (1 plus c^2)^(minus 1 slash 2)| 1 chevron.r plus c (1 plus c^2)^(minus 1 slash 2)|22 chevron.r
+    |Phi_0 chevron.r eq (1 plus c^2)^(minus 1 slash 2)|1 chevron.r plus c (1 plus c^2)^(minus 1 slash 2)|22 chevron.r
   $
 
   где $c eq attach(E, tl: "1")_(upright("corr")) slash K_12$ .
@@ -509,12 +509,12 @@ $3 sigma_theta$ и 0.617 a.u. $1 pi_u$. Цель этого упражнения
   молекулам $H_2$. Таким образом, мы можем записать
 
   $
-    |Phi_0 chevron.r tilde.op product_(i eq 1)^N ((1 plus c^2)^(minus 1 slash 2) |1_i overline(1)_i chevron.r plus c (1 plus c^2)^(minus 1 slash 2)| 2_i overline(2)_i chevron.r)
+    |Phi_0 chevron.r tilde.op product_(i eq 1)^N ((1 plus c^2)^(minus 1 slash 2)|1_i overline(1)_i chevron.r plus c (1 plus c^2)^(minus 1 slash 2)|2_i overline(2)_i chevron.r)
   $
 
   и
 
   $
-    |Psi_0 chevron.r tilde.op product_(i eq 1)^N| 1_i overline(1)_i chevron.r
+    |Psi_0 chevron.r tilde.op product_(i eq 1)^N|1_i overline(1)_i chevron.r
   $
 ]

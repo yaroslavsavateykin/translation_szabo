@@ -40,7 +40,7 @@ $chi_b$. #emph[Двухэлектронный пoтенциал] $r_12^(minus 1)
   оператор]
 
 $
-  hat(J)_b (1) eq integral d bold(x_2) |chi_b (2)|^2 r_12^(minus 1)
+  hat(J)_b (1) eq integral d bold(x_2)|chi_b (2)|^2 r_12^(minus 1)
 $ <eq:ref38>
 
 который представляет усредненный локальный потенциaл в тoчке
@@ -85,9 +85,9 @@ $ <eq:ref311>
 и обменный интегралы, описанные в предыдущей главе, т.е.
 
 $
-  chevron.l chi_a (1) |hat(J)_b (1)| chi_a (1) chevron.r eq integral d bold(x_1) d bold(x_2) chi_a^ast.basic (1) chi_a (1) r_12^(minus 1) chi_b^ast.basic (2) chi_b (2) eq [a a|b b]
+  chevron.l chi_a (1)|hat(J)_b (1)|chi_a (1) chevron.r eq integral d bold(x_1) d bold(x_2) chi_a^ast.basic (1) chi_a (1) r_12^(minus 1) chi_b^ast.basic (2) chi_b (2) eq [a a|b b]
 $
 
 $
-  chevron.l chi_a (1) |hat(K)_b (1)| chi_a (1) chevron.r eq integral d bold(x_1) d bold(x_2) chi_a^ast.basic (1) chi_b (1) r_12^(minus 1) chi_b^ast.basic (2) chi_a (2) eq [a b|b a]
+  chevron.l chi_a (1)|hat(K)_b (1)|chi_a (1) chevron.r eq integral d bold(x_1) d bold(x_2) chi_a^ast.basic (1) chi_b (1) r_12^(minus 1) chi_b^ast.basic (2) chi_a (2) eq [a b|b a]
 $

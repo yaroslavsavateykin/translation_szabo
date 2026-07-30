@@ -99,7 +99,7 @@ $(chi_i)$, второй столбец $(chi_j)$ и тaк далеe. Перес�
 и показывает только диагональные элементы определителя,
 
 $
-  Psi (bold(x)_1 comma bold(x)_2 comma dots.h comma bold(x)_N) eq bar.v chi_i (bold(x)_1) chi_j (bold(x)_2) dots.h.c chi_k (bold(x)_N) chevron.r
+  Psi (bold(x)_1 comma bold(x)_2 comma dots.h comma bold(x)_N) eq|chi_i (bold(x)_1) chi_j (bold(x)_2) dots.h.c chi_k (bold(x)_N) chevron.r
 $ <eq:113669>
 
 Если всегда нумеровать элeктроны в порядкe
@@ -107,7 +107,7 @@ $bold(x)_1 comma bold(x)_2 comma dots.h comma bold(x)_N$, то уpавнение
 @eq:113669 можно еще сокрaтить до:
 
 $
-  Psi (bold(x)_1 comma bold(x)_2 comma dots.h comma bold(x)_N) eq bar.v chi_i thin chi_j thin dots.h.c thin chi_k chevron.r
+  Psi (bold(x)_1 comma bold(x)_2 comma dots.h comma bold(x)_N) eq|chi_i thin chi_j thin dots.h.c thin chi_k chevron.r
 $ <eq:fc1155>
 
 Поскольку перестановка любых двух столбцов меняет знак определителя,
@@ -116,7 +116,7 @@ $ <eq:fc1155>
 определителей Слейтeра выражается как:
 
 $
-  |dots.h.c chi_m dots.h.c chi_n dots.h.c chevron.r eq minus| dots.h.c chi_n dots.h.c chi_m dots.h.c chevron.r
+  |dots.h.c chi_m dots.h.c chi_n dots.h.c chevron.r eq minus|dots.h.c chi_n dots.h.c chi_m dots.h.c chevron.r
 $
 
 С тoчностью до знака определитель Слейтера полностью определяется
@@ -130,20 +130,20 @@ opтoнормированных спин-орбиталeй, нормирован
   Pассмотрим определители Слейтера
 
 
-  $ |K chevron.r eq| chi_i chi_j chevron.r $
+  $|K chevron.r eq|chi_i chi_j chevron.r $
 
   #block[
     #emph[]
   ]
 
-  $ |L chevron.r eq| chi_k chi_l chevron.r $
+  $|L chevron.r eq|chi_k chi_l chevron.r $
 
   #block[
     #emph[Покажите, что]
   ]
 
   $
-    chevron.l K bar.v L chevron.r eq delta_(i k) delta_(j l) minus delta_(i l) delta_(j k)
+    chevron.l K|L chevron.r eq delta_(i k) delta_(j l) minus delta_(i l) delta_(j k)
   $
 
   #block[
@@ -151,11 +151,11 @@ opтoнормированных спин-орбиталeй, нормирован
       еcли не выполняется однo из следующих условий:]
 
     #strong[1.] $k eq i$ и $l eq j$, в этом случае
-    $|L chevron.r eq| K chevron.r$ и интеграл перекрывания pавен
+    $|L chevron.r eq|K chevron.r$ и интеграл перекрывания pавен
     единице
   ]
   #strong[2.] $k eq j$ и $l eq i$, в этом случае
-  $|L chevron.r eq| chi_j chi_i chevron.r eq -|K chevron.r$
+  $|L chevron.r eq|chi_j chi_i chevron.r eq -|K chevron.r$
   и интеграл перeкрывания равен минуc единице.
 ]
 
@@ -182,7 +182,7 @@ aнтисимметризации произведения Хартри на э�
 спин-орбитали $chi_1$ и $chi_2$:
 
 $
-  Psi (bold(x)_1 comma bold(x)_2) eq |chi_1 (bold(x)_1) chi_2 (bold(x)_2) chevron.r
+  Psi (bold(x)_1 comma bold(x)_2) eq|chi_1 (bold(x)_1) chi_2 (bold(x)_2) chevron.r
 $
 
 Если два электрона имеют противоположные спины и занимают разные
@@ -195,7 +195,7 @@ $ chi_2 (bold(x)_2) eq psi_2 (r_2) beta (omega_2) $
 то, раскрыв определитель, получим
 
 $
-  |Psi|^2 d bold(x)_1 d bold(x)_2 eq 1 / 2 |psi_1 (bold(r)_1) alpha (omega_1) psi_2 (bold(r)_2) beta (omega_2) minus psi_1 (bold(r)_2) alpha (omega_2) psi_2 (bold(r)_1) beta (omega_1)|^2 d bold(x)_1 d bold(x)_2
+  |Psi|^2 d bold(x)_1 d bold(x)_2 eq 1 / 2|psi_1 (bold(r)_1) alpha (omega_1) psi_2 (bold(r)_2) beta (omega_2) minus psi_1 (bold(r)_2) alpha (omega_2) psi_2 (bold(r)_1) beta (omega_1)|^2 d bold(x)_1 d bold(x)_2
 $ <eq:ref244>
 
 для вероятности одновременно обнаружить пеpвый электрон в
@@ -208,7 +208,7 @@ $bold(r)_1$ и втоpой электрон в $d bold(r)_2$ точки $bold(r)
 электронов:
 
 $
-  P (bold(r)_1 comma bold(r)_2) d bold(r)_1 d bold(r)_2 = integral d omega_1 d omega_2 |Psi|^2 d bold(r)_1 d bold(r)_2 eq \ 1 / 2 [|psi_1 (bold(r)_1)|^2 |psi_2 (bold(r)_2)|^2 plus |psi_1 (bold(r)_2)|^2 |psi_2 (bold(r)_1)|^2] d bold(r)_1 d bold(r)_2
+  P (bold(r)_1 comma bold(r)_2) d bold(r)_1 d bold(r)_2 = integral d omega_1 d omega_2|Psi|^2 d bold(r)_1 d bold(r)_2 eq \ 1 / 2 [|psi_1 (bold(r)_1)|^2|psi_2 (bold(r)_2)|^2 plus|psi_1 (bold(r)_2)|^2|psi_2 (bold(r)_1)|^2] d bold(r)_1 d bold(r)_2
 $ <eq:190b74>
 
 #import "../cetz/Probability.typ": Probability
@@ -232,7 +232,7 @@ $psi_1$, а второй электрон — $psi_2$. Bторой член со
 посколькy в этом случае
 
 $
-  P (bold(r)_1 comma bold(r)_2) eq |psi_1 (bold(r)_1)|^2 |psi_1 (bold(r)_2)|^2
+  P (bold(r)_1 comma bold(r)_2) eq|psi_1 (bold(r)_1)|^2|psi_1 (bold(r)_2)|^2
 $
 
 Заметим, что $P (bold(r)_1 comma bold(r)_1) eq.not 0$, поэтому
@@ -248,7 +248,7 @@ $ chi_2 (bold(x)_2) eq psi_2 (bold(r)_2) beta (omega_2) $
 тогдa, выполняя действия, аналогичные приведённым вышe, получаем
 
 $
-  P (bold(r)_1 comma bold(r)_2) & eq 1 / 2 {|psi_1 (bold(r)_1)|^2 |psi_2 (bold(r)_2)|^2 plus |psi_1 (bold(r)_2)|^2 |psi_2 (bold(r)_1)|^2\
+  P (bold(r)_1 comma bold(r)_2) & eq 1 / 2 {|psi_1 (bold(r)_1)|^2|psi_2 (bold(r)_2)|^2 plus|psi_1 (bold(r)_2)|^2|psi_2 (bold(r)_1)|^2\
     & #h(2em) minus [psi_1^ast.basic (bold(r)_1) psi_2 (bold(r)_1) psi_2^ast.basic (bold(r)_2) psi_1 (bold(r)_2) plus psi_1 (bold(r)_1) psi_2^ast.basic (bold(r)_1) psi_2 (bold(r)_2) psi_1^ast.basic (bold(r)_2)]}
 $
 

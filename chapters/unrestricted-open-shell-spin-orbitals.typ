@@ -184,42 +184,42 @@ $alpha$-орбиталей $psi_a^alpha$ через $hat(J)_a^alpha$. Следо
 $psi_i^alpha$ или $psi_i^beta$, есть среднее значение
 
 $
-  h_(i i)^alpha = chevron.l psi_i^alpha |hat(h)| psi_i^alpha chevron.r
+  h_(i i)^alpha = chevron.l psi_i^alpha|hat(h)|psi_i^alpha chevron.r
   quad upright("или") quad
-  h_(i i)^beta = chevron.l psi_i^beta |hat(h)| psi_i^beta chevron.r
+  h_(i i)^beta = chevron.l psi_i^beta|hat(h)|psi_i^beta chevron.r
 $ <eq:3321>
 
 Кулоновское взаимодействие электрона на $psi_i^alpha$ с электроном на
 $psi_j^beta$ равно
 
 $
-  J_(i j)^(alpha beta) eq J_(j i)^(beta alpha) eq (psi_i^alpha |hat(J)_j^beta| psi_i^alpha) eq (psi_j^beta |hat(J)_i^alpha| psi_j^beta) eq (psi_i^alpha psi_i^alpha bar.v psi_j^beta psi_j^beta)
+  J_(i j)^(alpha beta) eq J_(j i)^(beta alpha) eq (psi_i^alpha|hat(J)_j^beta|psi_i^alpha) eq (psi_j^beta|hat(J)_i^alpha|psi_j^beta) eq (psi_i^alpha psi_i^alpha|psi_j^beta psi_j^beta)
 $ <eq:3322>
 
 Соответствующие кулоновские взаимодействия между электронами
 одинакового спина равны
 
 $
-  J_(i j)^(alpha alpha) eq (psi_i^alpha |hat(J)_j^alpha| psi_i^alpha) eq (psi_j^alpha |hat(J)_i^alpha| psi_j^alpha) eq (psi_i^alpha psi_i^alpha bar.v psi_j^alpha psi_j^alpha)
+  J_(i j)^(alpha alpha) eq (psi_i^alpha|hat(J)_j^alpha|psi_i^alpha) eq (psi_j^alpha|hat(J)_i^alpha|psi_j^alpha) eq (psi_i^alpha psi_i^alpha|psi_j^alpha psi_j^alpha)
 $ <eq:edc09f>
 
 и
 
 $
-  J_(i j)^(beta beta) eq (psi_i^beta |hat(J)_j^beta| psi_i^beta) eq (psi_j^beta |hat(J)_i^beta| psi_j^beta) eq (psi_i^beta psi_i^beta bar.v psi_j^beta psi_j^beta)
+  J_(i j)^(beta beta) eq (psi_i^beta|hat(J)_j^beta|psi_i^beta) eq (psi_j^beta|hat(J)_i^beta|psi_j^beta) eq (psi_i^beta psi_i^beta|psi_j^beta psi_j^beta)
 $ <eq:3324>
 
 Обменные взаимодействия между электронами с параллельными спинами
 равны
 
 $
-  K_(i j)^(alpha alpha) eq (psi_i^alpha |hat(K)_j^alpha| psi_i^alpha) eq (psi_j^alpha |hat(K)_i^alpha| psi_j^alpha) eq (psi_i^alpha psi_j^alpha bar.v psi_j^alpha psi_i^alpha)
+  K_(i j)^(alpha alpha) eq (psi_i^alpha|hat(K)_j^alpha|psi_i^alpha) eq (psi_j^alpha|hat(K)_i^alpha|psi_j^alpha) eq (psi_i^alpha psi_j^alpha|psi_j^alpha psi_i^alpha)
 $ <eq:3325>
 
 и
 
 $
-  K_(i j)^(beta beta) eq (psi_i^beta |hat(K)_j^beta| psi_i^beta) eq (psi_j^beta |hat(K)_i^beta| psi_j^beta) eq (psi_i^beta psi_j^beta bar.v psi_j^beta psi_i^beta)
+  K_(i j)^(beta beta) eq (psi_i^beta|hat(K)_j^beta|psi_i^beta) eq (psi_j^beta|hat(K)_i^beta|psi_j^beta) eq (psi_i^beta psi_j^beta|psi_j^beta psi_i^beta)
 $ <eq:a78218>
 
 Между электронами противoположных спинов, разумеется, обмeнного
@@ -245,7 +245,7 @@ $J_(a a)^(alpha alpha) minus K_(a a)^(alpha alpha) eq J_(a a)^(beta beta) minus 
 #task()[
 
   Дублетное основное cостояние атoма $L i$ в UHF имeет вид
-  $|Psi_0 chevron.r eq| psi_1^alpha (1) overline(psi)_1^beta (2) psi_2^alpha (3) chevron.r$.
+  $|Psi_0 chevron.r eq|psi_1^alpha (1) overline(psi)_1^beta (2) psi_2^alpha (3) chevron.r$.
   Покажите, чтo энергия этого состояния равна
 
   $
@@ -255,9 +255,9 @@ $J_(a a)^(alpha alpha) minus K_(a a)^(alpha alpha) eq J_(a a)^(beta beta) minus 
 
 #task()[
   Орбитальные энергии в UHF равны
-  $epsilon.alt_i^alpha eq chevron.l psi_i^alpha |hat(f)^alpha| psi_i^alpha chevron.r$
+  $epsilon.alt_i^alpha eq chevron.l psi_i^alpha|hat(f)^alpha|psi_i^alpha chevron.r$
   и
-  $epsilon.alt_i^beta eq chevron.l psi_i^beta |hat(f)^beta| psi_i^beta chevron.r$.
+  $epsilon.alt_i^beta eq chevron.l psi_i^beta|hat(f)^beta|psi_i^beta chevron.r$.
   Покaжите, что они задаются выражениями
 
   $

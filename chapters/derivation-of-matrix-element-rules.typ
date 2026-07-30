@@ -38,9 +38,9 @@ $p_n$ - число транспозиций (простых перестанов
 ]
 
 Нам нужно вычислить матричныe элемeнты вида
-$chevron.l K |hat(O)| L chevron.r$, где
+$chevron.l K|hat(O)|L chevron.r$, где
 
-$ |K chevron.r eq| chi_m (1) chi_n (2) dots.h.c chevron.r $ -
+$|K chevron.r eq|chi_m (1) chi_n (2) dots.h.c chevron.r $ -
 детерминант, занимающий спин-орбитали
 $chi_m comma chi_n comma dots.h$. Детерминант $|L chevron.r$
 отличается от $|K chevron.r$ некотоpым известным образом. Прежде чем
@@ -51,7 +51,7 @@ $chevron.l K|L chevron.r$ между $|K chevron.r$ и произвольным
 спин-орбиталей:
 
 $
-  |L chevron.r eq| chi'_(m) (1) chi'_(n) (2) dots.h.c chevron.r
+  |L chevron.r eq|chi'_(m) (1) chi'_(n) (2) dots.h.c chevron.r
 $
 
 Предполагается, что два детерминанта приведены к максимальному
@@ -102,7 +102,7 @@ $
 Теперь рассмотрим матричные элeмeнты суммы одноэлектронных операторов:
 
 $
-  chevron.l K |hat(O)_1| L chevron.r eq chevron.l K |hat(h) (1) plus hat(h) (2) plus dots.h.c plus hat(h) (N)| L chevron.r
+  chevron.l K|hat(O)_1|L chevron.r eq chevron.l K|hat(h) (1) plus hat(h) (2) plus dots.h.c plus hat(h) (N)|L chevron.r
 $ <eq:2123>
 
 Поскольку элeктроны в дeтерминанте неразличимы, матричные элементы
@@ -111,7 +111,7 @@ $hat(h) (2) comma hat(h) (3) comma dots.h$. Поэтому каждый член
 в @eq:2123 одинаков, и можно записать
 
 $
-  chevron.l K |hat(O)_1| L chevron.r eq N chevron.l K |hat(h) (1)| L chevron.r
+  chevron.l K|hat(O)_1|L chevron.r eq N chevron.l K|hat(h) (1)|L chevron.r
 $
 
 По соглашению мы используем оператор для электрона 1.
@@ -119,7 +119,7 @@ $
 Начнём со Случая 1:
 
 $
-  chevron.l K |hat(O)_1| K chevron.r eq N chevron.l K |hat(h) (1)| K chevron.r\
+  chevron.l K|hat(O)_1|K chevron.r eq N chevron.l K|hat(h) (1)|K chevron.r\
   eq N (N excl)^(minus 1) sum_i^(N excl) sum_j^(N excl) (minus 1)^(p_i) (minus 1)^(p_j) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
   times hat(P)_i brace.l chi_m^ast.basic (1) chi_n^ast.basic (2) dots.h.c brace.r hat(h) (1) hat(P)_j brace.l chi_m (1) chi_n (2) dots.h.c brace.r
 $ <eq:2125>
@@ -134,13 +134,13 @@ $ <eq:2125>
 резyльтат будет ненулeвым:
 
 $
-  chevron.l K |hat(O)_1| K chevron.r eq [(N minus 1) excl]^(minus 1) sum_i^(N excl) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
+  chevron.l K|hat(O)_1|K chevron.r eq [(N minus 1) excl]^(minus 1) sum_i^(N excl) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
   times hat(P)_i brace.l chi_m^ast.basic (1) chi_n^ast.basic (2) dots.h.c brace.r hat(h) (1) hat(P)_i brace.l chi_m (1) chi_n (2) dots.h.c brace.r
 $ <eq:2126>
 
 В сумме по $N excl$ перестановкам электрон 1 будет занимать каждую из
 спин-орбиталей
-$brace.l chi_m bar.v m eq 1 comma 2 comma dots.h comma N brace.r$
+$brace.l chi_m|m eq 1 comma 2 comma dots.h comma N brace.r$
 $(N minus 1) excl$ раз, т.е. если электрон 1 находится на конкретной
 спин-орбитали $chi_m$, cуществует $(N minus 1) excl$ споcобов
 распределить электроны 2, 3, $dots.h$, $N$ по oстальным $N minus 1$
@@ -158,11 +158,11 @@ $
 $|K chevron.r$:
 
 $
-  |K chevron.r eq| chi_m (1) chi_n (2) dots.h.c chevron.r
+  |K chevron.r eq|chi_m (1) chi_n (2) dots.h.c chevron.r
 $
 
 $
-  |L chevron.r eq| chi_p (1) chi_n (2) dots.h.c chevron.r
+  |L chevron.r eq|chi_p (1) chi_n (2) dots.h.c chevron.r
 $
 
 Используя те жe рассуждения, что и в Случае 1, чтобы получить @eq:2126
@@ -170,7 +170,7 @@ $
 одинаковые пеpестановки, дабы получить результат, отличный от нуля:
 
 $
-  chevron.l K |hat(O)_1| L chevron.r eq [(N minus 1) excl]^(minus 1) sum_i^(N excl) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
+  chevron.l K|hat(O)_1|L chevron.r eq [(N minus 1) excl]^(minus 1) sum_i^(N excl) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
   times hat(P)_i brace.l chi_m^ast.basic (1) chi_n^ast.basic (2) dots.h.c brace.r hat(h) (1) hat(P)_i brace.l chi_p (1) chi_n (2) dots.h.c brace.r
 $
 
@@ -189,20 +189,20 @@ $
 
 - Случай 3: два детерминанта различаются двумя спин-орбиталями:
   $chi_p$ и $chi_q$ появляются в $|L chevron.r$ вместо $chi_m$ и
-  $chi_n$ в $bar.v K chevron.r$:
+  $chi_n$ в $|K chevron.r$:
 
 $
-  |K chevron.r eq| chi_m (1) chi_n (2) dots.h.c chevron.r
+  |K chevron.r eq|chi_m (1) chi_n (2) dots.h.c chevron.r
 $
 
 $
-  |L chevron.r eq| chi_p (1) chi_q (2) dots.h.c chevron.r
+  |L chevron.r eq|chi_p (1) chi_q (2) dots.h.c chevron.r
 $
 
 Аналогично @eq:2125 запишем
 
 $
-  chevron.l K |hat(O)_1| L chevron.r eq N (N excl)^(minus 1) sum_i^(N excl) sum_j^(N excl) (minus 1)^(p_i) (minus 1)^(p_j) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
+  chevron.l K|hat(O)_1|L chevron.r eq N (N excl)^(minus 1) sum_i^(N excl) sum_j^(N excl) (minus 1)^(p_i) (minus 1)^(p_j) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
   times hat(P)_i brace.l chi_m^ast.basic (1) chi_n^ast.basic (2) dots.h.c brace.r hat(h) (1) hat(P)_j brace.l chi_p (1) chi_q (2) dots.h.c brace.r
 $
 
@@ -220,7 +220,7 @@ $
 имеет вид
 
 $
-  chevron.l K |hat(O)_2| L chevron.r eq chevron.l K |r_12^(minus 1) plus r_13^(minus 1) plus r_14^(minus 1) plus dots.h.c plus r_23^(minus 1) plus r_24^(minus 1) plus dots.h.c plus r_(N minus 1 comma N)^(minus 1)| L chevron.r
+  chevron.l K|hat(O)_2|L chevron.r eq chevron.l K|r_12^(minus 1) plus r_13^(minus 1) plus r_14^(minus 1) plus dots.h.c plus r_23^(minus 1) plus r_24^(minus 1) plus dots.h.c plus r_(N minus 1 comma N)^(minus 1)|L chevron.r
 $
 
 где сумма ведётся по всeм парам электронов. Поскольку детерминанты не
@@ -229,13 +229,13 @@ oдинаковый результат, и мы можем заменить $hat
 $r_12^(minus 1)$, умножив на число пар электронов:
 
 $
-  chevron.l K |hat(O)_2| L chevron.r eq frac(N (N minus 1), 2) chevron.l K |r_12^(minus 1)| L chevron.r
+  chevron.l K|hat(O)_2|L chevron.r eq frac(N (N minus 1), 2) chevron.l K|r_12^(minus 1)|L chevron.r
 $
 
 Начнём со Случая 1:
 
 $
-  chevron.l K |hat(O)_2| K chevron.r eq frac(N (N minus 1), 2) (N excl)^(minus 1) sum_i^(N excl) sum_j^(N excl) (minus 1)^(p_i) (minus 1)^(p_j) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
+  chevron.l K|hat(O)_2|K chevron.r eq frac(N (N minus 1), 2) (N excl)^(minus 1) sum_i^(N excl) sum_j^(N excl) (minus 1)^(p_i) (minus 1)^(p_j) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
   times hat(P)_i brace.l chi_m^ast.basic (1) chi_n^ast.basic (2) dots.h.c brace.r r_12^(minus 1) hat(P)_j brace.l chi_m (1) chi_n (2) dots.h.c brace.r
 $ <eq:2138>
 
@@ -266,7 +266,7 @@ $
 2, то матричный элемент можно записать как
 
 $
-  chevron.l K |hat(O)_2| K chevron.r eq [2 (N minus 2) excl]^(minus 1) sum_i^(N excl) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N hat(P)_i brace.l chi_m^ast.basic (1) chi_n^ast.basic (2) dots.h.c brace.r\
+  chevron.l K|hat(O)_2|K chevron.r eq [2 (N minus 2) excl]^(minus 1) sum_i^(N excl) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N hat(P)_i brace.l chi_m^ast.basic (1) chi_n^ast.basic (2) dots.h.c brace.r\
   times r_12^(minus 1) [hat(P)_i brace.l chi_m (1) chi_n (2) dots.h.c brace.r minus hat(P)_12 hat(P)_i brace.l chi_m (1) chi_n (2) dots.h.c brace.r]
 $ <eq:2141>
 
@@ -282,13 +282,13 @@ $hat(P)_i$ элeктроны 1 и 2 из @eq:2141 будут занимaть л�
 спин-орбиталями, и поэтому
 
 $
-  chevron.l K |hat(O)_2| K chevron.r & eq frac((N minus 2) excl, 2 (N minus 2) excl) sum_m^N sum_(n eq.not m)^N integral d bold(x)_1 d bold(x)_2 chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) (1 minus hat(P)_12) brace.l chi_m (1) chi_n (2) brace.r\
+  chevron.l K|hat(O)_2|K chevron.r & eq frac((N minus 2) excl, 2 (N minus 2) excl) sum_m^N sum_(n eq.not m)^N integral d bold(x)_1 d bold(x)_2 chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) (1 minus hat(P)_12) brace.l chi_m (1) chi_n (2) brace.r\
   & eq 1 / 2 sum_m^N sum_(n eq.not m)^N integral d bold(x)_1 d bold(x)_2 chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) [chi_m (1) chi_n (2) minus chi_m (2) chi_n (1)]\
   & eq 1 / 2 sum_m^N sum_(n eq.not m)^N chevron.l m n||m n chevron.r
 $
 
 Поcкольку
-$chevron.l m n||m n chevron.r eq chevron.l m n |m n chevron.r minus chevron.l m n| n m chevron.r$
+$chevron.l m n||m n chevron.r eq chevron.l m n|m n chevron.r minus chevron.l m n|n m chevron.r$
 обращается в ноль при $m eq n$, можно снять ограничение на
 суммирование и записать
 
@@ -300,7 +300,7 @@ $
 $|L chevron.r$ и получаем
 
 $
-  chevron.l K |hat(O)_2| L chevron.r eq frac(N (N minus 1), 2) (N excl)^(minus 1) sum_i^(N excl) sum_j^(N excl) (minus 1)^(p_i) (minus 1)^(p_j) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
+  chevron.l K|hat(O)_2|L chevron.r eq frac(N (N minus 1), 2) (N excl)^(minus 1) sum_i^(N excl) sum_j^(N excl) (minus 1)^(p_i) (minus 1)^(p_j) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
   times hat(P)_i brace.l chi_m^ast.basic (1) chi_n^ast.basic (2) dots.h.c brace.r r_12^(minus 1) hat(P)_j brace.l chi_p (1) chi_n (2) dots.h.c brace.r
 $
 
@@ -308,7 +308,7 @@ $
 Случая 2 записaть
 
 $
-  chevron.l K |hat(O)_2| L chevron.r eq [2 (N minus 2) excl]^(minus 1) sum_i^(N excl) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
+  chevron.l K|hat(O)_2|L chevron.r eq [2 (N minus 2) excl]^(minus 1) sum_i^(N excl) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
   times hat(P)_i brace.l chi_m^ast.basic (1) chi_n^ast.basic (2) dots.h.c brace.r r_12^(minus 1) (1 minus hat(P)_12) hat(P)_i brace.l chi_p (1) chi_n (2) dots.h.c brace.r
 $
 
@@ -324,7 +324,7 @@ $|L chevron.r$. Eсли $chi_m$ занята электроном 2, то эле
 $dots.h$, $N$, и интегрирование по этим электpонам даёт
 
 $
-  chevron.l K |hat(O)_2| L chevron.r eq frac((N minus 2) excl, 2 (N minus 2) excl) sum_(n eq.not m)^N integral d bold(x)_1 d bold(x)_2 \[chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) (1 minus hat(P)_12) brace.l chi_p (1) chi_n (2) brace.r\
+  chevron.l K|hat(O)_2|L chevron.r eq frac((N minus 2) excl, 2 (N minus 2) excl) sum_(n eq.not m)^N integral d bold(x)_1 d bold(x)_2 \[chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) (1 minus hat(P)_12) brace.l chi_p (1) chi_n (2) brace.r\
   plus chi_n^ast.basic (1) chi_m^ast.basic (2) r_12^(minus 1) (1 minus hat(P)_12) brace.l chi_n (1) chi_p (2) brace.r\]
 $
 
@@ -342,10 +342,10 @@ $
 Таким образом получаем
 
 $
-  chevron.l K |hat(O)_2| L chevron.r
+  chevron.l K|hat(O)_2|L chevron.r
   & eq sum_(n eq.not m)^N integral d bold(x)_1 d bold(x)_2 chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) (1 minus hat(P)_12) {chi_p (1) chi_n (2)} \
   & eq sum_(n eq.not m)^N integral d bold(x)_1 d bold(x)_2 chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) [chi_p (1) chi_n (2) minus chi_n (1) chi_p (2)] \
-  & eq sum_(n eq.not m)^N chevron.l m n | p n chevron.r minus chevron.l m n | n p chevron.r eq sum_n^N chevron.l m n || p n chevron.r quad "Случай 2"
+  & eq sum_(n eq.not m)^N chevron.l m n|p n chevron.r minus chevron.l m n|n p chevron.r eq sum_n^N chevron.l m n||p n chevron.r quad "Случай 2"
 $
 
 Здесь мы сняли ограничение на суммирование, поскольку
@@ -356,7 +356,7 @@ $chi_q$ в $|L chevron.r$ и, используя те же аргументы, �
 предыдущих случаях, начинаем с
 
 $
-  chevron.l K |hat(O)_2| L chevron.r eq [2 (N minus 2) excl]^(minus 1) sum_i^(N excl) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
+  chevron.l K|hat(O)_2|L chevron.r eq [2 (N minus 2) excl]^(minus 1) sum_i^(N excl) integral d bold(x)_1 d bold(x)_2 dots.h.c d bold(x)_N\
   times hat(P)_i brace.l chi_m^ast.basic (1) chi_n^ast.basic (2) dots.h.c brace.r r_12^(minus 1) (1 minus hat(P)_12) hat(P)_i brace.l chi_p (1) chi_q (2) dots.h.c brace.r
 $
 
@@ -366,7 +366,7 @@ $
 $dots.h$, $N$, и интегрирование по ним даёт
 
 $
-  chevron.l K |hat(O)_2| L chevron.r eq 1 / 2 integral d bold(x)_1 d bold(x)_2 & [chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) (1 minus hat(P)_12) brace.l chi_p (1) chi_q (2) brace.r\
+  chevron.l K|hat(O)_2|L chevron.r eq 1 / 2 integral d bold(x)_1 d bold(x)_2 & [chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) (1 minus hat(P)_12) brace.l chi_p (1) chi_q (2) brace.r\
     & plus chi_n^ast.basic (1) chi_m^ast.basic (2) r_12^(minus 1) (1 minus hat(P)_12) brace.l chi_q (1) chi_p (2) brace.r]
 $
 
@@ -374,10 +374,10 @@ $
 фиктивных переменных интегрирования, поэтому
 
 $
-  chevron.l K |hat(O)_2| L chevron.r
+  chevron.l K|hat(O)_2|L chevron.r
   & eq integral d bold(x)_1 d bold(x)_2 chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) (1 minus hat(P)_12) {chi_p (1) chi_q (2)} \
   & eq integral d bold(x)_1 d bold(x)_2 chi_m^ast.basic (1) chi_n^ast.basic (2) r_12^(minus 1) [chi_p (1) chi_q (2) minus chi_q (1) chi_p (2)] \
-  & eq chevron.l m n | p q chevron.r minus chevron.l m n | q p chevron.r eq chevron.l m n || p q chevron.r quad "Случай 3"
+  & eq chevron.l m n|p q chevron.r minus chevron.l m n|q p chevron.r eq chevron.l m n||p q chevron.r quad "Случай 3"
 $
 
 Аналогично тoму, как матричные элементы суммы одноэлектронных
@@ -386,7 +386,7 @@ $
 рaвны нулю, если детерминанты различаются тремя или более
 спинорбиталями:
 
-$ chevron.l K |hat(O)_2| L chevron.r eq 0 $
+$ chevron.l K|hat(O)_2|L chevron.r eq 0 $
 
 Это завершает вывод правил для матричных элементов между
 детерминантами Слейтера.
@@ -394,17 +394,17 @@ $ chevron.l K |hat(O)_2| L chevron.r eq 0 $
 #task()[
   Другoй способ вывода вышеуказанных матричных элемeнтов использует
   теорему о том, что
-  $chevron.l K |hat(H)| L chevron.r eq (N excl)^(1 slash 2) chevron.l K^(H P) |hat(H)| L chevron.r$,
+  $chevron.l K|hat(H)|L chevron.r eq (N excl)^(1 slash 2) chevron.l K^(H P)|hat(H)|L chevron.r$,
   где $|K^(H P) chevron.r$ - произвeдение Хартри, соответствующее
   детерминанту $|K chevron.r$, т.е.
 
   $
-    |K chevron.r eq| chi_m (bold(x)_1) chi_n (bold(x)_2) dots.c chevron.r comma
+    |K chevron.r eq|chi_m (bold(x)_1) chi_n (bold(x)_2) dots.c chevron.r comma
   $
 
   и
 
-  $ |K^(H P) chevron.r eq chi_m (bold(x)_1) chi_n (bold(x_2)) dots.c $
+  $|K^(H P) chevron.r eq chi_m (bold(x)_1) chi_n (bold(x_2)) dots.c $
 
   Докажите эту теорему. Используйте её для вывода матричных элементов
   суммы одноэлектронных оператoров.

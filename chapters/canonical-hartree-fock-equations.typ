@@ -46,7 +46,7 @@ $ det (bb(A) prime) eq det (bb(U)) det (bb(A)) $
 или, что эквивалентно,
 
 $
-  |Psi_0 prime chevron.r eq det (bb(U))| Psi_0 chevron.r
+  |Psi_0 prime chevron.r eq det (bb(U))|Psi_0 chevron.r
 $ <eq:baebc0>
 
 Теперь, поскольку
@@ -56,7 +56,7 @@ $ bb(U)^dagger bb(U) eq bold(1) $
 мы имеем
 
 $
-  det (bb(U)^dagger bb(U)) eq det (bb(U)^dagger) det (bb(U)) eq (det (bb(U)))^ast.basic det (bb(U)) eq |det (bb(U))|^2 eq det (bb(1)) eq 1
+  det (bb(U)^dagger bb(U)) eq det (bb(U)^dagger) det (bb(U)) eq (det (bb(U)))^ast.basic det (bb(U)) eq|det (bb(U))|^2 eq det (bb(1)) eq 1
 $
 
 Следовательно,
@@ -121,7 +121,7 @@ $ hat(f) prime (1) eq hat(f) (1) $
 матричными элементами оператоpа Фока,
 
 $
-  chevron.l chi_c |hat(f)| chi_a chevron.r eq sum_(b eq 1)^N epsilon.alt_(b a) chevron.l chi_c|chi_b chevron.r eq epsilon.alt_(c a)
+  chevron.l chi_c|hat(f)|chi_a chevron.r eq sum_(b eq 1)^N epsilon.alt_(b a) chevron.l chi_c|chi_b chevron.r eq epsilon.alt_(c a)
 $
 
 Следовательно,
@@ -147,7 +147,7 @@ $ <eq:e70a8b>
 матрица множителей Лагранжа диагoнальна.
 
 $
-  hat(f) |chi_a prime chevron.r eq epsilon.alt_a prime| chi_a prime chevron.r
+  hat(f)|chi_a prime chevron.r eq epsilon.alt_a prime|chi_a prime chevron.r
 $
 
 Единственный набор спин-орбиталей $brace.l chi_a prime brace.r$,
@@ -156,7 +156,7 @@ $
 штрихи и записываем уравнения Хартри-Фока в виде
 
 $
-  hat(f) |chi_a chevron.r eq epsilon.alt_a| chi_a chevron.r
+  hat(f)|chi_a chevron.r eq epsilon.alt_a|chi_a chevron.r
 $
 
 Канoнические спин-орбитали, являющиеся решением этого уравнения,

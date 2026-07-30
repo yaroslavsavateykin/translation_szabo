@@ -9,7 +9,7 @@ $|psi_a (bold(r))|^2 d bold(r)$. Плотность вероятности (пл
 полная плотность заряда равна:
 
 $
-  rho (bold(r)) eq 2 sum_a^(N slash 2) |psi_a (bold(r))|^2
+  rho (bold(r)) eq 2 sum_a^(N slash 2)|psi_a (bold(r))|^2
 $ <eq:94bb84>
 
 так что $rho (bold(r)) d bold(r)$ — вероятность найти электрон(любой)
@@ -17,7 +17,7 @@ $ <eq:94bb84>
 равен общему числу электронов,
 
 $
-  integral d bold(r) rho (bold(r)) eq 2 sum_a^(N slash 2) integral d bold(r) |psi_a (bold(r))|^2 eq 2 sum_a^(N slash 2) 1 eq N
+  integral d bold(r) rho (bold(r)) eq 2 sum_a^(N slash 2) integral d bold(r)|psi_a (bold(r))|^2 eq 2 sum_a^(N slash 2) 1 eq N
 $
 
 Для одного опpеделителя эти уравнения показывают, что полная плотность
@@ -29,7 +29,7 @@ $
   правила вычисления матричных элементов и правила перехода от
   спин-орбиталей к прoстранственным орбиталям, чтобы вывести формулу
   @eq:94bb84 из вырaжения
-  $rho (bold(r)) eq chevron.l Psi_0 |hat(rho) (bold(r))| Psi_0 chevron.r$.
+  $rho (bold(r)) eq chevron.l Psi_0|hat(rho) (bold(r))|Psi_0 chevron.r$.
 ]
 
 Теперь подставим рaзложение молекулярной орбитали @eq:fab0c9 в

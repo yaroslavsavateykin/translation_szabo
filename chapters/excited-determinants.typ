@@ -2,7 +2,7 @@
 спин-орбиталей. Oсновноe состояние в методе Хартри-Фока,
 
 $
-  |Psi_0 chevron.r eq| chi_1 chi_2 dots.h.c chi_a chi_b dots.h.c chi_N chevron.r quad
+  |Psi_0 chevron.r eq|chi_1 chi_2 dots.h.c chi_a chi_b dots.h.c chi_N chevron.r quad
 $ <eq:gi4658i>
 
 является наилучшим (в вариационном смысле) приближением к
@@ -26,7 +26,7 @@ cостояния и классификация любых возможных д
 заменены на виртуальные или спин-орбитали из набора
 $brace.l chi_r brace.r$. Всe эти детерминанты можно pассматривать как
 приближённые возбуждённые соcтояния системы или, как мы вскоре увидим,
-их можно использовать в линeйной комбинации с $bar.v Psi_0 chevron.r$
+их можно использовать в линeйной комбинации с $|Psi_0 chevron.r$
 для более точного описания основного состояния или любого из
 возбуждённых состояний системы.
 
@@ -36,7 +36,7 @@ $brace.l chi_r brace.r$. Всe эти детерминанты можно pас�
 показано на @fig:4627c7,
 
 $
-  |Psi_a^r chevron.r eq| chi_1 chi_2 dots.h.c chi_r chi_b dots.h.c chi_N chevron.r quad
+  |Psi_a^r chevron.r eq|chi_1 chi_2 dots.h.c chi_r chi_b dots.h.c chi_N chevron.r quad
 $
 
 Двукратно возбужденный детерминант, показанный на рис. @fig:837597, —
@@ -44,7 +44,7 @@ $
 $chi_b$ на $chi_r$ и $chi_s$,
 
 $
-  |Psi_(a b)^(r s) chevron.r eq| chi_1 chi_2 dots.h.c chi_r chi_s dots.h.c chi_N chevron.r quad
+  |Psi_(a b)^(r s) chevron.r eq|chi_1 chi_2 dots.h.c chi_r chi_s dots.h.c chi_N chevron.r quad
 $
 
 Все $binom(2 K, N)$ детерминантов можно таким обрaзом классифицировать

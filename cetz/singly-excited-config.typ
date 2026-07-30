@@ -73,6 +73,6 @@
 //   columns: 2,
 //   align: (right + horizon, left + horizon),
 //   column-gutter: 0.5em,
-//   $ |overline(psi)_1 psi_2 overline(psi)_2 overline(psi)_3 angle.r med equiv $,
+//   $|overline(psi)_1 psi_2 overline(psi)_2 overline(psi)_3 angle.r med equiv $,
 //   singly-excited-config(),
 // )

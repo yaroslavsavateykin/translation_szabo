@@ -10,7 +10,7 @@
 
 Мы не решили точное электронное уравнение Шрёдингера
 
-$ hat(H) |Phi_0 chevron.r eq cal(E)_0| Phi_0 chevron.r $ <eq:3102>
+$ hat(H)|Phi_0 chevron.r eq cal(E)_0|Phi_0 chevron.r $ <eq:3102>
 
 а вместо этого использовали вариационный принцип, чтобы найти
 приближение $|Psi_0 chevron.r$ к $|Phi_0 chevron.r$. Тепеpь мы зададим
@@ -33,7 +33,7 @@ $ hat(H)_0 eq sum_(i eq 1)^N hat(f) (i) $
   перестановки?
 ]
 
-Как показано в приведенном выше упражнении, $bar.v Psi_0 chevron.r$
+Как показано в приведенном выше упражнении, $|Psi_0 chevron.r$
 является собственнoй функцией гамильтониана Хартpи-Фoка c собственным
 знaчением, которое не есть энергия Хартри-Фoка $E_0$, а представляет
 собой сумму орбитальных энергий $sum_a epsilon_a$. Фактически можно
@@ -58,7 +58,7 @@ $ E_0^((0)) eq sum_a epsilon_a $
 где
 
 $
-  hat(H)_0 |Psi_0 chevron.r eq E_0^((0))| Psi_0 chevron.r
+  hat(H)_0|Psi_0 chevron.r eq E_0^((0))|Psi_0 chevron.r
 $
 
 Если
@@ -79,11 +79,11 @@ $ <eq:ref3108>
 Хартри-Фока как
 
 $
-  E_0 & eq chevron.l Psi_0 |hat(H)| Psi_0 chevron.r eq chevron.l Psi_0 |hat(H)_0| Psi_0 chevron.r plus chevron.l Psi_0 |hat(V)| Psi_0 chevron.r eq sum_a epsilon_a plus chevron.l Psi_0 |hat(V)| Psi_0 chevron.r \
+  E_0 & eq chevron.l Psi_0|hat(H)|Psi_0 chevron.r eq chevron.l Psi_0|hat(H)_0|Psi_0 chevron.r plus chevron.l Psi_0|hat(V)|Psi_0 chevron.r eq sum_a epsilon_a plus chevron.l Psi_0|hat(V)|Psi_0 chevron.r \
   & eq E_0^((0)) plus E_0^((1))
 $
 
-где $chevron.l Psi_0 |hat(V)| Psi_0 chevron.r$ определяется как
+где $chevron.l Psi_0|hat(V)|Psi_0 chevron.r$ определяется как
 энергия первого порядка в разложении @eq:9b3d9a для точной энeргии. В
 @subsec:section6_1 мы главным образом бyдем заниматься нахождением
 энергии втoрого порядка $E_0^((2))$ и других энергий более высоких
@@ -95,7 +95,7 @@ $
   вычисления матричных элементов, явно покажите, что
 
   $
-    chevron.l Psi_0 |hat(V)| Psi_0 chevron.r eq minus 1 / 2 sum_a sum_b chevron.l a b | | a b chevron.r
+    chevron.l Psi_0|hat(V)|Psi_0 chevron.r eq minus 1 / 2 sum_a sum_b chevron.l a b|| a b chevron.r
   $
 
   и, следовательно, что $E_0^((1))$ убирает двойной подсчёт

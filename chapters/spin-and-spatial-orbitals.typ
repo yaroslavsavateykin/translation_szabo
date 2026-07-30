@@ -56,7 +56,7 @@ $
 спин-орбитали также образуют ортонормированный набор:
 
 $
-  integral d bold(x) thin chi_i^ast.basic (bold(x)) chi_j (bold(x)) eq chevron.l chi_i bar.v chi_j chevron.r eq delta_(i j)
+  integral d bold(x) thin chi_i^ast.basic (bold(x)) chi_j (bold(x)) eq chevron.l chi_i|chi_j chevron.r eq delta_(i j)
 $
 
 #task(breakable: false)[

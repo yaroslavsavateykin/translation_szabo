@@ -67,7 +67,7 @@ $
 далее, согласно @eq:eq230, равна произведению вероятностей:
 
 $
-  |chi_i (bold(x)_1)|^2 d bold(x)_1 thin |chi_j (bold(x)_2)|^2 d bold(x)_2 dots.h.c |chi_k (bold(x)_N)|^2 d bold(x)_N dot.basic
+  |chi_i (bold(x)_1)|^2 d bold(x)_1 thin|chi_j (bold(x)_2)|^2 d bold(x)_2 dots.h.c|chi_k (bold(x)_N)|^2 d bold(x)_N dot.basic
 $
 
 То есть произведению вероятности того, что первый электрон находится в

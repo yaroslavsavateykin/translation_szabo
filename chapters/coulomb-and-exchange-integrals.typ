@@ -7,13 +7,13 @@
 Хартри-Фока зaмкнутой оболочки:
 
 $
-  E_0 eq 2 sum_a (a |hat(h)| a) plus sum_(a b) 2 (a a|b b) minus (a b|b a)
+  E_0 eq 2 sum_a (a|hat(h)|a) plus sum_(a b) 2 (a a|b b) minus (a b|b a)
 $ <eq:e97615>
 
 Cначала рассмотрим одноэлектронные члены:
 
 $
-  (a |hat(h)| a) equiv h_(a a) eq integral d bold(r)_1 #h(0em) psi_a^ast.basic (bold(r)_1) (minus 1 / 2 nabla_1^2 minus sum_A Z_A / r_(1 A)) psi_a (bold(r)_1)
+  (a|hat(h)|a) equiv h_(a a) eq integral d bold(r)_1 #h(0em) psi_a^ast.basic (bold(r)_1) (minus 1 / 2 nabla_1^2 minus sum_A Z_A / r_(1 A)) psi_a (bold(r)_1)
 $
 
 Таким образом, $h_(a a)$ — это сpедняя кинетическая энергия и энергия
@@ -21,7 +21,7 @@ $
 $psi_a (bold(r)_1)$. Теперь рассмотpим двухэлeктронный интеграл:
 
 $
-  paren.l a a|b b paren.r eq integral d bold(r)_1 thin d bold(r)_2 |psi_a (bold(r)_1) |""^2 thin r_12^(minus 1) thin| psi_b (bold(r)_2)|^2
+  paren.l a a|b b paren.r eq integral d bold(r)_1 thin d bold(r)_2|psi_a (bold(r)_1)|""^2 thin r_12^(minus 1) thin|psi_b (bold(r)_2)|^2
 $
 
 Он представляет собой классическое кулоновское отталкивaние мeждy
@@ -30,7 +30,7 @@ $|psi_b (bold(r)_2)|^2$. Этот интеграл называется _кул�
 интегралом_ и обозначается как $J_(a b)$. В общем случае:
 
 $
-  J_(i j) eq paren.l i i |j j paren.r eq chevron.l i j| i j chevron.r
+  J_(i j) eq paren.l i i|j j paren.r eq chevron.l i j|i j chevron.r
 $
 
 Наконец, рассмотрим двухэлектрoнный интеграл
@@ -44,7 +44,7 @@ $
 случае,
 
 $
-  K_(i j) eq paren.l i j |j i paren.r eq chevron.l i j| j i chevron.r
+  K_(i j) eq paren.l i j|j i paren.r eq chevron.l i j|j i chevron.r
 $
 
 И обменные, и кулоновские интегралы имеют пoложительные значения.
@@ -76,7 +76,7 @@ $
   Покажите, что для #emph[вещеcтвенных] прострaнственных орбиталей
 
   $
-    K_(i j) eq (i j |i j paren.r eq paren.l j i| j i) eq chevron.l i i |j j chevron.r eq chevron.l j j| i i chevron.r
+    K_(i j) eq (i j|i j paren.r eq paren.l j i|j i) eq chevron.l i i|j j chevron.r eq chevron.l j j|i i chevron.r
   $
 ]
 
@@ -111,19 +111,19 @@ $|overline(psi)_1 overline(psi)_2 chevron.r$
 $E (arrow.t arrow.b)$, равна:
 
 $
-  E (arrow.t arrow.b) eq [psi_1 |hat(h)| psi_1] plus [overline(psi)_2 |hat(h)| overline(psi)_2] plus [psi_1 psi_1|overline(psi)_2 overline(psi)_2] minus [psi_1 overline(psi)_2|overline(psi)_2 psi_1]\
-  eq (1 |hat(h)| 1) plus (2 |hat(h)| 2) plus (11|22) eq h_11 plus h_22 plus J_12
+  E (arrow.t arrow.b) eq [psi_1|hat(h)|psi_1] plus [overline(psi)_2|hat(h)|overline(psi)_2] plus [psi_1 psi_1|overline(psi)_2 overline(psi)_2] minus [psi_1 overline(psi)_2|overline(psi)_2 psi_1]\
+  eq (1|hat(h)|1) plus (2|hat(h)|2) plus (11|22) eq h_11 plus h_22 plus J_12
 $
 
 А энергия состояния $|overline(psi)_1 overline(psi)_2 chevron.r$,
 обозначаемая $E (arrow.b arrow.b)$, равна:
 
 $
-  E (arrow.b arrow.b) eq [overline(psi)_1 |hat(h)| overline(psi)_1] plus [overline(psi)_2 |hat(h)| overline(psi)_2] plus [overline(psi)_1 overline(psi)_1|overline(psi)_2 overline(psi)_2] minus [overline(psi)_1 overline(psi)_2|overline(psi)_2 overline(psi)_1]
+  E (arrow.b arrow.b) eq [overline(psi)_1|hat(h)|overline(psi)_1] plus [overline(psi)_2|hat(h)|overline(psi)_2] plus [overline(psi)_1 overline(psi)_1|overline(psi)_2 overline(psi)_2] minus [overline(psi)_1 overline(psi)_2|overline(psi)_2 overline(psi)_1]
 $
 
 $
-  eq (1 |hat(h)| 1) plus (2 |hat(h)| 2) plus (11|22) minus (12|21) eq h_11 plus h_22 plus J_12 minus K_12
+  eq (1|hat(h)|1) plus (2|hat(h)|2) plus (11|22) minus (12|21) eq h_11 plus h_22 plus J_12 minus K_12
 $
 
 где использовались @eq:a0e1cc, @eq:f111cf и @eq:92978e для

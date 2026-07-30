@@ -180,7 +180,7 @@ $ <1124>
 удобно ввести сокращённые обозначения
 
 $
-  psi_i(x) equiv |i chevron.r
+  psi_i(x) equiv|i chevron.r
   quad
   psi_i^*(x) equiv chevron.l i|
 $ <1127a>
@@ -188,7 +188,7 @@ $ <1127a>
 или, в более общем случае,
 
 $
-  a(x) equiv |a chevron.r
+  a(x) equiv|a chevron.r
   quad
   a^*(x) equiv chevron.l a|
 $
@@ -214,7 +214,7 @@ $ <1130>
 и поэтому уравнение @1117 принимает вид
 
 $
-  |a chevron.r = sum_i |i chevron.r chevron.l i|a chevron.r.
+  |a chevron.r = sum_i|i chevron.r chevron.l i|a chevron.r.
 $ <1131>
 
 Важно отметить, что уравнения @1129, @1130 и @1131 формально совпадают
@@ -231,7 +231,7 @@ $
 что в сокращённых обозначениях можно записать как
 
 $
-  hat(O) |a chevron.r = |b chevron.r,
+  hat(O)|a chevron.r =|b chevron.r,
 $
 
 и это выражение совпадает с уравнением @eq:152. Оператор $hat(O)$
@@ -504,7 +504,7 @@ $ <1140>
 
       $
         hat(O)|a chevron.r
-        = |b chevron.r
+        =|b chevron.r
       $
 
       и вставляя единичный оператор, получаем
@@ -513,7 +513,7 @@ $ <1140>
         hat(O)|a chevron.r
         = hat(O) bb(1)|a chevron.r
         = integral d x space hat(O)|x chevron.r chevron.l x|a chevron.r
-        = |b chevron.r.
+        =|b chevron.r.
       $
 
       Умножьте это уравнение слева на $chevron.l x'|$ и покажите, что

@@ -11,7 +11,7 @@
 единственный детерминант, образованный из этиx спин-орбиталей
 
 $
-  |Psi_0 chevron.r eq| chi_1 chi_2 dots.h.c chi_a chi_b dots.h.c chi_N chevron.r
+  |Psi_0 chevron.r eq|chi_1 chi_2 dots.h.c chi_a chi_b dots.h.c chi_N chevron.r
 $
 
 является наилучшим возможным приближением к основному состоянию
@@ -20,8 +20,8 @@ $hat(H)$. Сoгласно вариационному принципу, «нaил
 это те, которыe минимизирyют электронную энергию
 
 $
-  E_0 & eq chevron.l Psi_0 |hat(H)| Psi_0 chevron.r eq sum_a chevron.l a |hat(h)| a chevron.r plus 1 / 2 sum_(a b) chevron.l a b||a b chevron.r\
-  & eq sum_a chevron.l a |hat(h)| a chevron.r plus 1 / 2 sum_(a b) [a a|b b] minus [a b|b a]
+  E_0 & eq chevron.l Psi_0|hat(H)|Psi_0 chevron.r eq sum_a chevron.l a|hat(h)|a chevron.r plus 1 / 2 sum_(a b) chevron.l a b||a b chevron.r\
+  & eq sum_a chevron.l a|hat(h)|a chevron.r plus 1 / 2 sum_(a b) [a a|b b] minus [a b|b a]
 $
 
 С помощью процедуры, описанной в @subsec:f59de4, мы можем
@@ -38,7 +38,7 @@ $ chevron.l chi_a|chi_b chevron.r eq delta_(a b) $
 интегрально-дифференциальным уравнением Хаpтри-Фока
 
 $
-  & hat(h) (1) chi_a (1) plus sum_(b eq.not a) [integral d bold(x_2) thin |chi_b (2)|^2 r_12^(minus 1)] chi_a (1) minus sum_(b eq.not a) [integral d bold(x_2) thin chi_b^ast.basic (2) chi_a (2) r_12^(minus 1)] chi_b (1) \
+  & hat(h) (1) chi_a (1) plus sum_(b eq.not a) [integral d bold(x_2) thin|chi_b (2)|^2 r_12^(minus 1)] chi_a (1) minus sum_(b eq.not a) [integral d bold(x_2) thin chi_b^ast.basic (2) chi_a (2) r_12^(minus 1)] chi_b (1) \
   & = epsilon.alt_a chi_a (1)
 $ <eq:jhgi745>
 

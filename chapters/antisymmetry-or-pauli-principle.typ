@@ -11,7 +11,7 @@ $
 $ <eq:219a>
 
 $
-  chevron.l alpha |alpha chevron.r eq chevron.l beta| beta chevron.r eq 1
+  chevron.l alpha|alpha chevron.r eq chevron.l beta|beta chevron.r eq 1
 $ <eq:219b>
 
 и
@@ -21,7 +21,7 @@ $
 $ <eq:220a>
 
 $
-  chevron.l alpha |beta chevron.r eq chevron.l beta| alpha chevron.r eq 0
+  chevron.l alpha|beta chevron.r eq chevron.l beta|alpha chevron.r eq 0
 $ <eq:220b>
 
 В данном формализме электрон описывается не только тремя

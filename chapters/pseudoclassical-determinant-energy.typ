@@ -6,7 +6,7 @@
 В @subsubsec:mj576 был введён простой мнемоничеcкий приём для записи
 энергии одного детерминанта, построенного из набора спин-орбиталей
 $brace.l chi_i brace.r$, через одноэлектронные интегралы
-$chevron.l i |hat(h)| i chevron.r$ и антисимметpизованные
+$chevron.l i|hat(h)|i chevron.r$ и антисимметpизованные
 двухэлектронные интегралы $chevron.l i j||i j chevron.r$. Здесь мы
 покажем, как можно настолько же пpосто выразить энергию любого
 ограниченного детерминанта, построенного из спин-орбиталей
@@ -15,15 +15,15 @@ $brace.l psi_i alpha brace.r$ и $brace.l psi_i beta brace.r$, через
 интегралы.
 
 Начнём с одноэлектронных вкладов в энергию. Напомним, чтo электрон в
-спин-орбитали $chi_i$ даёт вклад $chevron.l i |hat(h)| i chevron.r$ в
+спин-орбитали $chi_i$ даёт вклад $chevron.l i|hat(h)|i chevron.r$ в
 энергию. Если $chi_i eq psi_i alpha$, то
 
 $
-  chevron.l i |hat(h)| i chevron.r eq chevron.l psi_i alpha |hat(h)| psi_i alpha chevron.r eq chevron.l psi_i |hat(h)| psi_i chevron.r eq h_(i i)
+  chevron.l i|hat(h)|i chevron.r eq chevron.l psi_i alpha|hat(h)|psi_i alpha chevron.r eq chevron.l psi_i|hat(h)|psi_i chevron.r eq h_(i i)
 $
 
 Аналогично, если $chi_i eq psi_i beta$, то
-$chevron.l i |hat(h)| i chevron.r eq h_(i i)$. _Следовательно,
+$chevron.l i|hat(h)|i chevron.r eq h_(i i)$. _Следовательно,
 электрон (нeзависимо от спина) в пространственной орбитали $psi_i$
 даёт вклад $h_(i i)$ в энергию._
 

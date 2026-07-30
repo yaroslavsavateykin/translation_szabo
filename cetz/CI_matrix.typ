@@ -2,15 +2,15 @@
 
 // Функция генерирует графическую матрицу КВ с поддержкой масштабирования
 #let ci_matrix(scale-factor: 100%) = {
-  // Базовые математические стили без пробелов вокруг |
+  // Базовые математические стили без пробелов вокруг|
   let mel(x, y) = $chevron.l #x|hat(H)|#y chevron.r$
-  let bra(x) = $chevron.l #x |$
-  let ket(x) = $| #x chevron.r$
+  let bra(x) = $chevron.l #x|$
+  let ket(x) = $|#x chevron.r$
 
-  let S = $| S chevron.r$
-  let D = $| D chevron.r$
-  let T = $| T chevron.r$
-  let Q = $| Q chevron.r$
+  let S = $|S chevron.r$
+  let D = $|D chevron.r$
+  let T = $|T chevron.r$
+  let Q = $|Q chevron.r$
 
   scale(scale-factor, reflow: true)[
     #block(breakable: false, width: 100%)[

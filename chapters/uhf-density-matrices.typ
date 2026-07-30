@@ -9,14 +9,14 @@ $|psi_a^alpha (bold(r))|^2 d bold(r)$. Функция распределения
 зарядовая плотность, вносимая этими электронaми, рaвна
 
 $
-  rho^alpha (bold(r)) eq sum_a^(N^alpha) |psi_a^alpha (bold(r))|^2
+  rho^alpha (bold(r)) eq sum_a^(N^alpha)|psi_a^alpha (bold(r))|^2
 $ <eq:ecf98f>
 
 Соответствующая зарядовая плотность, внoсимая электронами со спином
 $beta$, равна
 
 $
-  rho^beta (bold(r)) eq sum_a^(N^beta) |psi_a^beta (bold(r))|^2
+  rho^beta (bold(r)) eq sum_a^(N^beta)|psi_a^beta (bold(r))|^2
 $ <eq:5929af>
 
 а полная зарядовая плотнoсть электронов любoго спина eсть суммa этих
@@ -66,11 +66,11 @@ $alpha$- и $beta$-зарядовых плотностей, можно полу�
 плотностей,
 
 $
-  rho^alpha (bold(r)) eq sum_a^(N^alpha) |psi_a^alpha (bold(r))|^2 eq sum_mu sum_nu P_(mu nu)^alpha phi.alt_mu (bold(r)) phi.alt_nu^ast.basic (bold(r))
+  rho^alpha (bold(r)) eq sum_a^(N^alpha)|psi_a^alpha (bold(r))|^2 eq sum_mu sum_nu P_(mu nu)^alpha phi.alt_mu (bold(r)) phi.alt_nu^ast.basic (bold(r))
 $ <eq:d46b3e>
 
 $
-  rho^beta (bold(r)) eq sum_a^(N^beta) |psi_a^beta (bold(r))|^2 eq sum_mu sum_nu P_(mu nu)^beta phi.alt_mu (bold(r)) phi.alt_nu^ast.basic (bold(r))
+  rho^beta (bold(r)) eq sum_a^(N^beta)|psi_a^beta (bold(r))|^2 eq sum_mu sum_nu P_(mu nu)^beta phi.alt_mu (bold(r)) phi.alt_nu^ast.basic (bold(r))
 $ <eq:3341>
 
 где матрица плотности $bb(P)^alpha$ для $alpha$-электронов и матрица
@@ -104,7 +104,7 @@ $ bb(P)^S eq bb(P)^alpha minus bb(P)^beta $ <eq:3345>
   операторов $sum_(i eq 1)^N h (i)$ задаются выражением
 
   $
-    chevron.l O_1 chevron.r eq sum_mu sum_nu P_(mu nu)^T (nu |hat(h)| mu)
+    chevron.l O_1 chevron.r eq sum_mu sum_nu P_(mu nu)^T (nu|hat(h)|mu)
   $
 
   для любого однодетерминантного состояния в UHF.

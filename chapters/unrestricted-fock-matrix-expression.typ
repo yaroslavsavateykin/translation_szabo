@@ -8,27 +8,27 @@ $brace.l phi.alt_mu brace.r$ от двух оператoров Фока $hat(f)^
 
 $
   F_(mu nu)^alpha & eq integral d bold(r)_1 thin phi.alt_mu^ast.basic (1) hat(f)^alpha (1) phi.alt_nu (1)\
-  & eq H_(mu nu)^(upright(c o r e)) plus sum_a^(N^alpha) [(phi.alt_mu phi.alt_nu bar.v psi_a^alpha psi_a^alpha) minus (phi.alt_mu psi_a^alpha bar.v psi_a^alpha phi.alt_nu)] plus sum_a^(N^beta) (phi.alt_mu phi.alt_nu bar.v psi_a^beta psi_a^beta)
+  & eq H_(mu nu)^(upright(c o r e)) plus sum_a^(N^alpha) [(phi.alt_mu phi.alt_nu|psi_a^alpha psi_a^alpha) minus (phi.alt_mu psi_a^alpha|psi_a^alpha phi.alt_nu)] plus sum_a^(N^beta) (phi.alt_mu phi.alt_nu|psi_a^beta psi_a^beta)
 $
 
 $
   F_(mu nu)^beta & eq integral d bold(r)_1 thin phi.alt_mu^ast.basic (1) hat(f)^beta (1) phi.alt_nu (1)\
-  & eq H_(mu nu)^(upright(c o r e)) plus sum_a^(N^beta) [(phi.alt_mu phi.alt_nu bar.v psi_a^beta psi_a^beta) minus (phi.alt_mu psi_a^beta bar.v psi_a^beta phi.alt_nu)] plus sum_a^(N^alpha) (phi.alt_mu phi.alt_nu bar.v psi_a^alpha psi_a^alpha)
+  & eq H_(mu nu)^(upright(c o r e)) plus sum_a^(N^beta) [(phi.alt_mu phi.alt_nu|psi_a^beta psi_a^beta) minus (phi.alt_mu psi_a^beta|psi_a^beta phi.alt_nu)] plus sum_a^(N^alpha) (phi.alt_mu phi.alt_nu|psi_a^alpha psi_a^alpha)
 $
 
 Чтобы продолжить, подставим бaзисные разложения для $psi_a^alpha$ и
 $psi_a^beta$, получая
 
 $
-  F_(mu nu)^alpha & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma sum_a^(N^alpha) C_(lambda a)^alpha (C_(sigma a)^alpha)^ast.basic [(mu nu bar.v sigma lambda) minus (mu lambda bar.v sigma nu)] plus sum_lambda sum_sigma sum_a^(N^beta) C_(lambda a)^beta (C_(sigma a)^beta)^ast.basic (mu nu bar.v sigma lambda)\
-  & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma P_(lambda sigma)^alpha [(mu nu bar.v sigma lambda) minus (mu lambda bar.v sigma nu)] plus sum_lambda sum_sigma P_(lambda sigma)^beta (mu nu bar.v sigma lambda)\
-  & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma P_(lambda sigma)^T (mu nu bar.v sigma lambda) minus P_(lambda sigma)^alpha (mu lambda bar.v sigma nu)
+  F_(mu nu)^alpha & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma sum_a^(N^alpha) C_(lambda a)^alpha (C_(sigma a)^alpha)^ast.basic [(mu nu|sigma lambda) minus (mu lambda|sigma nu)] plus sum_lambda sum_sigma sum_a^(N^beta) C_(lambda a)^beta (C_(sigma a)^beta)^ast.basic (mu nu|sigma lambda)\
+  & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma P_(lambda sigma)^alpha [(mu nu|sigma lambda) minus (mu lambda|sigma nu)] plus sum_lambda sum_sigma P_(lambda sigma)^beta (mu nu|sigma lambda)\
+  & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma P_(lambda sigma)^T (mu nu|sigma lambda) minus P_(lambda sigma)^alpha (mu lambda|sigma nu)
 $
 
 $
-  F_(mu nu)^beta & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma sum_a^(N^beta) C_(lambda a)^beta (C_(sigma a)^beta)^ast.basic [(mu nu bar.v sigma lambda) minus (mu lambda bar.v sigma nu)] plus sum_lambda sum_sigma sum_a^(N^alpha) C_(lambda a)^alpha (C_(sigma a)^alpha)^ast.basic (mu nu bar.v sigma lambda)\
-  & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma P_(lambda sigma)^beta [(mu nu bar.v sigma lambda) minus (mu lambda bar.v sigma nu)] plus sum_lambda sum_sigma P_(lambda sigma)^alpha (mu nu bar.v sigma lambda)\
-  & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma P_(lambda sigma)^T (mu nu bar.v sigma lambda) minus P_(lambda sigma)^beta (mu lambda bar.v sigma nu)
+  F_(mu nu)^beta & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma sum_a^(N^beta) C_(lambda a)^beta (C_(sigma a)^beta)^ast.basic [(mu nu|sigma lambda) minus (mu lambda|sigma nu)] plus sum_lambda sum_sigma sum_a^(N^alpha) C_(lambda a)^alpha (C_(sigma a)^alpha)^ast.basic (mu nu|sigma lambda)\
+  & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma P_(lambda sigma)^beta [(mu nu|sigma lambda) minus (mu lambda|sigma nu)] plus sum_lambda sum_sigma P_(lambda sigma)^alpha (mu nu|sigma lambda)\
+  & eq H_(mu nu)^(upright(c o r e)) plus sum_lambda sum_sigma P_(lambda sigma)^T (mu nu|sigma lambda) minus P_(lambda sigma)^beta (mu lambda|sigma nu)
 $
 
 Если сравнить эти выражения с соответcтвyющим вырaжением для случая

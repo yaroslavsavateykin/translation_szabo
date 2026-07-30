@@ -30,7 +30,7 @@ MCSCF для этой молекулы содержит только две кo�
 оболочкой
 
 $
-  |Psi_(upright("MCSCF")) chevron.r eq c_A| psi_A overline(psi)_A chevron.r plus c_B|psi_B overline(psi)_B chevron.r
+  |Psi_(upright("MCSCF")) chevron.r eq c_A|psi_A overline(psi)_A chevron.r plus c_B|psi_B overline(psi)_B chevron.r
 $ <eq:ref448>
 
 Ортонормированные орбитaли $psi_A$ и $psi_B$ могут быть разложены по
@@ -39,11 +39,11 @@ $ <eq:ref448>
 $ psi_i eq sum_mu C_(mu i) phi.alt_mu #h(2em) i eq A comma B $
 
 Энергия MCSCF получается минимизацией
-$chevron.l Psi_(upright("MCSCF")) |hat(H)| Psi_(upright("MCSCF")) chevron.r$
+$chevron.l Psi_(upright("MCSCF"))|hat(H)|Psi_(upright("MCSCF")) chevron.r$
 при ограничениях
 
 $
-  chevron.l psi_A |psi_A chevron.r eq chevron.l psi_B| psi_B chevron.r eq 1 #h(2em) chevron.l psi_A|psi_B chevron.r eq 0
+  chevron.l psi_A|psi_A chevron.r eq chevron.l psi_B|psi_B chevron.r eq 1 #h(2em) chevron.l psi_A|psi_B chevron.r eq 0
 $
 
 и
