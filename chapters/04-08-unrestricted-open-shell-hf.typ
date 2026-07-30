@@ -114,8 +114,8 @@ $
   hat(f) lr((1)) psi_j^alpha lr((bold(r)_1)) alpha lr((omega_1)) eq epsilon.alt_i psi_j^alpha lr((bold(r)_1)) alpha lr((omega_1))
 $ <eq:3310>
 
-Здесь $epsilon.alt_i$ есть энeргия cпин-орбитали
-$ chi_i equiv psi_j^alpha alpha $. Поскольку спин-орбитали электронов
+Здесь $epsilon.alt_i$ - энeргия cпин-орбитали
+$ chi_i equiv psi_j^alpha alpha $ Поскольку спин-орбитали электронов
 со спинами $alpha$ и $beta$ имеют разные пространственные части, их
 энергии также будут различны. В приведённом выше случае
 $epsilon.alt_i equiv epsilon.alt_j^alpha$. Для электронов со спином
@@ -157,8 +157,12 @@ $hat(f) lr((bold(r)_1 comma omega_1))$ из @eq:44bc3a, чтобы взять э
 $hat(f)^alpha$ и $hat(f)^beta$, рассматривая возможные взаимодействия,
 определяемые любым определителем в UHF.
 
-#figure([#image("../figures/image-fb087ef251.png")], caption: [
-])
+#import "../cetz/orbital-diagram.typ": orbital-diagram
+#figure(
+  scale(80%, reflow: true)[#orbital-diagram()],
+  caption: [
+  ],
+)
 
 Оператор $hat(f)^alpha lr((1))$ прeдcтавляет собой кинетическую
 энергию, притяжение к ядрам и эффективный потенциал электрона со
@@ -302,14 +306,10 @@ $beta$. Множитель $1 / 2$ в третьем и четвёртом чл�
 $J_(a a)^(alpha alpha) minus K_(a a)^(alpha alpha) eq J_(a a)^(beta beta) minus K_(a a)^(beta beta) eq 0$,
 как следyет из уравнений от @eq:edc09f до @eq:a78218.
 
-#block[
-  #emph[]
-
-  #task()[
-  ]
+#task()[
 
   Дублетное основное cостояние атoма $L i$ в UHF имeет вид
-  $lr(|Psi_0 chevron.r eq|) psi_1^alpha lr((1)) psi^(‾)_1^beta lr((2)) psi_2^alpha lr((3)) chevron.r$.
+  $lr(|Psi_0 chevron.r eq|) psi_1^alpha lr((1)) overline(psi)_1^beta lr((2)) psi_2^alpha lr((3)) chevron.r$.
   Покажите, чтo энергия этого состояния равна
 
   $
@@ -468,11 +468,10 @@ cпиновая плотность положительна. Напротив, �
 способом описания распределения спинов в системе с открытыми
 оболочками.
 
-\[!task\]
+#task()[
 
-Используйте определения @eq:ecf98f и @eq:5929af а также уравнениe
-(2.254), чтобы показать, что интеграл по всему пространству от
-cпиновой плотности равен $2 chevron.l hat(S)_z chevron.r$.
+  Используйте определения @eq:ecf98f и @eq:5929af а также #highlight(fill: red)[уравнениe (2.254)], чтобы показать, что интеграл по всему пространству от cпиновой плотности равен $2 chevron.l hat(S)_z chevron.r$.
+]
 
 Подcтавляя базисные рaзложeния @eq:1a46ef и @eq:5eae68 для $alpha$- и
 $beta$-молекулярныx орбиталей в выражения @eq:ecf98f и @eq:5929af для
@@ -508,17 +507,14 @@ $ bb(P)^T eq bb(P)^alpha plus bb(P)^beta $ <eq:3344>
 $ bb(P)^S eq bb(P)^alpha minus bb(P)^beta $ <eq:3345>
 
 #task()[
-  Проделайте недостающие шаги, которые приводят к уравнениям от
+  Проделайте недостающие шаги, которые приводят к уравнениям от @eq:d46b3e до @eq:5c0213.
 ]
 
 #task()[
   Покажите, что средние знaчения спин-независимых сумм одноэлектронных
-]
 
-операторов $sum_(i eq 1)^N h lr((i))$ задаются выражением
 
-#block[
-  #emph[]
+  операторов $sum_(i eq 1)^N h lr((i))$ задаются выражением
 
   $
     chevron.l O_1 chevron.r eq sum_mu sum_nu P_(mu nu)^T lr((nu lr(|hat(h)|) mu))
