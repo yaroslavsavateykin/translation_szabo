@@ -47,22 +47,28 @@
     let v6 = (radius * calc.cos(150deg), radius * calc.sin(150deg))
 
     // Рёбра: чередование сплошных (β₁) и точечных (β₂).
-    line(v6, v1, stroke: solid-stroke)   // верхнее левое,  β₁
-    line(v1, v2, stroke: dotted-stroke)  // верхнее правое, β₂
-    line(v2, v3, stroke: solid-stroke)   // правое,         β₁
-    line(v3, v4, stroke: dotted-stroke)  // нижнее правое,  β₂
-    line(v4, v5, stroke: solid-stroke)   // нижнее левое,   β₁
-    line(v5, v6, stroke: dotted-stroke)  // левое,          β₂
+    line(v6, v1, stroke: solid-stroke) // верхнее левое,  β₁
+    line(v1, v2, stroke: dotted-stroke) // верхнее правое, β₂
+    line(v2, v3, stroke: solid-stroke) // правое,         β₁
+    line(v3, v4, stroke: dotted-stroke) // нижнее правое,  β₂
+    line(v4, v5, stroke: solid-stroke) // нижнее левое,   β₁
+    line(v5, v6, stroke: dotted-stroke) // левое,          β₂
 
     // Подписи рёбер — смещены наружу от середины каждой стороны.
     let mid(a, b) = ((a.at(0) + b.at(0)) / 2, (a.at(1) + b.at(1)) / 2)
     let out(p, dx, dy) = (p.at(0) + dx, p.at(1) + dy)
 
-    content(out(mid(v6, v1), -label-gap, label-gap), label($ beta_1 $))
+    content(out(mid(v6, v1), -label-gap, label-gap), label(
+      $ beta_1 $,
+    ))
     content(out(mid(v1, v2), label-gap, label-gap), label($ beta_2 $))
     content(out(mid(v2, v3), label-gap, 0), label($ beta_1 $))
-    content(out(mid(v3, v4), label-gap, -label-gap), label($ beta_2 $))
-    content(out(mid(v4, v5), -label-gap, -label-gap), label($ beta_1 $))
+    content(out(mid(v3, v4), label-gap, -label-gap), label(
+      $ beta_2 $,
+    ))
+    content(out(mid(v4, v5), -label-gap, -label-gap), label(
+      $ beta_1 $,
+    ))
     content(out(mid(v5, v6), -label-gap, 0), label($ beta_2 $))
   },
 )

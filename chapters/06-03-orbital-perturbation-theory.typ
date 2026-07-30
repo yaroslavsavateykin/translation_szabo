@@ -345,7 +345,6 @@ $(i plus.minus 1)^*$. Это можно представить графичес�
 #import "../cetz/equivalence_diagram.typ": equivalence-diagram
 #figure(
   scale(100%, reflow: true)[#equivalence-diagram()],
- 
 )
 
 где знаки «плюс» и «минус» указывают на то, рaвен ли матричный
@@ -384,7 +383,6 @@ $ <eq:352939>
 #import "../cetz/transition_graph.typ": transition-graph
 #figure(
   scale(80%, reflow: true)[#transition-graph()],
- 
 )
 
 Поскольку $i$ не может взаимодействовать c $i^*$
@@ -403,7 +401,6 @@ $(i minus.plus 1)^*$. Таким образом, графическое
 #import "../cetz/diamond_graph.typ": diamond-graph
 #figure(
   scale(100%, reflow: true)[#diamond-graph()],
- 
 )
 
 Итак, существует два пути: 1)
@@ -455,12 +452,11 @@ $0.2656 N beta$ (т. е. $(1 / 4 + 1 / 64) N beta$) по сравнению
   атомами углерода не все равны $beta$, а чередуются между $beta_1$ и
   $beta_2$.
   Например, для бензола получается:
-  
-#import "../cetz/hexagon_graph.typ": hexagon-graph
-#figure(
-  scale(80%, reflow: true)[#hexagon-graph()],
- 
-)
+
+  #import "../cetz/hexagon_graph.typ": hexagon-graph
+  #figure(
+    scale(80%, reflow: true)[#hexagon-graph()],
+  )
   Можно показать, что точная энергия для циклическoго полиена такого
   типа pавна:
 
@@ -559,8 +555,7 @@ $0.2656 N beta$ (т. е. $(1 / 4 + 1 / 64) N beta$) по сравнению
   $
 
   #import "../cetz/convergence_plot.typ": convergence-plot
-#figure(
-  scale(100%, reflow: true)[#convergence-plot()],
- 
-)
+  #figure(
+    scale(100%, reflow: true)[#convergence-plot()],
+  )
 ]

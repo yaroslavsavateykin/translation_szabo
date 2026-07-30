@@ -93,10 +93,10 @@
     let gap-side = 0.16
     let gap-tip = 0.05
 
-    line(along(L, T, gap-side), along(T, L, gap-tip))  // i–(i+1)*, +
-    line(along(T, R, gap-tip), along(R, T, gap-side))  // (i+1)*–i, +
-    line(along(L, B, gap-side), along(B, L, gap-tip))  // i–(i-1)*, -
-    line(along(B, R, gap-tip), along(R, B, gap-side))  // (i-1)*–i, -
+    line(along(L, T, gap-side), along(T, L, gap-tip)) // i–(i+1)*, +
+    line(along(T, R, gap-tip), along(R, T, gap-side)) // (i+1)*–i, +
+    line(along(L, B, gap-side), along(B, L, gap-tip)) // i–(i-1)*, -
+    line(along(B, R, gap-tip), along(R, B, gap-side)) // (i-1)*–i, -
 
     content(L, label($ i $))
     content(T, label($ (i+1)^* $))
@@ -120,7 +120,11 @@
     // ----------------------------------------------------------------------
     content(
       (15.60, 0),
-      formula($ sum_j chevron.l i|v|j^* chevron.r chevron.l j^*|v|i chevron.r $),
+      formula(
+        $
+          sum_j chevron.l i|v|j^* chevron.r chevron.l j^*|v|i chevron.r
+        $,
+      ),
     )
   },
 )
