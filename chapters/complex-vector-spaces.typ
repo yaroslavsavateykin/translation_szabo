@@ -12,7 +12,7 @@ comma dots.h comma N$, которые называются кет-вектора
 кет-вектор $|a chevron.r$ можно записать в виде
 
 $
-  | a chevron.r eq sum_(i eq 1)^N|i chevron.r a_i
+  |a chevron.r eq sum_(i eq 1)^N|i chevron.r a_i
 $ <eq:141>
 
 Это простое обобщение уравнения (1.1), переписанного в новой нотации.
@@ -43,7 +43,7 @@ $ <eq:143>
 $|b chevron.r$ определяется как
 
 $
-  chevron.l a|| b chevron.r eq chevron.l a|b chevron.r
+  chevron.l a||b chevron.r eq chevron.l a|b chevron.r
   eq bold(a)^dagger bold(b)
   eq mat(delim: "(", a_1^ast.basic, a_2^ast.basic, dots.h, a_N^ast.basic)
   mat(delim: "(", b_1; b_2; dots.v; b_N)
@@ -131,7 +131,7 @@ $ <eq:149>
 
 #sub-eq("a")[
   $
-    | a chevron.r eq sum_i|i chevron.r a_i
+    |a chevron.r eq sum_i|i chevron.r a_i
     eq sum_i|i chevron.r chevron.l i|a chevron.r
   $ <eq:150a>
 ]

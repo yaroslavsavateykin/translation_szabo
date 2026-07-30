@@ -103,7 +103,7 @@ $chevron.l upright(I)|upright(II)' chevron.r eq 0 eq 1 plus c S$.
 Наконец, нормируем $|upright(II)' chevron.r$ и получаем
 
 $
-  | upright(II) chevron.r eq (S^(-2) minus 1)^(-1 slash 2)
+  |upright(II) chevron.r eq (S^(-2) minus 1)^(-1 slash 2)
   (|1 chevron.r minus S^(-1)|2 chevron.r)
 $ <eq:180>
 

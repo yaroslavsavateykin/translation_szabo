@@ -376,7 +376,7 @@ $
 функцию $|Psi_0 chevron.r$ и раскрытием детерминанта:
 
 $
-  | Psi_0 chevron.r & eq|psi_1^alpha psi^(‾)_1^beta chevron.r\
+  |Psi_0 chevron.r & eq|psi_1^alpha psi^(‾)_1^beta chevron.r\
   & eq cos^2 theta thin|psi_1 psi^(‾)_1 chevron.r minus sin^2 theta thin|psi_2 psi^(‾)_2 chevron.r\
   & quad minus (2)^(1 slash 2) cos theta sin theta [|psi_1 psi^(‾)_2 chevron.r minus|psi_2 psi^(‾)_1 chevron.r] slash (2)^(1 slash 2)\
   & eq cos^2 theta thin|psi_1 psi^(‾)_1 chevron.r minus sin^2 theta thin|psi_2 psi^(‾)_2 chevron.r minus (2)^(1 slash 2) cos theta sin theta thin|zws^3 Psi_1^(thin 2) chevron.r

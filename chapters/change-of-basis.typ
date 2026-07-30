@@ -31,7 +31,7 @@ $alpha comma beta comma gamma$. Поэтому имеем
 и наоборот. То есть
 
 $
-  | alpha chevron.r eq 1|alpha chevron.r
+  |alpha chevron.r eq 1|alpha chevron.r
   eq sum_i|i chevron.r chevron.l i|alpha chevron.r
   eq sum_i|i chevron.r U_(i alpha)
 $ <eq:163>
@@ -45,7 +45,7 @@ $ <eq:164>
 При преобразовании в противоположном направлении получаем
 
 $
-  | i chevron.r eq 1|i chevron.r
+  |i chevron.r eq 1|i chevron.r
   eq sum_alpha|alpha chevron.r chevron.l alpha|i chevron.r
   eq sum_alpha|alpha chevron.r U_(i alpha)^ast.basic
   eq sum_alpha|alpha chevron.r (bb(U)^dagger)_(alpha i)

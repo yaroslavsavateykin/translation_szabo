@@ -38,7 +38,7 @@ $chevron.l Psi_0|hat(H)|Psi_a^r chevron.r$. Этот матричный элем
 @tab-hf-one-electron и @tab-hf-two-electron.
 
 $
-  chevron.l Psi_0|hat(H)|Psi_a^r chevron.r eq chevron.l a|hat(h)|r chevron.r plus sum_b chevron.l a b|| r b chevron.r
+  chevron.l Psi_0|hat(H)|Psi_a^r chevron.r eq chevron.l a|hat(h)|r chevron.r plus sum_b chevron.l a b||r b chevron.r
 $
 
 Правая часть этого уравнения может быть упрощена; кaк показано в
@@ -46,7 +46,7 @@ $
 определяются из выражения
 
 $
-  chevron.l chi_i|hat(f)|chi_j chevron.r eq chevron.l i|hat(h)|j chevron.r plus sum_b chevron.l i b|| j b chevron.r
+  chevron.l chi_i|hat(f)|chi_j chevron.r eq chevron.l i|hat(h)|j chevron.r plus sum_b chevron.l i b||j b chevron.r
 $
 
 Cледoватeльно,

@@ -95,7 +95,7 @@ $
   вычисления матричных элементов, явно покажите, что
 
   $
-    chevron.l Psi_0|hat(V)|Psi_0 chevron.r eq minus 1 / 2 sum_a sum_b chevron.l a b|| a b chevron.r
+    chevron.l Psi_0|hat(V)|Psi_0 chevron.r eq minus 1 / 2 sum_a sum_b chevron.l a b||a b chevron.r
   $
 
   и, следовательно, что $E_0^((1))$ убирает двойной подсчёт

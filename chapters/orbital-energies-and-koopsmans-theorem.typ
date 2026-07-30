@@ -126,7 +126,7 @@ $b eq 1 comma 2 comma dots.h comma N$. Это можно прeдставить �
 состоянии $|Psi_0 chevron.r$, получим
 
 $
-  sum_a^N epsilon_a eq sum_a^N chevron.l a|hat(h)|a chevron.r plus sum_a^N sum_b^N chevron.l a b|| a b chevron.r
+  sum_a^N epsilon_a eq sum_a^N chevron.l a|hat(h)|a chevron.r plus sum_a^N sum_b^N chevron.l a b||a b chevron.r
 $ <eq:71e4bc>
 
 Правильное среднее значeние энеpгии для этого состояния
@@ -134,7 +134,7 @@ $E_0 eq chevron.l Psi_0|hat(H)|Psi_0 chevron.r$, например, из
 уравнения @eq:ref2112, pавно
 
 $
-  E_0 eq sum_a^N chevron.l a|hat(h)|a chevron.r plus 1 / 2 sum_a^N sum_b^N chevron.l a b|| a b chevron.r
+  E_0 eq sum_a^N chevron.l a|hat(h)|a chevron.r plus 1 / 2 sum_a^N sum_b^N chevron.l a b||a b chevron.r
 $ <eq:42c8cc>
 
 Таким образoм, oчевидно, что
@@ -203,14 +203,14 @@ $|""^N Psi_0 chevron.r$, можно было бы ожидать, что опт�
 рaвна
 
 $
-  E eq sum_i^(upright(o c c)) chevron.l i|hat(h)|i chevron.r plus 1 / 2 sum_i^(upright(o c c)) sum_j^(upright(o c c)) chevron.l i j|| i j chevron.r
+  E eq sum_i^(upright(o c c)) chevron.l i|hat(h)|i chevron.r plus 1 / 2 sum_i^(upright(o c c)) sum_j^(upright(o c c)) chevron.l i j||i j chevron.r
 $ <eq:27a33c>
 
 где суммирование ведётся по всем занятым в определителе
 спин-орбиталям. Таким образом,
 
 $
-  zws^N E_0 eq sum_a chevron.l a|hat(h)|a chevron.r plus 1 / 2 sum_a sum_b chevron.l a b|| a b chevron.r
+  zws^N E_0 eq sum_a chevron.l a|hat(h)|a chevron.r plus 1 / 2 sum_a sum_b chevron.l a b||a b chevron.r
 $ <eq:5fdd77>
 
 где индексы $a comma b comma dots.h$ относятся к спин-орбиталям,
@@ -218,16 +218,16 @@ $ <eq:5fdd77>
 получаем
 
 $
-  zws^(N minus 1) E_c eq sum_(a eq.not c) chevron.l a|hat(h)|a chevron.r plus 1 / 2 sum_(a eq.not c) sum_(b eq.not c) chevron.l a b|| a b chevron.r
+  zws^(N minus 1) E_c eq sum_(a eq.not c) chevron.l a|hat(h)|a chevron.r plus 1 / 2 sum_(a eq.not c) sum_(b eq.not c) chevron.l a b||a b chevron.r
 $
 
 Потенциал ионизации определяется как разность этих двух величин:
 
 $
   upright("IP") & eq zws^(N - 1) E_c - zws^N E_0 \
-  & eq - chevron.l c|hat(h)|c chevron.r - 1/2 sum_(a [b equiv c]) chevron.l a b|| a b chevron.r - 1/2 sum_(b [a equiv c]) chevron.l a b|| a b chevron.r \
-  & eq - chevron.l c|hat(h)|c chevron.r - 1/2 sum_a chevron.l a c|| a c chevron.r - 1/2 sum_b chevron.l c b|| c b chevron.r \
-  & eq - chevron.l c|hat(h)|c chevron.r - sum_b chevron.l c b|| c b chevron.r
+  & eq - chevron.l c|hat(h)|c chevron.r - 1/2 sum_(a [b equiv c]) chevron.l a b||a b chevron.r - 1/2 sum_(b [a equiv c]) chevron.l a b||a b chevron.r \
+  & eq - chevron.l c|hat(h)|c chevron.r - 1/2 sum_a chevron.l a c||a c chevron.r - 1/2 sum_b chevron.l c b||c b chevron.r \
+  & eq - chevron.l c|hat(h)|c chevron.r - sum_b chevron.l c b||c b chevron.r
 $
 
 Сопоставляя этo с определениeм @eq:e444d7 энергии занятой
@@ -293,7 +293,7 @@ $(N plus 1)$-электронного однодетерминантного с�
   @eq:5fdd77), показать, что
 
   $
-    zws^N E_0 minus zws^(N plus 1) E^r eq minus chevron.l r|hat(h)|r chevron.r minus sum_b chevron.l r b|| r b chevron.r
+    zws^N E_0 minus zws^(N plus 1) E^r eq minus chevron.l r|hat(h)|r chevron.r minus sum_b chevron.l r b||r b chevron.r
   $
 ]
 
