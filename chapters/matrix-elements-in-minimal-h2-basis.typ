@@ -32,8 +32,8 @@ $ hat(O)_1 eq hat(h) (1) plus hat(h) (2) $ <eq:281>
 $ hat(O)_2 eq r_12^(minus 1) $
 
 Сначала рассмотрим матричный элемент
-$chevron.l Psi_0|hat(O)_1|Psi_0 chevron.r$, котoрый, согласно
-@eq:281, является суммой двух членов. Первый член равен
+$chevron.l Psi_0|hat(O)_1|Psi_0 chevron.r$, котoрый, согласно @eq:281,
+является суммой двух членов. Первый член равен
 
 $
   chevron.l Psi_0|hat(h) (1)|Psi_0 chevron.r eq integral d bold(x)_1 d bold(x)_2 [2^(minus 1 / 2) (chi_1 (bold(x)_1) chi_2 (bold(x)_2) minus chi_2 (bold(x)_1) chi_1 (bold(x)_2))]^ast.basic\

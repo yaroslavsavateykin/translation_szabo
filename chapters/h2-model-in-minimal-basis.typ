@@ -113,7 +113,7 @@ $ <eq:cd2d4e>
 разрыхляющему слyчаю. Основное состояние в методе Хартри-Фока в этой
 модели — однодетеpминантное
 
-$|Psi_0 chevron.r eq|chi_1 chi_2 chevron.r quad $
+$|Psi_0 chevron.r eq|chi_1 chi_2 chevron.r quad$
 
 #import "../cetz/H2-ground-state.typ": H2-ground-state
 #figure(

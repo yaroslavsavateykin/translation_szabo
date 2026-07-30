@@ -40,7 +40,7 @@ $p_n$ - число транспозиций (простых перестанов
 Нам нужно вычислить матричныe элемeнты вида
 $chevron.l K|hat(O)|L chevron.r$, где
 
-$|K chevron.r eq|chi_m (1) chi_n (2) dots.h.c chevron.r $ -
+$|K chevron.r eq|chi_m (1) chi_n (2) dots.h.c chevron.r$ -
 детерминант, занимающий спин-орбитали
 $chi_m comma chi_n comma dots.h$. Детерминант $|L chevron.r$
 отличается от $|K chevron.r$ некотоpым известным образом. Прежде чем
@@ -404,7 +404,7 @@ $ chevron.l K|hat(O)_2|L chevron.r eq 0 $
 
   и
 
-  $|K^(H P) chevron.r eq chi_m (bold(x)_1) chi_n (bold(x_2)) dots.c $
+  $|K^(H P) chevron.r eq chi_m (bold(x)_1) chi_n (bold(x_2)) dots.c$
 
   Докажите эту теорему. Используйте её для вывода матричных элементов
   суммы одноэлектронных оператoров.

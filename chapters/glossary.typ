@@ -9,7 +9,9 @@
     stroke: none,
 
     table.hline(stroke: 1pt),
-    table.header([*Сокращение*], [*Английское название*], [*Русское название*]),
+    table.header(
+      [*Сокращение*], [*Английское название*], [*Русское название*]
+    ),
     table.hline(stroke: 1pt),
 
     [*HF*],

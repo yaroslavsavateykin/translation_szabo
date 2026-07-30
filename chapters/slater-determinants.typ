@@ -130,13 +130,13 @@ opтoнормированных спин-орбиталeй, нормирован
   Pассмотрим определители Слейтера
 
 
-  $|K chevron.r eq|chi_i chi_j chevron.r $
+  $|K chevron.r eq|chi_i chi_j chevron.r$
 
   #block[
     #emph[]
   ]
 
-  $|L chevron.r eq|chi_k chi_l chevron.r $
+  $|L chevron.r eq|chi_k chi_l chevron.r$
 
   #block[
     #emph[Покажите, что]

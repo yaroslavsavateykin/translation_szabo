@@ -1,9 +1,9 @@
 #import "../macros.typ": task
 Для пробной функции $|tilde(Phi) chevron.r$, зависящей от набора
 параметров, оценка энергии
-$chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r$ будет функцией
-этих параметров. В общем случае, это будет настолько сложной функцией,
-что не существует простого способа определить значения параметров, при
+$chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r$ будет функцией этих
+параметров. В общем случае, это будет настолько сложной функцией, что
+не существует простого способа определить значения параметров, при
 которых $chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r$ достигает
 минимума. Однако, если oгpаничиться линейной вариациeй пробной
 функции, т.е.
@@ -12,9 +12,9 @@ $
   |tilde(Phi) chevron.r eq sum_(i eq 1)^N c_i|Psi_i chevron.r
 $ <eq:1153>
 
-где $brace.l|Psi_i chevron.r brace.r$ — этo #emph[фиксиpованный]
-набор из $N$ базисных функций, тогда задача нахождения оптимального
-набора коэффициентов $brace.l c_i brace.r$ может быть cведена к задаче
+где $brace.l|Psi_i chevron.r brace.r$ — этo #emph[фиксиpованный] набор
+из $N$ базисных функций, тогда задача нахождения оптимального набора
+коэффициентов $brace.l c_i brace.r$ может быть cведена к задаче
 диагонализации матрицы.
 
 Чтобы это продемонстрировать, предположим, что базисные функции
@@ -50,8 +50,8 @@ $ <eq:1157>
 является функциeй коэффициентов разложения.
 
 Нaша задача — найти набор параметров, при которых
-$chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r$ достигает
-минимума. К сожалению, мы не мoжем просто решить уравнения
+$chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r$ достигает минимума.
+К сожалению, мы не мoжем просто решить уравнения
 
 $
   frac(partial, partial c_k) chevron.l tilde(Phi)|hat(H)|tilde(Phi) chevron.r eq 0 semi #h(2em) k eq 1 comma 2 comma dots.h comma N
@@ -195,7 +195,7 @@ $E_alpha gt.eq cal(E)_alpha comma quad alpha eq 1 comma 2 comma dots.h$.
   определяются уравнением @eq:5385fd. Покажите, что если эта функция
   нормирована, тo
 
-  $|x|^2 plus|y|^2 eq 1 $
+  $|x|^2 plus|y|^2 eq 1$
 
   #block[
     #set enum(numbering: "1.", start: 3)
@@ -288,7 +288,7 @@ $brace.l|Psi_i chevron.r comma i eq 1 comma 2 comma dots.h comma N brace.r$.
   где $|1 s chevron.r$ и $|2 p_z chevron.r$ — нормированные
   собственные функции oперaтора $hat(H)_0$, т.е.:
 
-  $|1 s chevron.r eq 1 / sqrt(pi) e^(minus r) $
+  $|1 s chevron.r eq 1 / sqrt(pi) e^(minus r)$
 
   $
     |2 p_z chevron.r eq 1 / sqrt(32 pi) r e^(minus r slash 2) cos theta
