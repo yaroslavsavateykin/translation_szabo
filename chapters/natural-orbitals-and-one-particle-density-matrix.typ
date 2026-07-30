@@ -255,6 +255,10 @@ CI на основе натуральных орбиталей очевидна.
   SCF (CO) и натуральных орбиталей (NO)])[
   #table(
     columns: 3,
+    stroke: none,
+
+    table.hline(stroke: 1pt),
+
     [#strong[доля $E_(upright("корр")) (upright("SDCI"))$, %]],
     [#strong[Число конфигураций]],
     [#strong[]],
@@ -266,6 +270,8 @@ CI на основе натуральных орбиталей очевидна.
     [80], [351], [147],
     [90], [617], [362],
     [99], [1760], [1652],
+
+    table.hline(stroke: 1pt),
   )
 ]<label:Number-of-Natural-orbitals>
 

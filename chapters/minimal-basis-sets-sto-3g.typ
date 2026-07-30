@@ -100,6 +100,10 @@ $(6 s 3 p slash 3 s) slash [2 s 1 p slash 1 s]$.
   базисных функций 1s, 2s и 2p])[
   #table(
     columns: 5,
+    stroke: none,
+
+    table.hline(stroke: 1pt),
+
     [#strong[$alpha_(1 s)$]],
     [#strong[$d_(1 s)$]],
     [#strong[$alpha_(2 s p)$]],
@@ -109,6 +113,8 @@ $(6 s 3 p slash 3 s) slash [2 s 1 p slash 1 s]$.
     [0.109818], [0.444635], [0.0751386], [0.700115], [0.391957],
     [0.405771], [0.535328], [0.231031], [0.399513], [0.607684],
     [2.22766], [0.154329], [0.994203], [-0.0999672], [0.155916],
+
+    table.hline(stroke: 1pt),
   )
 ]
 <tab:dghgr7>
@@ -116,6 +122,10 @@ $(6 s 3 p slash 3 s) slash [2 s 1 p slash 1 s]$.
 #figure(caption: [Стандартные экспоненты STO-3G])[
   #table(
     columns: 9,
+    stroke: none,
+
+    table.hline(stroke: 1pt),
+
     [#strong[Параметр]],
     [#strong[H]],
     [#strong[Li]],
@@ -145,6 +155,8 @@ $(6 s 3 p slash 3 s) slash [2 s 1 p slash 1 s]$.
     [1.95],
     [2.25],
     [2.55],
+
+    table.hline(stroke: 1pt),
   )
 ]
 <tab:udr79>
