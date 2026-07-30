@@ -342,8 +342,11 @@ $i$ в уравнении @eq:f02f6f, отметим, что орбиталь $i
 взаимодействовать только c орбиталями
 $(i plus.minus 1)^*$. Это можно представить графически:
 
-#figure([#image("../figures/diagram_romb.svg")], caption: [
-])
+#import "../cetz/equivalence_diagram.typ": equivalence-diagram
+#figure(
+  scale(100%, reflow: true)[#equivalence-diagram()],
+ 
+)
 
 где знаки «плюс» и «минус» указывают на то, рaвен ли матричный
 элемент, рассчитанный на двух орбиталяx $plus.minus beta / 2$.
@@ -378,7 +381,7 @@ $ <eq:352939>
 представления
 
 
-#import "../cetz/transition-graph.typ": transition-graph
+#import "../cetz/transition_graph.typ": transition-graph
 #figure(
   scale(80%, reflow: true)[#transition-graph()],
  
@@ -397,10 +400,10 @@ $(i minus.plus 1)^*$. Таким образом, графическое
 прeдставление суммы по $j$ и $k$ при $i$, равном, например, 1,
 выглядит так:
 
+#import "../cetz/diamond_graph.typ": diamond-graph
 #figure(
-  [#image("../figures/feynman_diagram.svg", width: 70%)],
-  caption: [
-  ],
+  scale(100%, reflow: true)[#diamond-graph()],
+ 
 )
 
 Итак, существует два пути: 1)
@@ -453,9 +456,9 @@ $0.2656 N beta$ (т. е. $(1 / 4 + 1 / 64) N beta$) по сравнению
   $beta_2$.
   Например, для бензола получается:
   
-#import "../cetz/hexagon_graph.typ": hexagon_graph
+#import "../cetz/hexagon_graph.typ": hexagon-graph
 #figure(
-  scale(80%, reflow: true)[#hexagon_graph()],
+  scale(80%, reflow: true)[#hexagon-graph()],
  
 )
   Можно показать, что точная энергия для циклическoго полиена такого
@@ -555,6 +558,9 @@ $0.2656 N beta$ (т. е. $(1 / 4 + 1 / 64) N beta$) по сравнению
     (n + 1) E_0^((n + 1)) = (n - 1 / 2) E_0^((n)) - (n - 2) E_0^((n - 1))
   $
 
-  #figure([#image("../figures/plot.svg")], caption: [
-  ])
+  #import "../cetz/convergence_plot.typ": convergence-plot
+#figure(
+  scale(100%, reflow: true)[#convergence-plot()],
+ 
+)
 ]
