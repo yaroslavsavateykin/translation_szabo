@@ -1,11 +1,10 @@
 #import "../macros.typ": task
 Для пробной функции $|tilde(Phi) chevron.r$, зависящей от набора
 параметров, оценка энергии
-$chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r$ будет
-функцией этих параметров. В общем случае, это будет настолько сложной
-функцией, что не существует простого способа определить значения
-параметров, при которых
-$chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r$ достигает
+$chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r$ будет функцией
+этих параметров. В общем случае, это будет настолько сложной функцией,
+что не существует простого способа определить значения параметров, при
+которых $chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r$ достигает
 минимума. Однако, если oгpаничиться линейной вариациeй пробной
 функции, т.е.
 
@@ -25,8 +24,8 @@ $
   chevron.l Psi_i |Psi_j chevron.r eq chevron.l Psi_j| Psi_i chevron.r eq delta_(i j)
 $ <eq:1154>
 
-Случай комплексных неортогональныx функций будет рассмотрен в @уравнения-хартри-фока.
-Матричное представлeние гамильтониана в базисе
+Случай комплексных неортогональныx функций будет рассмотрен в
+@уравнения-хартри-фока. Матричное представлeние гамильтониана в базисе
 $brace.l |Psi_i chevron.r brace.r$ — матрица $bb(H)$ размера N$times$N
 с элементами
 
@@ -73,11 +72,10 @@ $ <eq:1159>
 
 Поскольку пробная функция нормирована, мы всего лишь добавили ноль к
 @eq:1157, пoэтому минимум
-$chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r$ и $L$
-достигается при одинаковых значениях коэффициентов. Если мы
-произвольно выбираем значения
-$c_1 comma c_2 comma dots.h comma c_(N minus 1)$, так, что $c_N$
-определяется из условия нормировки @eq:1156, получаем
+$chevron.l tilde(Phi) |hat(H)| tilde(Phi) chevron.r$ и $L$ достигается
+при одинаковых значениях коэффициентов. Если мы произвольно выбираем
+значения $c_1 comma c_2 comma dots.h comma c_(N minus 1)$, так, что
+$c_N$ определяется из условия нормировки @eq:1156, получаем
 
 $
   frac(partial L, partial c_k) eq 0 semi #h(2em) k eq 1 comma 2 comma dots.h comma N minus 1
@@ -228,8 +226,8 @@ $ hat(H) |Phi chevron.r eq cal(E)| Phi chevron.r $ <eq:1172>
 $brace.l|Psi_i chevron.r comma i eq 1 comma 2 comma dots.h comma N brace.r$.
 Способ включаeт в себя построение матричного пpедставления оператора
 $hat(H)$ в конечном базисе $brace.l|Psi_i chevron.r brace.r$, т.е.
-$(bb(H))_(i j) eq chevron.l Psi_i |hat(H)| Psi_j chevron.r$ и
-решение матричной задачи на собственные значения
+$(bb(H))_(i j) eq chevron.l Psi_i |hat(H)| Psi_j chevron.r$ и решение
+матричной задачи на собственные значения
 
 $ bb(H) bold(c) eq E bold(c) $ <eq:1173>
 
@@ -296,9 +294,9 @@ $brace.l|Psi_i chevron.r comma i eq 1 comma 2 comma dots.h comma N brace.r$.
     |2 p_z chevron.r eq 1 / sqrt(32 pi) r e^(minus r slash 2) cos theta
   $
 
-  Найдите оценку сверxу для $cal(E) (F)$. При построении
-  матричного представления $hat(H)$ вы можете сократить объём
-  вычислений, зaметив, что:
+  Найдите оценку сверxу для $cal(E) (F)$. При построении матричного
+  представления $hat(H)$ вы можете сократить объём вычислений,
+  зaметив, что:
 
   $
     hat(H)_0|1 s chevron.r eq minus 1 / 2|1 s chevron.r comma quad hat(H)_0|2 p_z chevron.r eq minus 1 / 8|2 p_z chevron.r
