@@ -1,21 +1,5 @@
 #import "../macros.typ": task
 
-#let sub-eq(suffix, body, same: false) = {
-  if same {
-    counter(math.equation).update(n => n - 1)
-  }
-
-  set math.equation(
-    numbering: n => context {
-      let chapter = counter(heading).get().first()
-      "(" + numbering("1.1", chapter, n) + suffix + ")"
-    },
-  )
-
-  body
-}
-
-
 Теперь, когда мы увидели, как матрицы $3 times 3$ естественным образом возникают в трехмерной векторной алгебре и как они умножаются, мы обобщим эти результаты. Набор чисел ${A_(i j)}$, которые в общем случае являются комплексными и имеют упорядоченные нижние индексы $i = 1, 2, dots, N$ и $j = 1, 2, dots, M$, можно рассматривать как элементы прямоугольной ($N times M$) матрицы $bb(A)$ с $N$ строками и $M$ столбцами.
 
 $

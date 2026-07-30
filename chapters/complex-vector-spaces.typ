@@ -1,19 +1,4 @@
-#import "../macros.typ": task
-
-#let sub-eq(suffix, body, same: false) = {
-  if same {
-    counter(math.equation).update(n => n - 1)
-  }
-
-  set math.equation(
-    numbering: n => context {
-      let chapter = counter(heading).get().first()
-      "(" + numbering("1.1", chapter, n) + suffix + ")"
-    },
-  )
-
-  body
-}
+#import "../macros.typ": sub-eq, task
 
 Нужно обобщить идеи трёхмерной векторной алгебры на $N$-мерное
 пространство, в котором векторы могут быть комплексными. Мы будем

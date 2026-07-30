@@ -1,19 +1,4 @@
-#import "../macros.typ": task
-
-#let sub-eq(suffix, body, same: false) = {
-  if same {
-    counter(math.equation).update(n => n - 1)
-  }
-
-  set math.equation(
-    numbering: n => context {
-      let chapter = counter(heading).get().first()
-      "(" + numbering("1.1", chapter, n) + suffix + ")"
-    },
-  )
-
-  body
-}
+#import "../macros.typ": sub-eq, task
 
 В подразделе 1.1.1 мы видели, что выбор базиса не является единственным.
 Пусть даны два полных ортонормированных базиса

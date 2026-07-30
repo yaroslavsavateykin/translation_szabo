@@ -1,19 +1,4 @@
-#import "../macros.typ": task
-
-#let sub-eq(suffix, body, same: false) = {
-  if same {
-    counter(math.equation).update(n => n - 1)
-  }
-
-  set math.equation(
-    numbering: n => context {
-      let chapter = counter(heading).get().first()
-      "(" + numbering("1.1", chapter, n) + suffix + ")"
-    },
-  )
-
-  body
-}
+#import "../macros.typ": sub-eq, task
 
 Для заданной эрмитовой матрицы $bb(A)$ можно определить функцию от
 $bb(A)$, т. е. $f lr((bb(A)))$, почти так же, как определяется функция

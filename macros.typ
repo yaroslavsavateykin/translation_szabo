@@ -77,6 +77,23 @@
 
 // ============================================================================
 
+#let sub-eq(suffix, body, same: false) = {
+  if same {
+    counter(math.equation).update(n => n - 1)
+  }
+
+  set math.equation(
+    numbering: n => context {
+      let chapter = counter(heading).get().first()
+      "(" + numbering("1.1", chapter, n) + suffix + ")"
+    },
+  )
+
+  body
+}
+
+// ============================================================================
+
 #let placeholder(body) = box(
   fill: rgb(240, 120, 120),
   // stroke: (

@@ -1,21 +1,5 @@
 #import "../macros.typ": task
 
-#let sub-eq(suffix, body, same: false) = {
-  if same {
-    counter(math.equation).update(n => n - 1)
-  }
-
-  set math.equation(
-    numbering: n => context {
-      let chapter = counter(heading).get().first()
-      "(" + numbering("1.1", chapter, n) + suffix + ")"
-    },
-  )
-
-  body
-}
-
-
 Теперь мы дадим определение и приведем некоторые свойства определителя квадратной матрицы $bb(A)$. Напомним, что перестановка чисел $1, 2, 3, dots, N$ есть не что иное, как способ упорядочивания этих чисел, и существует $N!$ различных перестановок $N$ чисел. Определитель матрицы $bb(A)$ размера $N times N$ представляет собой *число*, получаемое по следующему правилу:
 
 $
