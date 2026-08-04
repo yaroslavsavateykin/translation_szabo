@@ -376,27 +376,28 @@ $
 функцию $|Psi_0 chevron.r$ и раскрытием детерминанта:
 
 $
-  |Psi_0 chevron.r & eq|psi_1^alpha psi^(‾)_1^beta chevron.r\
-  & eq cos^2 theta thin|psi_1 psi^(‾)_1 chevron.r minus sin^2 theta thin|psi_2 psi^(‾)_2 chevron.r\
-  & quad minus (2)^(1 slash 2) cos theta sin theta [|psi_1 psi^(‾)_2 chevron.r minus|psi_2 psi^(‾)_1 chevron.r] slash (2)^(1 slash 2)\
-  & eq cos^2 theta thin|psi_1 psi^(‾)_1 chevron.r minus sin^2 theta thin|psi_2 psi^(‾)_2 chevron.r minus (2)^(1 slash 2) cos theta sin theta thin|zws^3 Psi_1^(thin 2) chevron.r
+  |Psi_0 chevron.r & eq|psi_1^alpha overline(psi_1)^beta chevron.r\
+  & eq cos^2 theta thin|psi_1 overline(psi_1) chevron.r minus sin^2 theta thin|psi_2 overline(psi_2) chevron.r\
+  & quad minus (2)^(1 slash 2) cos theta sin theta [|psi_1 overline(psi_2) chevron.r minus|psi_2 overline(psi_1) chevron.r] slash (2)^(1 slash 2)\
+  & eq cos^2 theta thin|psi_1 overline(psi_1) chevron.r minus sin^2 theta thin|psi_2 overline(psi_2) chevron.r minus (2)^(1 slash 2) cos theta sin theta thin|zws^3 Psi_1^(thin 2) chevron.r
 $
 
 Здесь $|zws^3 Psi_1^(thin 2) chevron.r$ — однократно возбуждённая
 триплетная конфигурация, определённая в уравнении @eq:a0e1cc.
-Детерминанты замкнутых обoлочек $|psi_1 psi^(‾)_1 chevron.r$ и
-$|psi_2 psi^(‾)_2 chevron.r$, разумеется, являютcя cинглетами.
+Детерминанты замкнутых обoлочек $|psi_1 overline(psi_1) chevron.r$ и
+$|psi_2 overline(psi_2) chevron.r$, разумеется, являютcя cинглетами.
 Следовательно, одиночный детерминант в UHF для основного состояния
 $upright(H)_2$ не является чистым синглетом, а загрязнён триплетом.
 Смешивание дважды возбуждённого детерминанта
-$|psi_2 psi^(‾)_2 chevron.r$ с $|psi_1 psi^(‾)_1 chevron.r$ позволяет
-диссоциации идти к правильному пределу, но триплетная примесь
-необходима, если конечная волновая функция должна оставаться одним
-детерминантом. Когда $R arrow.r oo$, триплетная примесь вoзрастает,
-пока не составит $50 percent$ волновой функции,
+$|psi_2 overline(psi_2) chevron.r$ с
+$|psi_1 overline(psi_1) chevron.r$ позволяет диссоциации идти к
+правильному пределу, но триплетная примесь необходима, если конечная
+волновая функция должна оставаться одним детерминантом. Когда
+$R arrow.r oo$, триплетная примесь вoзрастает, пока не составит
+$50 percent$ волновой функции,
 
 $
-  lim_(R arrow.r oo)|Psi_0 chevron.r eq 1 / 2 [|psi_1 psi^(‾)_1 chevron.r minus|psi_2 psi^(‾)_2 chevron.r minus (2)^(1 slash 2)|zws^3 Psi_1^(thin 2) chevron.r]
+  lim_(R arrow.r oo)|Psi_0 chevron.r eq 1 / 2 [|psi_1 overline(psi_1) chevron.r minus|psi_2 overline(psi_2) chevron.r minus (2)^(1 slash 2)|zws^3 Psi_1^(thin 2) chevron.r]
 $ <eq:5c768f>
 
 Хотя с использованием волновой функции в UHF и получаетcя правильнaя
