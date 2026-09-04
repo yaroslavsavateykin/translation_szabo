@@ -37,7 +37,7 @@ $
 и интегралы притяжения к ядрам:
 
 $
-  V_(mu nu)^(upright("nucl")) eq integral d bold(r)_1 phi.alt_mu^ast.basic (1) [minus sum_A Z_A /|bold(r)_1 minus bold(R)_A|] phi.alt_nu (1)
+  V_(mu nu)^(upright("nucl")) eq integral d bold(r)_1 phi.alt_mu^ast.basic (1) [minus sum_A frac(Z_A, |bold(r)_1 minus bold(R)_A|)] phi.alt_nu (1)
 $
 
 где

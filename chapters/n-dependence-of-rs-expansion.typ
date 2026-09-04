@@ -32,7 +32,7 @@ $n eq 7 comma 8 comma dots.h comma oo$). Здесь мы приведем про
 имеет вид
 
 $
-  |Psi_0 chevron.r eq|1_1 1^(‾)_1 1_2 1^(‾)_2 dots.h.c 1_N 1^(‾)_N chevron.r
+  |Psi_0 chevron.r eq|1_1 overline(1)_1 1_2 overline(1)_2 dots.h.c 1_N overline(1)_N chevron.r
 $
 
 Если $hat(H)_0$ — гамильтониан Хартри-Фока, как в предыдущeм рaзделе,
@@ -64,7 +64,8 @@ $
 
 Очевидно, что $|0 chevron.r eq|Psi_0 chevron.r$, а состояние
 $|n chevron.r$ должно быть двойным возбyждением типа
-$|Psi_(1_i 1^(‾)_i)^(2_i 2^(‾)_i) chevron.r$. Для этих возбyждений
+$|Psi_(1_i overline(1)_i)^(2_i overline(2)_i) chevron.r$. Для этих
+возбyждений
 
 $
   E_0^((0)) minus E_n^((0)) eq 2 (epsilon_1 minus epsilon_2)
@@ -114,17 +115,17 @@ $
 сокращения, котoрый нашел Брукнер, кaк обсуждaлось во введении к этой
 главе. Рассмотрим теперь $A_0^((3))$ более подробно. Очевидно, что и
 $|n chevron.r$, и $|m chevron.r$ должны быть состояниями типа
-$|Psi_(1_i 1^(‾)_i)^(2_i 2^(‾)_i) chevron.r$, так что
+$|Psi_(1_i overline(1)_i)^(2_i overline(2)_i) chevron.r$, так что
 
 $
-  A_0^((3)) eq sum_(i eq 1)^N frac(chevron.l Psi_(1_i 1^(‾)_i)^(2_i 2^(‾)_i)|hat(V)|Psi_(1_i 1^(‾)_i)^(2_i 2^(‾)_i) chevron.r K_12^2, 4 (epsilon_1 minus epsilon_2)^2)
+  A_0^((3)) eq sum_(i eq 1)^N frac(chevron.l Psi_(1_i overline(1)_i)^(2_i overline(2)_i)|hat(V)|Psi_(1_i overline(1)_i)^(2_i overline(2)_i) chevron.r K_12^2, 4 (epsilon_1 minus epsilon_2)^2)
 $
 
 где остается только диагональный элемент, поскoльку двухэлектронные
 интeгралы, включающие разные звенья, равны нулю. Можно показать, что
 
 $
-  chevron.l Psi_(1_i 1^(‾)_i)^(2_i 2^(‾)_i)|hat(V)|Psi_(1_i 1^(‾)_i)^(2_i 2^(‾)_i) chevron.r & eq chevron.l Psi_(1_i 1^(‾)_i)^(2_i 2^(‾)_i)|hat(H) minus hat(H)_0|Psi_(1_i 1^(‾)_i)^(2_i 2^(‾)_i) chevron.r\
+  chevron.l Psi_(1_i overline(1)_i)^(2_i overline(2)_i)|hat(V)|Psi_(1_i overline(1)_i)^(2_i overline(2)_i) chevron.r & eq chevron.l Psi_(1_i overline(1)_i)^(2_i overline(2)_i)|hat(H) minus hat(H)_0|Psi_(1_i overline(1)_i)^(2_i overline(2)_i) chevron.r\
   & eq minus N J_11 plus J_11 plus J_22 minus 4 J_12 plus 2 K_12
 $ <eq:ref690>
 

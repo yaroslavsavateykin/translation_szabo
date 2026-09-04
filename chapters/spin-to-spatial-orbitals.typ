@@ -179,7 +179,7 @@ $
   #figure(
     rhf_ground_state(),
     caption: [
-      Определитель основного состояние в ограниченном методе
+      Определитель основного состояния в ограниченном методе
       Хартри-Фока,
       $|psi_1 overline(psi)_1 psi_2 overline(psi)_2 dots.c psi_a overline(psi)_a psi_b overline(psi)_b dots.c psi_(N/2) overline(psi)_(N/2) chevron.r$.
     ],

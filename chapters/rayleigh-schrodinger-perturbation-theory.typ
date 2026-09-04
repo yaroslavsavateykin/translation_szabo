@@ -198,7 +198,7 @@ $|I chevron.r$ и $|I I chevron.r$, которые являются собств
 функциями гамильтониана $hat(H)$,
 
 $
-  hat(H)_0|I chevron.r = E_1^(0)|I и hat(H)_0|I I chevron.r = E_2^(0)|I I chevron.r
+  hat(H)|I chevron.r = cal(E)_1|I chevron.r "и" hat(H)|I I chevron.r = cal(E)_2|I I chevron.r
 $
 
 Предположим, что мы записываем
@@ -209,7 +209,7 @@ $ hat(H) = hat(H)_0 + hat(V) $
 $hat(H)_0$,
 
 $
-  hat(H)_0|1 chevron.r = E_1^(0)|1
+  hat(H)_0|1 chevron.r = E_1^(0)|1 chevron.r
   quad "и" quad
   hat(H)_0|2 chevron.r = E_2^(0)|2 chevron.r
 $
